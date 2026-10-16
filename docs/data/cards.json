@@ -1,0 +1,62 @@
+[
+  {
+    "id": "card-001",
+    "question": "Qual é a regra geral de conservação a quente da RDC nº 216/2004?",
+    "answer": "Temperatura superior a 60 °C por, no máximo, 6 horas.",
+    "source": {
+      "title": "ANVISA — RDC nº 216/2004",
+      "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+      "location": "Item 4.8.15"
+    }
+  },
+  {
+    "id": "card-002",
+    "question": "Qual é a meta inicial de resfriamento de um alimento preparado?",
+    "answer": "De 60 °C a 10 °C em até duas horas; depois, refrigeração abaixo de 5 °C ou congelamento a −18 °C ou menos.",
+    "source": {
+      "title": "ANVISA — RDC nº 216/2004",
+      "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+      "location": "Item 4.8.16"
+    }
+  },
+  {
+    "id": "card-003",
+    "question": "Como se calcula IMC?",
+    "answer": "Massa em quilogramas dividida pela altura em metros elevada ao quadrado.",
+    "source": {
+      "title": "OMS — Obesity and overweight",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight",
+      "location": "Definição de IMC"
+    }
+  },
+  {
+    "id": "card-004",
+    "question": "Qual é a periodicidade ordinária da Conferência de Saúde?",
+    "answer": "Quatro anos. A Lei nº 8.142/1990 também admite convocação extraordinária.",
+    "source": {
+      "title": "Lei nº 8.142/1990 — participação da comunidade",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l8142.htm",
+      "location": "Art. 1º, § 1º"
+    }
+  },
+  {
+    "id": "card-005",
+    "question": "O Conselho de Saúde é permanente ou temporário?",
+    "answer": "Permanente e deliberativo, conforme a Lei nº 8.142/1990.",
+    "source": {
+      "title": "Lei nº 8.142/1990 — participação da comunidade",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l8142.htm",
+      "location": "Art. 1º, § 2º"
+    }
+  },
+  {
+    "id": "card-006",
+    "question": "Qual grupo deve ser a base das refeições segundo o Guia Alimentar?",
+    "answer": "Alimentos in natura ou minimamente processados.",
+    "source": {
+      "title": "Ministério da Saúde — Guia alimentar para a população brasileira, 2ª edição",
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+      "location": "Capítulo 2"
+    }
+  }
+]

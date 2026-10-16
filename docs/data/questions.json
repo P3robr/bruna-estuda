@@ -1,0 +1,3489 @@
+[
+  {
+    "id": "be-hig-001",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Tratamento térmico",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Um serviço de alimentação adota a regra geral de cocção da RDC nº 216/2004. Qual procedimento atende ao requisito, sem recorrer a combinações alternativas de tempo e temperatura?",
+    "options": [
+      "Garantir pelo menos 70 °C em todas as partes do alimento.",
+      "Medir 70 °C apenas na superfície, sem avaliar o centro.",
+      "Usar a cor externa como substituta obrigatória da temperatura.",
+      "Considerar qualquer alimento seguro ao atingir 50 °C."
+    ],
+    "answer": 0,
+    "explanations": [
+      "O item exige no mínimo 70 °C em todas as partes, ressalvando combinações inferiores de tempo e temperatura com segurança assegurada.",
+      "A superfície isolada não demonstra que todas as partes atingiram a temperatura.",
+      "Cor pode auxiliar a avaliação, mas não substitui de forma geral a verificação do tratamento.",
+      "50 °C, isoladamente, não comprova cumprimento da regra nem de uma combinação validada."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.8.8"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-002",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Conservação a quente",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Pela RDC nº 216/2004, qual condição corresponde à conservação a quente de alimentos preparados?",
+    "options": [
+      "Acima de 60 °C por, no máximo, 6 horas.",
+      "A 55 °C por tempo indeterminado.",
+      "A 60 °C ou menos por 12 horas.",
+      "Acima de 60 °C por até 24 horas."
+    ],
+    "answer": 0,
+    "explanations": [
+      "O limite combina temperatura superior a 60 °C e duração máxima de 6 horas.",
+      "A temperatura é inferior à exigida e não há autorização de tempo indeterminado.",
+      "A faixa térmica e o prazo não atendem ao item.",
+      "Temperatura adequada não elimina o limite de 6 horas."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.8.15"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-003",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Resfriamento",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Uma preparação saiu da cocção e será refrigerada. Qual meta de resfriamento está de acordo com a RDC nº 216/2004?",
+    "options": [
+      "Reduzir de 60 °C para 10 °C em até 2 horas.",
+      "Aguardar 6 horas na bancada para só então medir.",
+      "Manter a 30 °C durante toda a noite.",
+      "Resfriar até 10 °C em 8 horas, sem outros controles."
+    ],
+    "answer": 0,
+    "explanations": [
+      "Essa é a combinação prevista; depois, refrigerar abaixo de 5 °C ou congelar a −18 °C ou menos.",
+      "A espera proposta não cumpre a redução em até 2 horas.",
+      "A permanência prolongada nessa faixa contraria o controle de multiplicação microbiana.",
+      "O prazo de 8 horas excede o limite do resfriamento previsto."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.8.16"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-004",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Óleos de fritura",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Durante a fritura, qual situação exige substituir imediatamente o óleo, segundo a RDC nº 216/2004?",
+    "options": [
+      "Formação intensa de espuma e fumaça, com alteração de aroma.",
+      "Óleo sem alterações, usado abaixo de 180 °C.",
+      "Somente mudança do número de refeições previstas.",
+      "A simples abertura de uma embalagem nova, ainda íntegra."
+    ],
+    "answer": 0,
+    "explanations": [
+      "São sinais expressos de alteração físico-química ou sensorial que exigem substituição.",
+      "Esses dados, isoladamente, não caracterizam a alteração descrita; os demais controles continuam necessários.",
+      "O número de refeições não é o critério de deterioração do óleo previsto no item.",
+      "Abrir óleo novo não demonstra degradação, embora se deva armazená-lo adequadamente."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.8.11"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-005",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Descongelamento",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Qual conduta de descongelamento é admitida pela RDC nº 216/2004?",
+    "options": [
+      "Micro-ondas, seguido imediatamente de cocção.",
+      "Bancada à temperatura ambiente durante toda a madrugada.",
+      "Imersão sem controle térmico até o dia seguinte.",
+      "Descongelar, aquecer parcialmente e recongelar livremente."
+    ],
+    "answer": 0,
+    "explanations": [
+      "O micro-ondas é admitido quando o alimento é imediatamente submetido à cocção.",
+      "O descongelamento previsto ocorre sob refrigeração inferior a 5 °C ou em micro-ondas nas condições indicadas.",
+      "A ausência de controle térmico não atende ao procedimento estabelecido.",
+      "O item 4.8.14 não permite recongelar alimentos já descongelados."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Itens 4.8.12 a 4.8.14"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-006",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Validade refrigerada",
+    "difficulty": "hard",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Um alimento preparado será mantido a 4,5 °C. A equipe pretende aplicar automaticamente a validade máxima de 5 dias prevista para temperatura de 4 °C ou inferior. Avalie a conduta.",
+    "options": [
+      "Está correta, pois qualquer temperatura inferior a 5 °C permite os mesmos 5 dias.",
+      "Está incorreta: entre 4 °C e 5 °C, o prazo máximo deve ser reduzido.",
+      "Está correta, pois a validade independe da temperatura.",
+      "Está incorreta porque nenhum alimento preparado pode ser refrigerado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A norma distingue a faixa até 4 °C daquela acima de 4 °C e abaixo de 5 °C.",
+      "O item exige redução do prazo para garantir condições higiênico-sanitárias nessa faixa; não fornece um novo número universal de dias.",
+      "O item relaciona expressamente prazo e temperatura.",
+      "Refrigeração é admitida, desde que observadas as condições de segurança."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.8.17"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-007",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Identificação de preparados",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Qual conjunto mínimo identifica um alimento preparado armazenado sob refrigeração ou congelamento?",
+    "options": [
+      "Nome do cliente e preço da refeição.",
+      "Designação, data de preparo e prazo de validade.",
+      "Apenas peso líquido.",
+      "Apenas o número do lote do fornecedor."
+    ],
+    "answer": 1,
+    "explanations": [
+      "Esses dados não substituem a identificação mínima do alimento preparado.",
+      "São as três informações mínimas exigidas no invólucro; a temperatura também deve ser monitorada e registrada.",
+      "Peso não informa o preparo nem o prazo de consumo.",
+      "O lote do fornecedor não substitui a identificação da preparação produzida no serviço."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.8.18"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-008",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Contaminação cruzada",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Após cortar frango cru, o manipulador usou o mesmo utensílio não higienizado para porcionar salada pronta. Qual avaliação é adequada?",
+    "options": [
+      "Não há risco, pois o contato foi indireto.",
+      "Há risco de contaminação cruzada entre alimento cru e pronto.",
+      "O risco desaparece porque a salada será consumida fria.",
+      "Somente a cor do utensílio determina se houve risco."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A norma também manda evitar contato indireto entre crus e prontos.",
+      "O utensílio pode transferir contaminantes. Separação e higienização adequadas são controles necessários.",
+      "Consumo frio não elimina contaminantes transferidos.",
+      "Código de cores pode ajudar na organização, mas não demonstra ausência de contaminação."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Itens 4.8.3 e 4.8.4"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-009",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Água e gelo",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "O gelo que entra em contato com uma bebida deve ser produzido com:",
+    "options": [
+      "Qualquer água, porque congelar garante potabilidade.",
+      "Água potável, mantendo proteção contra contaminação.",
+      "Água não potável, desde que sem odor.",
+      "Água de reúso sem avaliação, se a bebida for ácida."
+    ],
+    "answer": 1,
+    "explanations": [
+      "Congelar não transforma qualquer água em potável.",
+      "A norma exige água potável e manutenção em condição higiênico-sanitária.",
+      "Ausência de odor não demonstra potabilidade.",
+      "Acidez da bebida não dispensa o requisito da água usada no gelo."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Itens 4.4.1 e 4.4.2"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-010",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Reservatório de água",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "A higienização do reservatório de água de um serviço de alimentação deve ocorrer, pela RDC nº 216/2004, em intervalo máximo de:",
+    "options": [
+      "24 meses, sem registro.",
+      "12 meses, sem inspeção.",
+      "6 meses, com registro da operação.",
+      "5 anos, quando houver água encanada."
+    ],
+    "answer": 2,
+    "explanations": [
+      "O intervalo excede seis meses e omite o registro obrigatório.",
+      "Doze meses excedem o intervalo máximo previsto.",
+      "A norma estabelece seis meses como intervalo máximo e exige registros.",
+      "Abastecimento encanado não dispensa a conservação e a higienização do reservatório."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.4.4"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-011",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Saúde dos manipuladores",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Um manipulador apresenta lesões que podem comprometer a qualidade higiênico-sanitária do alimento. Qual providência atende à RDC nº 216/2004?",
+    "options": [
+      "Mantê-lo na preparação sem qualquer avaliação.",
+      "Compensar o risco aumentando o sal das receitas.",
+      "Afastá-lo da preparação enquanto persistirem essas condições.",
+      "Substituir a lavagem das mãos por perfume."
+    ],
+    "answer": 2,
+    "explanations": [
+      "O item exige afastamento da atividade de preparação na condição descrita.",
+      "Adicionar sal não é medida substitutiva de controle da saúde do manipulador.",
+      "O afastamento da preparação é exigido enquanto persistirem lesões ou sintomas que comprometam a segurança.",
+      "Perfume não higieniza as mãos nem resolve o risco relacionado às lesões."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.6.2"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-012",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Saneantes",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Para usar saneante na higienização de uma bancada, a equipe deve:",
+    "options": [
+      "Dobrar toda concentração indicada para acelerar o processo.",
+      "Misturar produtos diferentes sempre que o cheiro for fraco.",
+      "Seguir diluição, tempo de contato e modo de aplicação do fabricante.",
+      "Escolher apenas pelo perfume, sem verificar regularização."
+    ],
+    "answer": 2,
+    "explanations": [
+      "Concentração arbitrária pode trazer resíduos e não corresponde à instrução do fabricante.",
+      "Misturas não previstas não são uma prática autorizada pelo item e podem ser perigosas.",
+      "A norma vincula a aplicação às instruções do fabricante e exige produto regularizado.",
+      "Regularização é obrigatória; perfume não comprova eficácia ou adequação."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.2.5"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-013",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Recepção de insumos",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Uma matéria-prima exige conservação refrigerada. Em quais etapas a RDC nº 216/2004 manda verificar sua temperatura?",
+    "options": [
+      "Somente após servir a refeição.",
+      "Somente quando houver reclamação.",
+      "Na recepção e no armazenamento.",
+      "Somente na emissão da nota fiscal."
+    ],
+    "answer": 2,
+    "explanations": [
+      "A verificação precisa ocorrer antes, nas etapas indicadas para os insumos.",
+      "Reclamações não substituem o controle de rotina.",
+      "A temperatura deve ser verificada na recepção e no armazenamento dos insumos com condições especiais de conservação.",
+      "A emissão da nota não verifica a condição térmica real do alimento."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.7.3"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-014",
+    "version": 1,
+    "type": "boolean",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Resíduos",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Nas áreas de preparação e armazenamento, os coletores de resíduos devem ter tampas acionadas sem contato manual.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 0,
+    "explanations": [
+      "O item 4.5.2 exige tampas com acionamento sem contato manual nessas áreas.",
+      "A afirmação reproduz o requisito; portanto, classificá-la como errada contraria o item."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.5.2"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-015",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Documentação",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Qual afirmação descreve corretamente os Procedimentos Operacionais Padronizados de um serviço de alimentação?",
+    "options": [
+      "Podem conter apenas slogans de higiene.",
+      "Precisam ficar inacessíveis aos funcionários.",
+      "Dispensam identificação de responsáveis.",
+      "Devem apresentar instruções sequenciais, frequência e responsáveis, com aprovação, data e assinatura."
+    ],
+    "answer": 3,
+    "explanations": [
+      "Slogans não substituem instruções operacionais sequenciais.",
+      "Os documentos devem estar acessíveis aos funcionários envolvidos.",
+      "O item 4.11.2 exige nome, cargo ou função dos responsáveis.",
+      "Esses elementos estão previstos no item 4.11.2 para tornar o procedimento executável e identificável."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Itens 4.11.1 e 4.11.2"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-016",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Registros",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Os registros previstos na RDC nº 216/2004 devem ser mantidos por período mínimo de:",
+    "options": [
+      "24 horas contadas da compra.",
+      "7 dias contados da entrega.",
+      "15 dias contados da limpeza.",
+      "30 dias contados da preparação dos alimentos."
+    ],
+    "answer": 3,
+    "explanations": [
+      "Esse prazo e esse marco inicial não correspondem ao item.",
+      "O mínimo previsto não é sete dias nem usa a entrega como marco.",
+      "O item não estabelece quinze dias a partir da limpeza.",
+      "O período mínimo é trinta dias, contados da preparação dos alimentos."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.11.3"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-017",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Estrutura física",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "No planejamento físico de uma cozinha, qual decisão contribui para cumprir a RDC nº 216/2004?",
+    "options": [
+      "Organizar o fluxo de preparo e separar atividades para evitar contaminação cruzada.",
+      "Fazer alimentos crus e prontos cruzarem continuamente sem controle.",
+      "Dimensionar as instalações sem considerar as operações.",
+      "Compartilhar qualquer acesso sem controlar a circulação."
+    ],
+    "answer": 0,
+    "explanations": [
+      "Fluxo ordenado e separação física ou por outros meios eficazes estão expressamente previstos.",
+      "Cruzamentos sem controle contrariam a prevenção exigida.",
+      "O dimensionamento deve ser compatível com as operações.",
+      "O acesso deve ser controlado; a circulação não pode ignorar os riscos sanitários."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Itens 4.1.1 e 4.1.2"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-018",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Armazenamento de insumos",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Para um ingrediente com prazo de validade declarado, qual critério precisa ser respeitado em sua utilização?",
+    "options": [
+      "Usar o prazo de validade, mantendo identificação e proteção adequadas.",
+      "Usar sempre o último recebido, ainda que vença primeiro outro lote.",
+      "Desconsiderar a validade se a embalagem parecer limpa.",
+      "Misturar lotes vencidos com lotes novos para uniformizar o estoque."
+    ],
+    "answer": 0,
+    "explanations": [
+      "O uso deve respeitar a validade e as condições de armazenamento e identificação.",
+      "A ordem proposta pode deixar vencer lotes; não substitui o respeito à validade.",
+      "Limpeza aparente da embalagem não estende prazo de validade.",
+      "Misturar produto vencido não restabelece sua adequação."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.7.5"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-019",
+    "version": 1,
+    "type": "boolean",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Visitantes",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Visitantes de uma área de manipulação de alimentos ficam dispensados dos requisitos de higiene e saúde aplicáveis aos manipuladores.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A dispensa afirmada não existe: o item 4.6.8 exige cumprimento dos requisitos.",
+      "O item determina que visitantes cumpram os requisitos de higiene e saúde estabelecidos para os manipuladores."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.6.8"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-hig-020",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Distribuição e pagamento",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Em um refeitório, qual organização atende à regra sobre recebimento de dinheiro e manipulação de alimentos preparados?",
+    "options": [
+      "O mesmo funcionário recebe dinheiro e serve alimentos sem restrições.",
+      "A área de pagamento é reservada, e seus responsáveis não manipulam alimentos preparados.",
+      "A regra só vale para alimentos sem embalagem.",
+      "Cartões de pagamento dispensam a separação prevista."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A norma proíbe que responsáveis pelo pagamento manipulem alimentos preparados.",
+      "A separação abrange a área de pagamento e os funcionários responsáveis por essa atividade.",
+      "A regra abrange alimentos preparados, embalados ou não.",
+      "O item inclui dinheiro, cartões e outros meios de pagamento."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.10.7"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-sus-001",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Sistema Único de Saúde",
+    "topic": "Princípios e acesso",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "A universalidade de acesso, prevista na Lei nº 8.080/1990, é compatível com qual afirmação?",
+    "options": [
+      "O acesso ao SUS exige contribuição previdenciária anterior.",
+      "Os serviços de saúde do SUS são acessíveis em todos os níveis de assistência.",
+      "Somente empregados formais integram o público do SUS.",
+      "O acesso fica restrito a ações de vacinação."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A universalidade não está condicionada à contribuição previdenciária.",
+      "O inciso I prevê universalidade de acesso em todos os níveis de assistência.",
+      "O vínculo formal de emprego não delimita a titularidade do acesso.",
+      "Universalidade não se restringe à vacinação."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 8.080/1990 — texto oficial consolidado",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+        "location": "Art. 7º, I"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-sus-002",
+    "version": 1,
+    "type": "boolean",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Sistema Único de Saúde",
+    "topic": "Vigilância nutricional",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "A vigilância nutricional e a orientação alimentar integram o campo de atuação do SUS.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 0,
+    "explanations": [
+      "As duas ações constam expressamente do art. 6º, IV.",
+      "Negar a afirmação contraria a previsão expressa da Lei nº 8.080/1990."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 8.080/1990 — texto oficial consolidado",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+        "location": "Art. 6º, IV"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-sus-003",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Sistema Único de Saúde",
+    "topic": "Determinantes da saúde",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Qual abordagem respeita a concepção de determinantes e condicionantes da saúde da Lei nº 8.080/1990?",
+    "options": [
+      "Explicar a saúde somente pela genética individual.",
+      "Excluir alimentação e renda da análise.",
+      "Considerar alimentação, moradia, trabalho, renda e outros fatores sociais.",
+      "Presumir que organização econômica não tem relação com saúde."
+    ],
+    "answer": 2,
+    "explanations": [
+      "A lei inclui fatores sociais, econômicos e ambientais, além de aspectos individuais.",
+      "Alimentação e renda são explicitamente mencionadas.",
+      "O art. 3º relaciona os níveis de saúde à organização social e econômica e enumera esses determinantes.",
+      "A relação com a organização social e econômica é expressa no artigo."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 8.080/1990 — texto oficial consolidado",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+        "location": "Art. 3º"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-sus-004",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Sistema Único de Saúde",
+    "topic": "Participação social",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "A periodicidade ordinária das Conferências de Saúde prevista na Lei nº 8.142/1990 é de:",
+    "options": [
+      "6 meses.",
+      "1 ano.",
+      "2 anos.",
+      "4 anos."
+    ],
+    "answer": 3,
+    "explanations": [
+      "A periodicidade ordinária não é semestral; convocações extraordinárias são outra hipótese.",
+      "A lei não estabelece frequência anual ordinária.",
+      "Dois anos não correspondem ao intervalo do § 1º.",
+      "A conferência reúne-se ordinariamente a cada quatro anos, admitida convocação extraordinária."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 8.142/1990 — participação da comunidade",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8142.htm",
+        "location": "Art. 1º, § 1º"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-sus-005",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Sistema Único de Saúde",
+    "topic": "Conselhos de saúde",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Segundo a Lei nº 8.142/1990, o Conselho de Saúde tem caráter:",
+    "options": [
+      "Permanente e deliberativo.",
+      "Temporário e exclusivamente decorativo.",
+      "Eventual e sem participação dos usuários.",
+      "Somente consultivo, sem atuação no controle da política de saúde."
+    ],
+    "answer": 0,
+    "explanations": [
+      "O § 2º define caráter permanente e deliberativo e atuação na formulação de estratégias e no controle da política.",
+      "O caráter legal é permanente, com funções definidas.",
+      "Usuários compõem o colegiado; não se trata de órgão eventual.",
+      "A lei lhe confere deliberação e controle, não apenas consulta."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 8.142/1990 — participação da comunidade",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8142.htm",
+        "location": "Art. 1º, § 2º"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-sus-006",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Sistema Único de Saúde",
+    "topic": "Paridade de usuários",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Um Conselho de Saúde terá 20 integrantes. Aplicando a paridade dos usuários em relação ao conjunto dos demais segmentos, quantas vagas cabem aos usuários?",
+    "options": [
+      "5.",
+      "8.",
+      "10.",
+      "15."
+    ],
+    "answer": 2,
+    "explanations": [
+      "Cinco representariam um quarto, não paridade com o conjunto restante.",
+      "Oito não equivalem aos outros doze integrantes.",
+      "Dez usuários equivalem aos dez integrantes dos demais segmentos em conjunto.",
+      "Quinze usuários não são paritários em relação aos cinco restantes."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 8.142/1990 — participação da comunidade",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8142.htm",
+        "location": "Art. 1º, § 4º"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-col-001",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Saúde coletiva e alimentação",
+    "topic": "Grau de processamento",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Arroz apenas descascado e polido, sem adição de sal, açúcar ou outras substâncias, é classificado pelo Guia Alimentar como:",
+    "options": [
+      "Ultraprocessado.",
+      "Minimamente processado.",
+      "Ingrediente culinário extraído.",
+      "Preparação culinária pronta."
+    ],
+    "answer": 1,
+    "explanations": [
+      "Polimento isolado não caracteriza formulação ultraprocessada.",
+      "Processos físicos sem adições mantêm o arroz nesse grupo.",
+      "Não se trata de óleo, açúcar ou outro ingrediente extraído.",
+      "O arroz cru ainda não foi transformado em preparação."
+    ],
+    "references": [
+      {
+        "title": "Ministério da Saúde — Guia alimentar para a população brasileira, 2ª edição",
+        "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+        "location": "Capítulo 2, alimentos in natura e minimamente processados"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-col-002",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Saúde coletiva e alimentação",
+    "topic": "Escolhas alimentares",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Qual orientação corresponde ao Guia Alimentar para a População Brasileira?",
+    "options": [
+      "Substituir refeições por refrigerantes enriquecidos.",
+      "Usar apenas suplementos como base da alimentação.",
+      "Basear refeições em alimentos in natura ou minimamente processados.",
+      "Escolher produtos apenas pela propaganda."
+    ],
+    "answer": 2,
+    "explanations": [
+      "Enriquecimento não transforma refrigerantes em base recomendada.",
+      "Suplementos não substituem a base alimentar proposta.",
+      "Esse grupo deve formar a base das refeições.",
+      "Publicidade não é critério suficiente de escolha."
+    ],
+    "references": [
+      {
+        "title": "Ministério da Saúde — Guia alimentar para a população brasileira, 2ª edição",
+        "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+        "location": "Capítulo 2, recomendações gerais"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-col-003",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Saúde coletiva e alimentação",
+    "topic": "Leitura de ingredientes",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Uma formulação industrial contém substâncias extraídas de alimentos e aditivos destinados a intensificar sabor, cor e textura. Qual informação ajuda a reconhecer seu grau de processamento?",
+    "options": [
+      "Somente o preço promocional.",
+      "Somente a cor da embalagem.",
+      "Somente o tamanho da porção.",
+      "A lista de ingredientes e a natureza da formulação."
+    ],
+    "answer": 3,
+    "explanations": [
+      "Preço não define processamento.",
+      "Embalagem não descreve a composição.",
+      "Porção não revela a formulação.",
+      "Ingredientes e formulação ajudam a identificar ultraprocessados."
+    ],
+    "references": [
+      {
+        "title": "Ministério da Saúde — Guia alimentar para a população brasileira, 2ª edição",
+        "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+        "location": "Capítulo 2, identificação de ultraprocessados"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-cic-001",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Nutrição nos ciclos da vida",
+    "topic": "Aleitamento materno",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Para lactente saudável em aleitamento materno exclusivo nos primeiros seis meses, qual oferta de rotina corresponde à recomendação do Ministério da Saúde?",
+    "options": [
+      "Leite materno, sem água, chás ou outros alimentos.",
+      "Leite materno e chá diariamente.",
+      "Água obrigatória depois de cada mamada.",
+      "Suco para substituir a mamada noturna."
+    ],
+    "answer": 0,
+    "explanations": [
+      "Exclusividade exclui água, chás, sucos e outros alimentos de rotina.",
+      "O chá descaracteriza a exclusividade recomendada.",
+      "Água de rotina não é necessária nessa condição.",
+      "Suco não substitui a mamada recomendada."
+    ],
+    "references": [
+      {
+        "title": "Ministério da Saúde — Amamentação",
+        "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/aleitamento-materno",
+        "location": "Recomendação do Ministério da Saúde"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-cic-002",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Nutrição nos ciclos da vida",
+    "topic": "Alimentação complementar",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Aos seis meses, mantendo-se a possibilidade de amamentação, qual orientação é adequada?",
+    "options": [
+      "Interromper obrigatoriamente o aleitamento.",
+      "Introduzir alimentação complementar adequada e manter a amamentação até dois anos ou mais.",
+      "Manter somente leite materno indefinidamente.",
+      "Trocar todas as mamadas por bebidas açucaradas."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A introdução alimentar não exige desmame.",
+      "Alimentos complementam o leite materno nessa fase.",
+      "A exclusividade é recomendada nos primeiros seis meses.",
+      "Bebidas açucaradas não correspondem à recomendação."
+    ],
+    "references": [
+      {
+        "title": "Ministério da Saúde — Amamentação",
+        "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/aleitamento-materno",
+        "location": "Introdução de alimentos após seis meses"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-ava-001",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Avaliação nutricional",
+    "topic": "Índice de massa corporal",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Uma adulta tem massa corporal de 72 kg e altura de 1,60 m. Qual é seu IMC, arredondado para uma casa decimal?",
+    "options": [
+      "45,0 kg/m².",
+      "28,1 kg/m².",
+      "22,5 kg/m².",
+      "18,0 kg/m²."
+    ],
+    "answer": 1,
+    "explanations": [
+      "45 resulta de dividir a massa apenas pela altura.",
+      "IMC = 72 / (1,60 × 1,60) = 28,125, ou 28,1 kg/m².",
+      "Esse valor não resulta da divisão por 2,56 m².",
+      "Esse valor usa um denominador incompatível com a altura informada."
+    ],
+    "references": [
+      {
+        "title": "OMS — Obesity and overweight",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight",
+        "location": "Definição de IMC em adultos"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-ava-002",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Avaliação nutricional",
+    "topic": "Classificação em adultos",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Considerando o critério geral da OMS para adultos, um IMC de 31 kg/m² se enquadra em:",
+    "options": [
+      "Baixo peso.",
+      "Faixa abaixo do limiar de excesso de peso.",
+      "Obesidade.",
+      "Classificação impossível apenas porque a pessoa é adulta."
+    ],
+    "answer": 2,
+    "explanations": [
+      "31 não está na faixa de baixo peso.",
+      "O valor supera os limiares de excesso de peso e de obesidade.",
+      "A OMS define obesidade em adultos a partir de IMC de 30 kg/m².",
+      "O critério adulto usa IMC, embora avaliação clínica completa exija outros dados."
+    ],
+    "references": [
+      {
+        "title": "OMS — Obesity and overweight",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight",
+        "location": "Critérios de excesso de peso e obesidade em adultos"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-ava-003",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Avaliação nutricional",
+    "topic": "Limites do IMC",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Qual afirmação sobre o IMC é adequada?",
+    "options": [
+      "Mede diretamente a gordura de cada órgão.",
+      "Dispensa qualquer outra avaliação clínica.",
+      "É calculado dividindo altura por massa.",
+      "É um marcador indireto de adiposidade e deve ser interpretado no contexto da avaliação."
+    ],
+    "answer": 3,
+    "explanations": [
+      "IMC não mede gordura diretamente.",
+      "Outros dados podem ser necessários.",
+      "A fórmula é massa dividida pela altura ao quadrado.",
+      "É uma medida substituta de adiposidade, não uma avaliação corporal completa."
+    ],
+    "references": [
+      {
+        "title": "OMS — Obesity and overweight",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight",
+        "location": "Diagnóstico de sobrepeso e obesidade"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-mat-001",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Raciocínio lógico e matemática",
+    "topic": "Porcentagem",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Em um levantamento fictício, 15% de 240 atendimentos incluíram orientação em grupo. Quantos atendimentos foram esses?",
+    "options": [
+      "16.",
+      "24.",
+      "36.",
+      "48."
+    ],
+    "answer": 2,
+    "explanations": [
+      "16 não representa 15% de 240.",
+      "24 correspondem a 10% do total.",
+      "15/100 × 240 = 36 atendimentos.",
+      "48 correspondem a 20% do total."
+    ],
+    "references": [
+      {
+        "title": "Bruna Estuda — memória de cálculo autoral do piloto",
+        "url": "./data/editorial-notes.html",
+        "location": "Cálculo autoral: 240 × 0,15"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-mat-002",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Raciocínio lógico e matemática",
+    "topic": "Média ponderada",
+    "difficulty": "hard",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Dois grupos consumiram, em média, quantidades diferentes de uma preparação. Qual é a média por pessoa nos dois grupos reunidos?",
+    "options": [
+      "90 g.",
+      "92 g.",
+      "180 g.",
+      "100 g."
+    ],
+    "answer": 1,
+    "explanations": [
+      "90 g é a média simples das médias; ignora os tamanhos diferentes dos grupos.",
+      "O total é 20 × 80 + 30 × 100 = 4.600 g para 50 pessoas: 92 g/pessoa.",
+      "Somar médias não produz a média do conjunto.",
+      "100 g corresponde somente ao segundo grupo."
+    ],
+    "references": [
+      {
+        "title": "Bruna Estuda — memória de cálculo autoral do piloto",
+        "url": "./data/editorial-notes.html",
+        "location": "Cálculo autoral: (20 × 80 + 30 × 100) / 50"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0.",
+    "table": {
+      "caption": "Dados fictícios de consumo",
+      "headers": [
+        "Grupo",
+        "Pessoas",
+        "Consumo médio por pessoa"
+      ],
+      "rows": [
+        [
+          "A",
+          "20",
+          "80 g"
+        ],
+        [
+          "B",
+          "30",
+          "100 g"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "be-mat-003",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Raciocínio lógico e matemática",
+    "topic": "Lógica de conjuntos",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Em uma turma fictícia, 18 pessoas estudaram Nutrição Clínica, 15 estudaram Saúde Coletiva e 7 estudaram ambas. Quantas estudaram pelo menos uma dessas matérias?",
+    "options": [
+      "26.",
+      "33.",
+      "40.",
+      "11."
+    ],
+    "answer": 0,
+    "explanations": [
+      "A união é 18 + 15 − 7 = 26: quem estudou ambas deve ser contado uma vez.",
+      "33 conta as sete pessoas da interseção duas vezes.",
+      "40 adiciona a interseção, em vez de corrigir a dupla contagem.",
+      "11 é a quantidade que estudou apenas Nutrição Clínica, não a união."
+    ],
+    "references": [
+      {
+        "title": "Bruna Estuda — memória de cálculo autoral do piloto",
+        "url": "./data/editorial-notes.html",
+        "location": "Cálculo autoral por inclusão-exclusão: 18 + 15 − 7"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-mat-004",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Raciocínio lógico e matemática",
+    "topic": "Proporcionalidade",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Uma ficha técnica fictícia usa 2,4 kg de um ingrediente para 80 porções. Mantida exatamente a proporção, quantos quilogramas são necessários para 200 porções?",
+    "options": [
+      "0,96 kg.",
+      "4,8 kg.",
+      "6,0 kg.",
+      "8,0 kg."
+    ],
+    "answer": 2,
+    "explanations": [
+      "0,96 resulta de inverter a razão de escala.",
+      "4,8 kg correspondem a 160 porções, não 200.",
+      "Cada porção usa 2,4/80 = 0,03 kg; 200 × 0,03 = 6 kg.",
+      "8 kg não mantêm a proporção informada."
+    ],
+    "references": [
+      {
+        "title": "Bruna Estuda — memória de cálculo autoral do piloto",
+        "url": "./data/editorial-notes.html",
+        "location": "Cálculo autoral: 2,4 × 200 / 80"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "be-por-001",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Língua Portuguesa",
+    "topic": "Compreensão textual",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "Qual interpretação é sustentada pelo texto?",
+    "options": [
+      "A ampliação resolveu integralmente todas as dificuldades de acesso.",
+      "A equipe considera novas medidas porque persistem dificuldades de acesso.",
+      "O texto afirma que ninguém foi beneficiado pela mudança.",
+      "A equipe decidiu encerrar o atendimento."
+    ],
+    "answer": 1,
+    "explanations": [
+      "O texto diz que ainda há pessoas que não conseguem comparecer.",
+      "A permanência de dificuldades motiva discutir outras formas de acolhimento.",
+      "A mudança facilitou o acesso; portanto, houve benefício declarado.",
+      "Encerramento não é mencionado nem decorre do texto."
+    ],
+    "references": [
+      {
+        "title": "Bruna Estuda — texto original e análise de leitura",
+        "url": "./data/editorial-notes.html",
+        "location": "Texto de apoio autoral exibido nesta questão; conclusão demonstrada pelas frases citadas, sem reprodução de texto externo."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0.",
+    "passage": "A equipe ampliou o horário de atendimento. Embora a mudança tenha facilitado o acesso, ainda há pessoas que não conseguem comparecer. Por isso, serão discutidas outras formas de acolhimento."
+  },
+  {
+    "id": "be-por-002",
+    "version": 1,
+    "type": "mcq",
+    "origin": "authorial",
+    "institution": null,
+    "board": null,
+    "role": "Nutricionista — nível superior",
+    "year": null,
+    "originalNumber": null,
+    "sourceURL": "./data/editorial-notes.html",
+    "subject": "Língua Portuguesa",
+    "topic": "Relações de sentido",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial por complexidade cognitiva, sem validação estatística.",
+    "prompt": "No texto de apoio, a expressão “Por isso” introduz:",
+    "options": [
+      "Uma causa para a ampliação já concluída.",
+      "Uma oposição à existência de dificuldades.",
+      "Uma consequência da dificuldade de acesso que ainda persiste.",
+      "Uma condição hipotética sem relação com a frase anterior."
+    ],
+    "answer": 2,
+    "explanations": [
+      "A expressão retoma a dificuldade persistente e apresenta a ação decorrente, não a causa da ampliação anterior.",
+      "A relação apresentada é de consequência, não de oposição.",
+      "As outras formas de acolhimento serão discutidas em razão da dificuldade que permanece.",
+      "Há vínculo explícito com a situação descrita imediatamente antes."
+    ],
+    "references": [
+      {
+        "title": "Bruna Estuda — texto original e análise de coesão",
+        "url": "./data/editorial-notes.html",
+        "location": "Texto de apoio autoral exibido nesta questão; análise sem reprodução de texto externo."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual por consulta à fonte indicada; sem revisão profissional humana.",
+    "reuse": "Texto e explicações autorais. Licença CC BY-NC-SA 4.0.",
+    "passage": "A equipe ampliou o horário de atendimento. Embora a mudança tenha facilitado o acesso, ainda há pessoas que não conseguem comparecer. Por isso, serão discutidas outras formas de acolhimento."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q031",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 31,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 3,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Ética e legislação profissional",
+    "topic": "Conselhos — duração do mandato",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "Os membros dos Conselhos Regionais de Nutricionistas e seus respectivos suplentes terão mandato de quatro anos.",
+    "passage": "De acordo com a Lei Federal n.º 6.583/1978 e com a Lei Federal n.º 8.234/1991, julgue os itens de 31 a 35.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A marcação Certo é incorreta. A afirmação é errada: o art. 6º estabelece mandato de três anos para membros dos Conselhos Regionais e seus suplentes, não quatro anos.",
+      "A afirmação é errada: o art. 6º estabelece mandato de três anos para membros dos Conselhos Regionais e seus suplentes, não quatro anos."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 6.583/1978 — texto consolidado",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6583.htm",
+        "location": "Art. 6º"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 31; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria.",
+    "editorialNote": "O caderno conserva a denominação de 2022; a Lei nº 14.924/2024 alterou a denominação dos conselhos para Nutrição. A duração avaliada permanece de três anos."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q032",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 32,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 3,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Ética e legislação profissional",
+    "topic": "Conselhos — eleição regional",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "Os membros dos Conselhos Regionais de Nutricionistas serão eleitos pelo sistema de eleição direta, por meio de voto pessoal, secreto e obrigatório dos profissionais registrados.",
+    "passage": "De acordo com a Lei Federal n.º 6.583/1978 e com a Lei Federal n.º 8.234/1991, julgue os itens de 31 a 35.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 0,
+    "explanations": [
+      "A afirmação está correta. O art. 6º determina eleição direta com voto pessoal, secreto e obrigatório dos profissionais registrados; não se trata da eleição indireta dos membros federais.",
+      "A marcação Errado não corresponde ao conteúdo verificado. A afirmação está correta. O art. 6º determina eleição direta com voto pessoal, secreto e obrigatório dos profissionais registrados; não se trata da eleição indireta dos membros federais."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 6.583/1978 — texto consolidado",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6583.htm",
+        "location": "Art. 6º"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 32; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria.",
+    "editorialNote": "Denominação institucional do caderno preservada; os Conselhos passaram a se denominar de Nutrição pela Lei nº 14.924/2024."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q033",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 33,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 3,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Ética e legislação profissional",
+    "topic": "Sanções — critérios de fixação",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "Na fixação da pena, não serão considerados os antecedentes profissionais do infrator, seu grau de culpa, as circunstâncias atenuantes e agravantes e as consequências da infração.",
+    "passage": "De acordo com a Lei Federal n.º 6.583/1978 e com a Lei Federal n.º 8.234/1991, julgue os itens de 31 a 35.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A marcação Certo é incorreta. A negação torna o item errado: antecedentes profissionais, grau de culpa, circunstâncias atenuantes e agravantes e consequências da infração devem ser considerados na fixação da pena.",
+      "A negação torna o item errado: antecedentes profissionais, grau de culpa, circunstâncias atenuantes e agravantes e consequências da infração devem ser considerados na fixação da pena."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 6.583/1978 — texto consolidado",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6583.htm",
+        "location": "Art. 20, § 4º"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 33; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q034",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 34,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 3,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Ética e legislação profissional",
+    "topic": "Identificação civil profissional",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "A carteira de identidade profissional, emitida pelo Conselho Regional de Nutricionistas, não é considerada como instrumento hábil de identificação civil.",
+    "passage": "De acordo com a Lei Federal n.º 6.583/1978 e com a Lei Federal n.º 8.234/1991, julgue os itens de 31 a 35.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A marcação Certo é incorreta. O art. 2º reconhece a carteira profissional como instrumento hábil de identificação civil e de comprovação da habilitação profissional. Por isso, a afirmação é errada.",
+      "O art. 2º reconhece a carteira profissional como instrumento hábil de identificação civil e de comprovação da habilitação profissional. Por isso, a afirmação é errada."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 8.234/1991 — regulamentação profissional",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/1989_1994/l8234.htm",
+        "location": "Art. 2º"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 34; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q035",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 35,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 3,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Ética e legislação profissional",
+    "topic": "Equipes multidisciplinares",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "É facultativa a participação de nutricionistas em equipes multidisciplinares destinadas a executar e a avaliar políticas relacionadas com alimentação e nutrição.",
+    "passage": "De acordo com a Lei Federal n.º 6.583/1978 e com a Lei Federal n.º 8.234/1991, julgue os itens de 31 a 35.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A marcação Certo é incorreta. A participação nas equipes descritas no art. 6º é obrigatória, nas entidades públicas ou particulares abrangidas. A palavra facultativa contradiz o dispositivo.",
+      "A participação nas equipes descritas no art. 6º é obrigatória, nas entidades públicas ou particulares abrangidas. A palavra facultativa contradiz o dispositivo."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 8.234/1991 — regulamentação profissional",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/1989_1994/l8234.htm",
+        "location": "Art. 6º"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 35; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q040",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 40,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 3,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Legislação e administração pública",
+    "topic": "Licitações — âmbito de aplicação",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "Os fundos especiais e as demais entidades, controladas, direta ou indiretamente, pela Administração Pública, submetem-se à Lei de Licitações e Contratos Administrativos.",
+    "passage": "À luz da Lei n.º 14.133/2021, julgue o item 40.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 0,
+    "explanations": [
+      "A afirmação corresponde ao art. 1º, § 1º, I e II. A leitura não dispensa as regras específicas do § 1º e a ressalva do § 2º para empresas públicas, sociedades de economia mista e subsidiárias, regidas pela Lei nº 13.303/2016, salvo previsão legal.",
+      "A marcação Errado não corresponde ao conteúdo verificado. A afirmação corresponde ao art. 1º, § 1º, I e II. A leitura não dispensa as regras específicas do § 1º e a ressalva do § 2º para empresas públicas, sociedades de economia mista e subsidiárias, regidas pela Lei nº 13.303/2016, salvo previsão legal."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 14.133/2021",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm",
+        "location": "Art. 1º, §§ 1º e 2º"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 40; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q041",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 41,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 4,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Bioquímica e fisiologia da nutrição",
+    "topic": "Digestão de carboidratos",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "A digestão dos carboidratos começa, e predomina, no estômago, com a atividade do ácido clorídrico, e é finalizada no intestino.",
+    "passage": "A respeito de macronutrientes e de micronutrientes, julgue os itens de 41 a 45.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A marcação Certo é incorreta. A digestão do amido inicia-se na boca pela amilase salivar; o intestino delgado tem papel principal com enzimas pancreáticas e da borda em escova. O ácido clorídrico não é a enzima que inicia ou predomina nessa digestão.",
+      "A digestão do amido inicia-se na boca pela amilase salivar; o intestino delgado tem papel principal com enzimas pancreáticas e da borda em escova. O ácido clorídrico não é a enzima que inicia ou predomina nessa digestão."
+    ],
+    "references": [
+      {
+        "title": "OpenStax / Rice University — Anatomy and Physiology 2e",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-7-chemical-digestion-and-absorption-a-closer-look",
+        "location": "Seção 23.7, Carbohydrate Digestion; tabela 23.8"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 41; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q043",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 43,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 4,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Bioquímica e fisiologia da nutrição",
+    "topic": "Digestão de proteínas vegetais e animais",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "A proteína vegetal não precisa ser desnaturada para ser absorvida. Já a proteína animal precisa passar pelo processo de desnaturação, com ação do ácido clorídrico, para mudar sua estrutura e ser absorvida.",
+    "passage": "A respeito de macronutrientes e de micronutrientes, julgue os itens de 41 a 45.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A marcação Certo é incorreta. A separação proposta por origem é falsa. Proteínas vegetais e animais passam por digestão proteolítica; o ambiente gástrico pode favorecer desnaturação e ação enzimática. A absorção envolve principalmente aminoácidos e pequenos peptídeos, não uma regra de absorção de proteína vegetal intacta.",
+      "A separação proposta por origem é falsa. Proteínas vegetais e animais passam por digestão proteolítica; o ambiente gástrico pode favorecer desnaturação e ação enzimática. A absorção envolve principalmente aminoácidos e pequenos peptídeos, não uma regra de absorção de proteína vegetal intacta."
+    ],
+    "references": [
+      {
+        "title": "OpenStax / Rice University — Anatomy and Physiology 2e",
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-7-chemical-digestion-and-absorption-a-closer-look",
+        "location": "Seção 23.7, Protein Digestion; Protein Absorption; tabela 23.9"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 43; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q047",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 47,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 4,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Nutrição nos ciclos da vida",
+    "topic": "Sarcopenia — ocorrência e limites",
+    "difficulty": "hard",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "A sarcopenia é uma síndrome de fragilidade na capacidade funcional que acomete somente os idosos. Ela consiste na perda progressiva e generalizada da força e da massa muscular, devido ao envelhecimento. A partir dos quarenta anos de idade, ocorre a perda de 5% da massa muscular a cada década, com declínio mais rápido após 65 anos de idade.",
+    "passage": "Acerca da saúde nos ciclos da vida, julgue os itens 46 e 47.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A marcação Certo é incorreta. A palavra somente torna o item errado: adultos jovens também podem desenvolver sarcopenia, por fatores que iniciam ou aceleram a perda muscular. Sarcopenia e fragilidade não são termos intercambiáveis. O percentual apresentado não deve ser aplicado como trajetória universal de toda pessoa.",
+      "A palavra somente torna o item errado: adultos jovens também podem desenvolver sarcopenia, por fatores que iniciam ou aceleram a perda muscular. Sarcopenia e fragilidade não são termos intercambiáveis. O percentual apresentado não deve ser aplicado como trajetória universal de toda pessoa."
+    ],
+    "references": [
+      {
+        "title": "INCA — Prevenindo a sarcopenia",
+        "url": "https://ninho.inca.gov.br/jspui/bitstream/123456789/14625/1/Prevenindo%20a%20sarcopenia.pdf",
+        "location": "Seção O que é sarcopenia?: ocorrência também em adultos jovens"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 47; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q049",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 49,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 4,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Doenças transmitidas por alimentos — definição",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "A doença transmitida por alimentos (DTA) é uma síndrome originada pela ingestão de alimentos, ou de água, que contenham agentes etiológicos (biológicos, físicos, toxinas ou substâncias químicas) em quantidades tais que afetem a saúde da população. Intolerâncias e alergias de hipersensibilidade individuais a determinados alimentos são exemplos de DTA.",
+    "passage": "No que se refere à nutrição em alimentação coletiva, julgue os itens de 49 a 51.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A marcação Certo é incorreta. O erro está em incluir intolerâncias e alergias individuais como exemplos de DTA na definição epidemiológica usada. O manual exclui essas reações individuais de hipersensibilidade dessa classificação; elas não equivalem à ingestão de agentes contaminantes.",
+      "O erro está em incluir intolerâncias e alergias individuais como exemplos de DTA na definição epidemiológica usada. O manual exclui essas reações individuais de hipersensibilidade dessa classificação; elas não equivalem à ingestão de agentes contaminantes."
+    ],
+    "references": [
+      {
+        "title": "Secretaria de Estado da Saúde de São Paulo — Vigilância epidemiológica das DTA",
+        "url": "https://saude.sp.gov.br/resources/cve-centro-de-vigilancia-epidemiologica/areas-de-vigilancia/doencas-transmitidas-por-agua-e-alimentos/doc/2006/1bvedta_manualtreinador.pdf",
+        "location": "Definição de doença transmitida por alimentos e exclusão de intolerâncias e alergias individuais"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 49; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q050",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 50,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 4,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Superfícies de instalações",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "As instalações físicas (piso, parede e teto) de uma Unidade de Alimentação e Nutrição (UAN) devem possuir revestimentos antiderrapantes, permeáveis e laváveis. Além disso, devem ser mantidas sempre íntegras, conservadas e sem rachaduras ou vazamentos.",
+    "passage": "No que se refere à nutrição em alimentação coletiva, julgue os itens de 49 a 51.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A marcação Certo é incorreta. O item exige permeabilidade, mas a RDC determina revestimento liso, impermeável e lavável para piso, parede e teto. A conservação adequada mencionada depois não corrige esse erro.",
+      "O item exige permeabilidade, mas a RDC determina revestimento liso, impermeável e lavável para piso, parede e teto. A conservação adequada mencionada depois não corrige esse erro."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.1.3"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 50; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q051",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 51,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 4,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Higiene pessoal — apresentação do manipulador",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "Os manipuladores de alimentos da UAN são comprovadamente capacitados em higiene pessoal, manipulação higiênica dos alimentos e DTA. Sendo assim, eles devem estar cientes de que a RDC n.º 216 veda o uso de adornos pessoais e de maquiagem, cabelo solto, unhas grandes, qualquer tipo de esmaltação e barba, para que não haja contato destes com os alimentos.",
+    "passage": "No que se refere à nutrição em alimentação coletiva, julgue os itens de 49 a 51.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 0,
+    "explanations": [
+      "A afirmação é correta no contexto do item 4.6.6: cabelos presos e protegidos, ausência de barba, unhas curtas e sem esmalte ou base, retirada de adornos e maquiagem durante a manipulação. A capacitação deve ser documentada.",
+      "A marcação Errado não corresponde ao conteúdo verificado. A afirmação é correta no contexto do item 4.6.6: cabelos presos e protegidos, ausência de barba, unhas curtas e sem esmalte ou base, retirada de adornos e maquiagem durante a manipulação. A capacitação deve ser documentada."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Itens 4.6.6 e 4.6.7"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 51; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q052",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 52,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 4,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Saúde coletiva e alimentação",
+    "topic": "PNAE — público atendido",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "O Programa Nacional de Alimentação Escolar (PNAE) oferece alimentação escolar e ações de educação alimentar a estudantes de todas as etapas da educação pública e particular.",
+    "passage": "De acordo com as políticas e os programas de alimentação e nutrição, julgue os itens de 52 a 55.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A marcação Certo é incorreta. A generalização a toda a educação particular é falsa. A garantia legal é para educação básica pública; a lei prevê hipóteses específicas de escolas filantrópicas e comunitárias conveniadas, não a inclusão indistinta de toda a rede privada.",
+      "A generalização a toda a educação particular é falsa. A garantia legal é para educação básica pública; a lei prevê hipóteses específicas de escolas filantrópicas e comunitárias conveniadas, não a inclusão indistinta de toda a rede privada."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 11.947/2009",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l11947.htm",
+        "location": "Arts. 2º, III; 3º; 5º, § 5º"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 52; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q054",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 54,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 4,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Saúde coletiva e alimentação",
+    "topic": "PNAN — curso da vida",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "A Política Nacional de Alimentação e Nutrição (PNAN) não se posiciona a respeito do aleitamento materno. Essa Política é especializada somente na promoção de estratégias nutricionais e de segurança alimentar para adultos e idosos.",
+    "passage": "De acordo com as políticas e os programas de alimentação e nutrição, julgue os itens de 52 a 55.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A marcação Certo é incorreta. A PNAN abrange atenção nutricional ao longo do curso da vida e inclui promoção da amamentação e da alimentação complementar saudável. Não é uma política exclusiva de adultos e idosos, nem omissa sobre aleitamento.",
+      "A PNAN abrange atenção nutricional ao longo do curso da vida e inclui promoção da amamentação e da alimentação complementar saudável. Não é uma política exclusiva de adultos e idosos, nem omissa sobre aleitamento."
+    ],
+    "references": [
+      {
+        "title": "Ministério da Saúde — Política Nacional de Alimentação e Nutrição",
+        "url": "https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_alimentacao_nutricao.pdf",
+        "location": "Diretrizes Organização da atenção nutricional e Promoção da alimentação adequada e saudável"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 54; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q055",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 55,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 4,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Saúde coletiva e alimentação",
+    "topic": "SISVAN — abrangência de gestão",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "O Sistema de Vigilância Alimentar e Nutricional (SISVAN) consiste em um sistema de informação cujo objetivo é conferir a necessária racionalidade como base de decisões nas ações de alimentação e nutrição e de promoção da saúde, atuando, exclusivamente, na esfera de governo estadual.",
+    "passage": "De acordo com as políticas e os programas de alimentação e nutrição, julgue os itens de 52 a 55.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A marcação Certo é incorreta. O termo exclusivamente torna a afirmação errada: o Sisvan reúne informações da atenção primária e subsidia ações locais e das diferentes esferas de gestão. Estados e municípios participam do sistema; não há exclusividade estadual.",
+      "O termo exclusivamente torna a afirmação errada: o Sisvan reúne informações da atenção primária e subsidia ações locais e das diferentes esferas de gestão. Estados e municípios participam do sistema; não há exclusividade estadual."
+    ],
+    "references": [
+      {
+        "title": "Ministério da Saúde — SISVAN",
+        "url": "https://www.gov.br/saude/pt-br/composicao/saps/vigilancia-alimentar-e-nutricional/sisvan",
+        "location": "Descrição dos registros de estado nutricional e consumo na APS"
+      },
+      {
+        "title": "Ministério da Saúde — passo a passo Sisvan Web",
+        "url": "https://www.gov.br/saude/pt-br/composicao/saps/vigilancia-alimentar-e-nutricional/publicacoes/informes/passo_passo_sisvanweb.pdf",
+        "location": "Orientações de uso por estados e municípios"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 55; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q056",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 56,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 4,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Inspeção especial",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "Considera-se como inspeção especial a exigida por um determinado evento, que teve como consequência um agravo ao consumidor e(ou) ao trabalhador, com vistas a determinar e a intervir na causa dos efeitos prejudiciais à saúde humana.",
+    "passage": "Conforme a Portaria MS n.º 1.428/1993 e a Resolução Anvisa RDC n.º 275/2002, julgue os itens 56 e 57.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 0,
+    "explanations": [
+      "O item corresponde à definição de inspeção especial da Portaria nº 1.428/1993: um evento com agravo ao consumidor ou trabalhador exige investigação e intervenção nas causas dos efeitos prejudiciais.",
+      "A marcação Errado não corresponde ao conteúdo verificado. O item corresponde à definição de inspeção especial da Portaria nº 1.428/1993: um evento com agravo ao consumidor ou trabalhador exige investigação e intervenção nas causas dos efeitos prejudiciais."
+    ],
+    "references": [
+      {
+        "title": "Ministério da Saúde — Portaria nº 1.428/1993",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/1993/prt1428_26_11_1993.html",
+        "location": "Regulamento Técnico para Inspeção Sanitária de Alimentos, definição de Inspeção Especial"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 56; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q057",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 57,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 4,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Inspeção — procedimentos",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "Os procedimentos da inspeção não estão adstritos ao manual de inspeção.",
+    "passage": "Conforme a Portaria MS n.º 1.428/1993 e a Resolução Anvisa RDC n.º 275/2002, julgue os itens 56 e 57.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A marcação Certo é incorreta. A afirmação contradiz a seção 5 do regulamento: os procedimentos da inspeção devem obedecer ao Manual de Inspeção. A negação desse vínculo torna o item errado.",
+      "A afirmação contradiz a seção 5 do regulamento: os procedimentos da inspeção devem obedecer ao Manual de Inspeção. A negação desse vínculo torna o item errado."
+    ],
+    "references": [
+      {
+        "title": "Ministério da Saúde — Portaria nº 1.428/1993",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/1993/prt1428_26_11_1993.html",
+        "location": "Regulamento Técnico para Inspeção Sanitária de Alimentos, seção 5 — Procedimentos"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 57; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q073",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 73,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 5,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Sistema Único de Saúde",
+    "topic": "Assistência terapêutica integral",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "A assistência terapêutica integral, inclusive farmacêutica, encontra-se prevista no campo de atuação do Sistema Único de Saúde (SUS).",
+    "passage": "Considerando o teor da Lei Federal n.º 8.080/1990 e da Lei Federal n.º 11.346/2006, julgue os itens de 73 a 77.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 0,
+    "explanations": [
+      "A assistência terapêutica integral, inclusive farmacêutica, está expressamente incluída no campo de atuação do SUS pelo art. 6º, I, d.",
+      "A marcação Errado não corresponde ao conteúdo verificado. A assistência terapêutica integral, inclusive farmacêutica, está expressamente incluída no campo de atuação do SUS pelo art. 6º, I, d."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 8.080/1990 — texto consolidado",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+        "location": "Art. 6º, I, d"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 73; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q074",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 74,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 5,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Sistema Único de Saúde",
+    "topic": "Participação da comunidade",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "A participação da comunidade constitui um princípio implícito do SUS.",
+    "passage": "Considerando o teor da Lei Federal n.º 8.080/1990 e da Lei Federal n.º 11.346/2006, julgue os itens de 73 a 77.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A marcação Certo é incorreta. A participação da comunidade é um princípio expresso no art. 7º, VIII, da Lei nº 8.080/1990. O erro do item é qualificá-lo como implícito.",
+      "A participação da comunidade é um princípio expresso no art. 7º, VIII, da Lei nº 8.080/1990. O erro do item é qualificá-lo como implícito."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 8.080/1990 — texto consolidado",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+        "location": "Art. 7º, VIII"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 74; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q075",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 75,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 5,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Sistema Único de Saúde",
+    "topic": "Sistema de informação — competências comuns",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "A coordenação do sistema de informação de saúde é de competência exclusiva da União, não podendo ser delegada aos estados, ao Distrito Federal ou aos municípios.",
+    "passage": "Considerando o teor da Lei Federal n.º 8.080/1990 e da Lei Federal n.º 11.346/2006, julgue os itens de 73 a 77.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A marcação Certo é incorreta. Organização e coordenação do sistema de informação de saúde são atribuições comuns da União, estados, Distrito Federal e municípios em seu âmbito administrativo. Não há a exclusividade da União afirmada no item.",
+      "Organização e coordenação do sistema de informação de saúde são atribuições comuns da União, estados, Distrito Federal e municípios em seu âmbito administrativo. Não há a exclusividade da União afirmada no item."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 8.080/1990 — texto consolidado",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+        "location": "Art. 15, caput e IV"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 75; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q076",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 76,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 5,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Sistema Único de Saúde",
+    "topic": "Integração ensino-serviço",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "Deverão ser criadas Comissões Permanentes de integração entre os serviços de saúde e as instituições de ensino profissional e superior.",
+    "passage": "Considerando o teor da Lei Federal n.º 8.080/1990 e da Lei Federal n.º 11.346/2006, julgue os itens de 73 a 77.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 0,
+    "explanations": [
+      "A assertiva corresponde ao art. 14. Essas comissões propõem prioridades e estratégias para formação, educação continuada, pesquisa e cooperação técnica entre as instituições.",
+      "A marcação Errado não corresponde ao conteúdo verificado. A assertiva corresponde ao art. 14. Essas comissões propõem prioridades e estratégias para formação, educação continuada, pesquisa e cooperação técnica entre as instituições."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 8.080/1990 — texto consolidado",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+        "location": "Art. 14 e parágrafo único"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 76; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q077",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 77,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 5,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Saúde coletiva e alimentação",
+    "topic": "CONSEA — representação social",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "O Conselho Nacional de Segurança Alimentar e Nutricional (CONSEA) será constituído, privativamente, pelos ministros de Estado e pelos secretários especiais responsáveis pelas pastas afetas à consecução da segurança alimentar e nutricional.",
+    "passage": "Considerando o teor da Lei Federal n.º 8.080/1990 e da Lei Federal n.º 11.346/2006, julgue os itens de 73 a 77.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A marcação Certo é incorreta. A composição não é privativa de ministros e secretários: a lei prevê um terço de representantes governamentais, dois terços da sociedade civil e observadores. A exclusividade governamental afirmada é falsa.",
+      "A composição não é privativa de ministros e secretários: a lei prevê um terço de representantes governamentais, dois terços da sociedade civil e observadores. A exclusividade governamental afirmada é falsa."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 11.346/2006 — SISAN",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11346.htm",
+        "location": "Art. 11, § 2º, I a III"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 77; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q078",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 78,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 5,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Caixas de gordura e esgoto",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "Enquanto o esgoto deve estar localizado na área externa, a caixa de gordura pode estar localizada na área interna do local de preparação e armazenamento de alimentos.",
+    "passage": "Com base na Resolução RDC Anvisa n.º 216/2004, na Resolução RDC Anvisa n.º 502/2021 e na Resolução RDC Anvisa n.º 503/2021, julgue os itens de 78 a 80.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 1,
+    "explanations": [
+      "A marcação Certo é incorreta. Caixas de gordura e de esgoto devem estar fora da área de preparação e armazenamento dos alimentos. O item permite indevidamente a caixa de gordura dentro dessa área.",
+      "Caixas de gordura e de esgoto devem estar fora da área de preparação e armazenamento dos alimentos. O item permite indevidamente a caixa de gordura dentro dessa área."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.1.6"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 78; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q079",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 79,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 5,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Nutrição clínica",
+    "topic": "Nutrição enteral — manipulação",
+    "difficulty": "medium",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "A manipulação da nutrição enteral (NE) deve ser realizada com técnica asséptica, seguindo os procedimentos escritos e validados.",
+    "passage": "Com base na Resolução RDC Anvisa n.º 216/2004, na Resolução RDC Anvisa n.º 502/2021 e na Resolução RDC Anvisa n.º 503/2021, julgue os itens de 78 a 80.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 0,
+    "explanations": [
+      "O art. 35 da RDC nº 503/2021 exige técnica asséptica e procedimentos escritos e validados na manipulação de nutrição enteral. Assepsia e documentação não são requisitos opcionais.",
+      "A marcação Errado não corresponde ao conteúdo verificado. O art. 35 da RDC nº 503/2021 exige técnica asséptica e procedimentos escritos e validados na manipulação de nutrição enteral. Assepsia e documentação não são requisitos opcionais."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 503/2021",
+        "url": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000503&orgao=RDC/DC/ANVISA/MS&seqAto=000&tipo=RDC&valorAno=2021",
+        "location": "Art. 35"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 79; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn4-2022-400-q080",
+    "version": 1,
+    "type": "boolean",
+    "origin": "real",
+    "institution": "CRN-4/RJ-ES",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal — códigos 400/401",
+    "year": 2022,
+    "originalNumber": 80,
+    "examId": "quadrix-crn4-2022-400",
+    "sourceURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "sourceFile": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+    "sourcePage": 5,
+    "definitiveKeyURL": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+    "definitiveKeyFile": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+    "subject": "Alimentação coletiva",
+    "topic": "ILPI — responsabilidade técnica",
+    "difficulty": "easy",
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial nem estatística.",
+    "prompt": "A instituição de longa permanência para idosos deve possuir um responsável técnico (RT) pelo serviço, que responderá pela instituição junto à autoridade sanitária local.",
+    "passage": "Com base na Resolução RDC Anvisa n.º 216/2004, na Resolução RDC Anvisa n.º 502/2021 e na Resolução RDC Anvisa n.º 503/2021, julgue os itens de 78 a 80.",
+    "options": [
+      "Certo.",
+      "Errado."
+    ],
+    "answer": 0,
+    "explanations": [
+      "O art. 10 da RDC nº 502/2021 exige responsável técnico que responda pela instituição perante a autoridade sanitária local. O art. 11 exige formação de nível superior, sem determinar nessa regra que seja necessariamente nutricionista.",
+      "A marcação Errado não corresponde ao conteúdo verificado. O art. 10 da RDC nº 502/2021 exige responsável técnico que responda pela instituição perante a autoridade sanitária local. O art. 11 exige formação de nível superior, sem determinar nessa regra que seja necessariamente nutricionista."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 502/2021",
+        "url": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000502&orgao=RDC/DC/ANVISA/MS&seqAto=000&tipo=RDC&valorAno=2021",
+        "location": "Arts. 10 e 11"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo CRN-4, aplicação em 01/05/2022",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Arquivo CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf, seção Nutricionista Fiscal (400/401), item 80; publicado em 23/05/2022."
+      },
+      {
+        "title": "Quadrix — arquivo oficial de 2022 e permissão didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+        "location": "Aviso de reprodução apenas para fins didáticos com atribuição; caderno CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual de texto, comando e gabarito definitivo da especialidade. Explicação própria confrontada com referências primárias. Sem revisão profissional humana.",
+    "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Caderno e numeração atribuídos; explicação própria."
+  },
+  {
+    "id": "quadrix-crn8-2024-401-q033",
+    "version": 1,
+    "type": "mcq",
+    "origin": "real",
+    "institution": "Conselho Regional de Nutrição da 8ª Região (CRN-8/PR)",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal Júnior — códigos 401/402",
+    "year": 2024,
+    "originalNumber": 33,
+    "sourceURL": "https://anexos.cdn.selecao.net.br/uploads/861/concursos/1110/anexos/6e16109b-299b-4f90-a95e-23216503c62a.zip",
+    "sourcePage": 8,
+    "examId": "quadrix-crn8-2024-401",
+    "definitiveKeyURL": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+    "answer": 3,
+    "prompt": "A RDC 216/2004 trata do regulamento técnico de boas práticas para os serviços de alimentação. Segundo as definições dessa resolução, assinale a alternativa correta.",
+    "options": [
+      "Contaminantes são substâncias ou agentes de origem biológica, química ou física, estranhos ao alimento, que não sejam considerados nocivos à saúde humana ou que comprometam sua integridade.",
+      "A desinfecção consiste na remoção de substâncias minerais e ou orgânicas indesejáveis, tais como poeira, gordura e outras sujidades.",
+      "A limpeza é uma operação de redução, por método físico e ou agente químico, do número de micro‑organismos em um nível que não comprometa a qualidade higiênico‑sanitária do alimento.",
+      "A higienização é uma operação que compreende duas etapas: a limpeza e a desinfecção.",
+      "Manipuladores de alimentos são apenas as pessoas do serviço de alimentação que entram em contato direto com o alimento."
+    ],
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial ou estatística.",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Limpeza, desinfecção e higienização",
+    "difficulty": "medium",
+    "explanations": [
+      "A definição de contaminantes inclui agentes considerados nocivos à saúde ou que comprometam a integridade do alimento; a alternativa introduz uma negação indevida.",
+      "Remover substâncias minerais ou orgânicas indesejáveis é a definição de limpeza, não de desinfecção.",
+      "Reduzir o número de micro-organismos a um nível que não comprometa a qualidade higiênico-sanitária define desinfecção, não limpeza.",
+      "Higienização compreende as duas etapas: limpeza e desinfecção, conforme a definição 2.7.",
+      "Manipuladores incluem pessoas que entram em contato direto ou indireto com o alimento, não apenas direto."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Definições 2.4, 2.6, 2.7, 2.8 e 2.10"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo do CRN-8, prova de 21/01/2024",
+        "url": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+        "location": "Página 2, seção 2.6, questão 33"
+      },
+      {
+        "title": "Quadrix — permissão de reprodução didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280906-provas-anteriores-realizadas-em-2023",
+        "location": "Aviso no início da página: reprodução apenas para fins didáticos, com fonte citada."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual: transcrição contra caderno oficial, cruzamento com gabarito definitivo e documento de recursos de 20/02/2024, explicações confrontadas com referência primária. Sem revisão humana profissional.",
+    "reuse": "Reprodução permitida pela Quadrix apenas para fins didáticos, com atribuição. Texto aplicado mantido; explicações próprias separadas."
+  },
+  {
+    "id": "quadrix-crn8-2024-401-q034",
+    "version": 1,
+    "type": "mcq",
+    "origin": "real",
+    "institution": "Conselho Regional de Nutrição da 8ª Região (CRN-8/PR)",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal Júnior — códigos 401/402",
+    "year": 2024,
+    "originalNumber": 34,
+    "sourceURL": "https://anexos.cdn.selecao.net.br/uploads/861/concursos/1110/anexos/6e16109b-299b-4f90-a95e-23216503c62a.zip",
+    "sourcePage": 8,
+    "examId": "quadrix-crn8-2024-401",
+    "definitiveKeyURL": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+    "answer": 4,
+    "prompt": "A RDC 216/2004 detalha diversas práticas para o melhor funcionamento da unidade de alimentação. Considerando essa informação, assinale a alternativa correta, a respeito das especificações de edificações e instalações.",
+    "options": [
+      "As portas e janelas não podem ser ajustadas aos batentes.",
+      "As portas da área de preparação e armazenamento de alimentos devem ser dotadas de fechamento manual.",
+      "As aberturas externas das áreas de armazenamento e preparação de alimentos devem permitir o acesso de vetores e pragas urbanas.",
+      "As telas devem ser fixas para facilitar a limpeza periódica.",
+      "O sistema de exaustão deve ser provido de telas milimetradas, para impedir o acesso de vetores e pragas urbanas."
+    ],
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial ou estatística.",
+    "subject": "Higiene e segurança dos alimentos",
+    "topic": "Barreiras contra vetores e pragas",
+    "difficulty": "easy",
+    "explanations": [
+      "Portas e janelas devem ser mantidas ajustadas aos batentes; a alternativa inverte a exigência.",
+      "As portas da preparação e do armazenamento devem ter fechamento automático, e não simplesmente manual.",
+      "As aberturas externas devem impedir o acesso de vetores e pragas, não permiti-lo.",
+      "As telas devem ser removíveis para facilitar a limpeza periódica, não fixas.",
+      "O item 4.1.4 inclui expressamente o sistema de exaustão entre as aberturas que devem receber telas milimetradas."
+    ],
+    "references": [
+      {
+        "title": "ANVISA — RDC nº 216/2004",
+        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+        "location": "Item 4.1.4"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo do CRN-8, prova de 21/01/2024",
+        "url": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+        "location": "Página 2, seção 2.6, questão 34"
+      },
+      {
+        "title": "Quadrix — permissão de reprodução didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280906-provas-anteriores-realizadas-em-2023",
+        "location": "Aviso no início da página: reprodução apenas para fins didáticos, com fonte citada."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual: transcrição contra caderno oficial, cruzamento com gabarito definitivo e documento de recursos de 20/02/2024, explicações confrontadas com referência primária. Sem revisão humana profissional.",
+    "reuse": "Reprodução permitida pela Quadrix apenas para fins didáticos, com atribuição. Texto aplicado mantido; explicações próprias separadas."
+  },
+  {
+    "id": "quadrix-crn8-2024-401-q035",
+    "version": 1,
+    "type": "mcq",
+    "origin": "real",
+    "institution": "Conselho Regional de Nutrição da 8ª Região (CRN-8/PR)",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal Júnior — códigos 401/402",
+    "year": 2024,
+    "originalNumber": 35,
+    "sourceURL": "https://anexos.cdn.selecao.net.br/uploads/861/concursos/1110/anexos/6e16109b-299b-4f90-a95e-23216503c62a.zip",
+    "sourcePage": 8,
+    "examId": "quadrix-crn8-2024-401",
+    "definitiveKeyURL": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+    "answer": 3,
+    "prompt": "O Programa Nacional de Alimentação Escolar (PNAE) tem por objetivo contribuir para o crescimento e o desenvolvimento biopsicossocial, a aprendizagem, o rendimento escolar e a formação de hábitos alimentares saudáveis dos alunos, por meio de ações de educação alimentar e nutricional e da oferta de refeições que cubram suas necessidades nutricionais durante o período letivo. Com base nessas informações, assinale a alternativa que apresenta uma diretriz do PNAE.",
+    "options": [
+      "o uso de alimentos variados, seguros, sem levar em conta a cultura, as tradições e os hábitos alimentares saudáveis",
+      "exclusão da educação alimentar e nutricional no processo de ensino e aprendizagem",
+      "universalidade do atendimento aos alunos matriculados na rede pública e privada de educação básica e superior",
+      "a participação da comunidade no controle social, no acompanhamento das ações realizadas para garantir a oferta da alimentação escolar saudável e adequada",
+      "o direito à alimentação escolar, visando garantir segurança alimentar e nutricional dos alunos, excluindo apenas os que se encontram em situação de vulnerabilidade social"
+    ],
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial ou estatística.",
+    "subject": "Saúde coletiva e alimentação",
+    "topic": "PNAE — diretrizes",
+    "difficulty": "medium",
+    "explanations": [
+      "A diretriz exige respeito à cultura, às tradições e aos hábitos alimentares; não autoriza ignorá-los.",
+      "O inciso II determina a inclusão da educação alimentar e nutricional no ensino e na aprendizagem.",
+      "A universalidade prevista no inciso III refere-se à rede pública de educação básica; a alternativa amplia indevidamente o enunciado legal para toda a rede privada e o ensino superior.",
+      "A participação da comunidade no controle social e no acompanhamento das ações é diretriz expressa do inciso IV.",
+      "O inciso VI inclui os alunos em vulnerabilidade social; excluí-los contraria a garantia do direito à alimentação escolar."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 11.947/2009 — alimentação escolar",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l11947.htm",
+        "location": "Art. 2º, I a VI"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo do CRN-8, prova de 21/01/2024",
+        "url": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+        "location": "Página 2, seção 2.6, questão 35"
+      },
+      {
+        "title": "Quadrix — permissão de reprodução didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280906-provas-anteriores-realizadas-em-2023",
+        "location": "Aviso no início da página: reprodução apenas para fins didáticos, com fonte citada."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual: transcrição contra caderno oficial, cruzamento com gabarito definitivo e documento de recursos de 20/02/2024, explicações confrontadas com referência primária. Sem revisão humana profissional.",
+    "reuse": "Reprodução permitida pela Quadrix apenas para fins didáticos, com atribuição. Texto aplicado mantido; explicações próprias separadas."
+  },
+  {
+    "id": "quadrix-crn8-2024-401-q036",
+    "version": 1,
+    "type": "mcq",
+    "origin": "real",
+    "institution": "Conselho Regional de Nutrição da 8ª Região (CRN-8/PR)",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal Júnior — códigos 401/402",
+    "year": 2024,
+    "originalNumber": 36,
+    "sourceURL": "https://anexos.cdn.selecao.net.br/uploads/861/concursos/1110/anexos/6e16109b-299b-4f90-a95e-23216503c62a.zip",
+    "sourcePage": 9,
+    "examId": "quadrix-crn8-2024-401",
+    "definitiveKeyURL": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+    "answer": 0,
+    "prompt": "O guia alimentar para a população brasileira foi elaborado com o objetivo de facilitar o acesso das pessoas, das famílias e das comunidades a conhecimentos sobre características e determinantes de uma alimentação adequada e saudável. Em relação aos alimentos in natura ou minimamente processados, processados e ultraprocessados, assinale a alternativa correta.",
+    "options": [
+      "Macarrão instantâneo e refrescos são alimentos ultraprocessados.",
+      "Frutas em calda e frutas cristalizadas são alimentos minimamente processados.",
+      "Sardinha e atum enlatados são alimentos ultraprocessados.",
+      "Farinhas de mandioca e de milho são alimentos processados.",
+      "Extrato de tomate e carne seca são alimentos in natura."
+    ],
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial ou estatística.",
+    "subject": "Saúde coletiva e alimentação",
+    "topic": "Classificação de grupos de alimentos",
+    "difficulty": "medium",
+    "explanations": [
+      "Macarrão instantâneo e refrescos são exemplos de formulações ultraprocessadas no Guia.",
+      "Frutas preservadas com adição de açúcar, como as em calda e as cristalizadas, pertencem ao grupo dos processados no contexto do Guia.",
+      "Conservas simples de sardinha ou atum com sal ou óleo são exemplos de processados; a alternativa não descreve uma formulação ultraprocessada.",
+      "Farinhas obtidas de mandioca ou milho sem outras adições são minimamente processadas.",
+      "Carne seca e extrato de tomate com os ingredientes de conservação apresentados pelo Guia não são alimentos in natura."
+    ],
+    "references": [
+      {
+        "title": "Ministério da Saúde — Guia alimentar para a população brasileira, 2ª edição",
+        "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+        "location": "Capítulo 2, exemplos de alimentos minimamente processados, processados e ultraprocessados"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo do CRN-8, prova de 21/01/2024",
+        "url": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+        "location": "Página 2, seção 2.6, questão 36"
+      },
+      {
+        "title": "Quadrix — permissão de reprodução didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280906-provas-anteriores-realizadas-em-2023",
+        "location": "Aviso no início da página: reprodução apenas para fins didáticos, com fonte citada."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual: transcrição contra caderno oficial, cruzamento com gabarito definitivo e documento de recursos de 20/02/2024, explicações confrontadas com referência primária. Sem revisão humana profissional.",
+    "reuse": "Reprodução permitida pela Quadrix apenas para fins didáticos, com atribuição. Texto aplicado mantido; explicações próprias separadas."
+  },
+  {
+    "id": "quadrix-crn8-2024-401-q044",
+    "version": 1,
+    "type": "mcq",
+    "origin": "real",
+    "institution": "Conselho Regional de Nutrição da 8ª Região (CRN-8/PR)",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal Júnior — códigos 401/402",
+    "year": 2024,
+    "originalNumber": 44,
+    "sourceURL": "https://anexos.cdn.selecao.net.br/uploads/861/concursos/1110/anexos/6e16109b-299b-4f90-a95e-23216503c62a.zip",
+    "sourcePage": 11,
+    "examId": "quadrix-crn8-2024-401",
+    "definitiveKeyURL": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+    "answer": 1,
+    "prompt": "À luz da Lei Federal n.o 6.583/1978, assinale a alternativa que corresponde a uma das hipóteses em que ocorrerá a extinção ou a perda de mandato de membro do Conselho Federal ou dos Conselhos Regionais de Nutricionistas.",
+    "options": [
+      "condenação à pena superior a um ano, em virtude de sentença transitada em julgado.",
+      "falta de decoro ou conduta incompatível com a dignidade do órgão.",
+      "ausência, sem motivo justificado, a duas sessões consecutivas ou a quatro intercaladas, durante o ano.",
+      "decisão imotivada do presidente da República.",
+      "publicação de portaria específica editada pelo ministro da Justiça."
+    ],
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial ou estatística.",
+    "subject": "Ética e legislação profissional",
+    "topic": "Conselhos — perda de mandato",
+    "difficulty": "medium",
+    "editorialNote": "O caderno utiliza a denominação institucional vigente à época. A Lei nº 14.924/2024 passou a usar Conselhos Federal e Regionais de Nutrição. A hipótese do art. 8º avaliada nesta questão foi mantida.",
+    "explanations": [
+      "O inciso III exige condenação a pena superior a dois anos, com trânsito em julgado. A alternativa reduz esse prazo para um ano.",
+      "Falta de decoro ou conduta incompatível com a dignidade do órgão é hipótese expressa no inciso V.",
+      "O inciso VI prevê três sessões consecutivas ou seis intercaladas no ano, sem justificativa; não duas ou quatro.",
+      "Decisão imotivada do presidente da República não está entre as hipóteses legais descritas no art. 8º.",
+      "Publicação de portaria do ministro da Justiça não é a hipótese legal de perda de mandato indicada no artigo."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 6.583/1978 — texto oficial consolidado",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6583.htm",
+        "location": "Art. 8º, III, V e VI; conferir também alteração de denominação pela Lei nº 14.924/2024"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo do CRN-8, prova de 21/01/2024",
+        "url": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+        "location": "Página 2, seção 2.6, questão 44"
+      },
+      {
+        "title": "Quadrix — permissão de reprodução didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280906-provas-anteriores-realizadas-em-2023",
+        "location": "Aviso no início da página: reprodução apenas para fins didáticos, com fonte citada."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual: transcrição contra caderno oficial, cruzamento com gabarito definitivo e documento de recursos de 20/02/2024, explicações confrontadas com referência primária. Sem revisão humana profissional.",
+    "reuse": "Reprodução permitida pela Quadrix apenas para fins didáticos, com atribuição. Texto aplicado mantido; explicações próprias separadas."
+  },
+  {
+    "id": "quadrix-crn8-2024-401-q045",
+    "version": 1,
+    "type": "mcq",
+    "origin": "real",
+    "institution": "Conselho Regional de Nutrição da 8ª Região (CRN-8/PR)",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal Júnior — códigos 401/402",
+    "year": 2024,
+    "originalNumber": 45,
+    "sourceURL": "https://anexos.cdn.selecao.net.br/uploads/861/concursos/1110/anexos/6e16109b-299b-4f90-a95e-23216503c62a.zip",
+    "sourcePage": 11,
+    "examId": "quadrix-crn8-2024-401",
+    "definitiveKeyURL": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+    "answer": 2,
+    "prompt": "Acerca da designação e do exercício da profissão de nutricionista, profissional de saúde, em qualquer de suas áreas, assinale a alternativa correta.",
+    "options": [
+      "São privativos dos portadores de diploma expedido por escolas de pós‑graduação em nutrição, oficiais ou reconhecidas, devidamente registrado no órgão competente do Ministério da Educação e regularmente inscrito no Conselho Regional de Nutricionistas da respectiva área de atuação profissional.",
+      "São privativos dos portadores diploma expedido por escolas de graduação em nutrição, oficiais ou reconhecidas, devidamente registrado no órgão competente do Ministério da Educação e regularmente inscrito no Conselho Federal de Nutricionistas.",
+      "São privativos dos portadores de diploma expedido por escolas de graduação em nutrição, oficiais ou reconhecidas, devidamente registrado no órgão competente do Ministério da Educação e regularmente inscrito no Conselho Regional de Nutricionistas da respectiva área de atuação profissional.",
+      "São privativos dos portadores de diploma expedido por escolas técnicas nutrição, oficiais ou reconhecidas, devidamente registrado no órgão competente do Ministério da Educação e regularmente inscrito no Conselho Regional de Nutricionistas da respectiva área de atuação profissional.",
+      "São privativos dos portadores de diploma expedido por escolas de pós‑graduação em nutrição, oficiais ou reconhecidas, devidamente registrado no órgão competente do Ministério da Educação e regularmente inscrito no Conselho Federal de Nutricionistas."
+    ],
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial ou estatística.",
+    "subject": "Ética e legislação profissional",
+    "topic": "Habilitação para exercício profissional",
+    "difficulty": "easy",
+    "explanations": [
+      "O requisito legal é diploma de graduação em Nutrição; uma pós-graduação não substitui a graduação exigida.",
+      "A inscrição profissional indicada no art. 1º é no Conselho Regional da área de atuação, não diretamente no Conselho Federal.",
+      "A alternativa reúne graduação em Nutrição oficial ou reconhecida, registro do diploma no órgão competente e inscrição regular no Conselho Regional da área de atuação.",
+      "Formação técnica não é a graduação exigida para designação e exercício como nutricionista.",
+      "A alternativa erra tanto ao substituir a graduação por pós-graduação quanto ao indicar inscrição no Conselho Federal."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 8.234/1991 — regulamentação profissional",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/1989_1994/l8234.htm",
+        "location": "Art. 1º"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo do CRN-8, prova de 21/01/2024",
+        "url": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+        "location": "Página 2, seção 2.6, questão 45"
+      },
+      {
+        "title": "Quadrix — permissão de reprodução didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280906-provas-anteriores-realizadas-em-2023",
+        "location": "Aviso no início da página: reprodução apenas para fins didáticos, com fonte citada."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual: transcrição contra caderno oficial, cruzamento com gabarito definitivo e documento de recursos de 20/02/2024, explicações confrontadas com referência primária. Sem revisão humana profissional.",
+    "reuse": "Reprodução permitida pela Quadrix apenas para fins didáticos, com atribuição. Texto aplicado mantido; explicações próprias separadas."
+  },
+  {
+    "id": "quadrix-crn8-2024-401-q046",
+    "version": 1,
+    "type": "mcq",
+    "origin": "real",
+    "institution": "Conselho Regional de Nutrição da 8ª Região (CRN-8/PR)",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal Júnior — códigos 401/402",
+    "year": 2024,
+    "originalNumber": 46,
+    "sourceURL": "https://anexos.cdn.selecao.net.br/uploads/861/concursos/1110/anexos/6e16109b-299b-4f90-a95e-23216503c62a.zip",
+    "sourcePage": 12,
+    "examId": "quadrix-crn8-2024-401",
+    "definitiveKeyURL": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+    "answer": 0,
+    "prompt": "De acordo com a Lei Geral de Proteção de Dados Pessoais (LGPD), o uso compartilhado de dados é conceituado como",
+    "options": [
+      "comunicação, difusão, transferência internacional, interconexão de dados pessoais ou tratamento compartilhado de bancos de dados pessoais por órgãos e entidades públicos no cumprimento de suas competências legais, ou entre esses e entes privados, reciprocamente, com autorização específica, para uma ou mais modalidades de tratamento permitidas por esses entes públicos, ou entre entes privados.",
+      "transferência de dados pessoais para país estrangeiro ou organismo internacional do qual o país seja membro.",
+      "documentação do controlador que contém a descrição dos processos de tratamento de dados pessoais que podem gerar riscos às liberdades civis e aos direitos fundamentais, bem como medidas, salvaguardas e mecanismos de mitigação de risco.",
+      "toda operação realizada com dados pessoais, como as que se referem à coleta, à produção, à recepção, à classificação, à utilização, ao acesso, à reprodução, à transmissão, à distribuição, ao processamento, ao arquivamento, ao armazenamento, à eliminação, à avaliação ou ao controle da informação, à modificação, à comunicação, à transferência, à difusão ou à extração.",
+      "utilização de meios técnicos razoáveis e disponíveis no momento do tratamento, por meio dos quais um dado perde a possibilidade de associação, direta ou indireta, a um indivíduo."
+    ],
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial ou estatística.",
+    "subject": "Legislação e administração pública",
+    "topic": "LGPD — conceitos",
+    "difficulty": "medium",
+    "explanations": [
+      "A alternativa corresponde à definição de uso compartilhado de dados do art. 5º, XVI.",
+      "Essa formulação descreve transferência internacional de dados, prevista no inciso XV.",
+      "A documentação de processos e salvaguardas caracteriza o relatório de impacto à proteção de dados pessoais, previsto no inciso XVII.",
+      "A lista de operações corresponde ao conceito amplo de tratamento de dados pessoais do inciso X.",
+      "A perda de possibilidade de associação direta ou indireta a um indivíduo por meios técnicos caracteriza anonimização, inciso XI."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 13.709/2018 — LGPD, texto oficial consolidado",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+        "location": "Art. 5º, X, XI, XV, XVI e XVII"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo do CRN-8, prova de 21/01/2024",
+        "url": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+        "location": "Página 2, seção 2.6, questão 46"
+      },
+      {
+        "title": "Quadrix — permissão de reprodução didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280906-provas-anteriores-realizadas-em-2023",
+        "location": "Aviso no início da página: reprodução apenas para fins didáticos, com fonte citada."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual: transcrição contra caderno oficial, cruzamento com gabarito definitivo e documento de recursos de 20/02/2024, explicações confrontadas com referência primária. Sem revisão humana profissional.",
+    "reuse": "Reprodução permitida pela Quadrix apenas para fins didáticos, com atribuição. Texto aplicado mantido; explicações próprias separadas."
+  },
+  {
+    "id": "quadrix-crn8-2024-401-q047",
+    "version": 1,
+    "type": "mcq",
+    "origin": "real",
+    "institution": "Conselho Regional de Nutrição da 8ª Região (CRN-8/PR)",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal Júnior — códigos 401/402",
+    "year": 2024,
+    "originalNumber": 47,
+    "sourceURL": "https://anexos.cdn.selecao.net.br/uploads/861/concursos/1110/anexos/6e16109b-299b-4f90-a95e-23216503c62a.zip",
+    "sourcePage": 12,
+    "examId": "quadrix-crn8-2024-401",
+    "definitiveKeyURL": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+    "answer": 3,
+    "prompt": "Segundo a Lei Federal n.o 14.133/2021, a modalidade de licitação para escolha de trabalho técnico, científico ou artístico, cujo critério de julgamento será o de melhor técnica ou conteúdo artístico, e para concessão de prêmio ou remuneração ao vencedor, é denominada",
+    "options": [
+      "leilão.",
+      "pregão.",
+      "diálogo competitivo.",
+      "concurso.",
+      "hasta pública."
+    ],
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial ou estatística.",
+    "subject": "Legislação e administração pública",
+    "topic": "Licitações — modalidades",
+    "difficulty": "medium",
+    "explanations": [
+      "Leilão se destina à alienação de bens nas hipóteses legais, com julgamento pelo maior lance; não é a definição apresentada.",
+      "Pregão é modalidade para aquisição de bens e serviços comuns, não para seleção do trabalho técnico, científico ou artístico descrito.",
+      "Diálogo competitivo envolve diálogos com licitantes previamente selecionados para desenvolver alternativas que atendam à necessidade da Administração.",
+      "O art. 6º, XXXIX, denomina concurso a modalidade descrita. Não se confunde com concurso para ingresso em cargo público.",
+      "Hasta pública não é a modalidade definida no inciso XXXIX da Lei nº 14.133/2021."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 14.133/2021 — texto oficial consolidado",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm",
+        "location": "Art. 6º, XXXIX"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo do CRN-8, prova de 21/01/2024",
+        "url": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+        "location": "Página 2, seção 2.6, questão 47"
+      },
+      {
+        "title": "Quadrix — permissão de reprodução didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280906-provas-anteriores-realizadas-em-2023",
+        "location": "Aviso no início da página: reprodução apenas para fins didáticos, com fonte citada."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual: transcrição contra caderno oficial, cruzamento com gabarito definitivo e documento de recursos de 20/02/2024, explicações confrontadas com referência primária. Sem revisão humana profissional.",
+    "reuse": "Reprodução permitida pela Quadrix apenas para fins didáticos, com atribuição. Texto aplicado mantido; explicações próprias separadas."
+  },
+  {
+    "id": "quadrix-crn8-2024-401-q048",
+    "version": 1,
+    "type": "mcq",
+    "origin": "real",
+    "institution": "Conselho Regional de Nutrição da 8ª Região (CRN-8/PR)",
+    "board": "Quadrix",
+    "role": "Nutricionista Fiscal Júnior — códigos 401/402",
+    "year": 2024,
+    "originalNumber": 48,
+    "sourceURL": "https://anexos.cdn.selecao.net.br/uploads/861/concursos/1110/anexos/6e16109b-299b-4f90-a95e-23216503c62a.zip",
+    "sourcePage": 12,
+    "examId": "quadrix-crn8-2024-401",
+    "definitiveKeyURL": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+    "answer": 3,
+    "prompt": "À luz da Lei Federal n.o 14.133/2021, a regra geral é que, nas hipóteses de serviços e fornecimentos contínuos, os contratos celebrados pela Administração podem ter prazo de até",
+    "options": [
+      "seis meses",
+      "um ano",
+      "três anos",
+      "cinco anos.",
+      "dez anos."
+    ],
+    "difficultyBasis": "Estimativa editorial, sem classificação oficial ou estatística.",
+    "subject": "Legislação e administração pública",
+    "topic": "Contratos contínuos — duração inicial",
+    "difficulty": "hard",
+    "explanations": [
+      "Seis meses não correspondem ao prazo de até cinco anos admitido no art. 106 para as hipóteses descritas.",
+      "A contratação plurianual de serviços e fornecimentos contínuos pode superar um ano, observadas as diretrizes legais.",
+      "O art. 106 não limita a três anos a celebração nas hipóteses tratadas.",
+      "O art. 106 admite celebração com prazo de até cinco anos para serviços e fornecimentos contínuos, sob suas condições.",
+      "O art. 107 admite prorrogações sucessivas até o limite decenal, com requisitos próprios. Esse limite de prorrogação não substitui o prazo de celebração inicial do art. 106."
+    ],
+    "references": [
+      {
+        "title": "Lei nº 14.133/2021 — texto oficial consolidado",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm",
+        "location": "Arts. 106 e 107"
+      },
+      {
+        "title": "Quadrix — gabarito definitivo do CRN-8, prova de 21/01/2024",
+        "url": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+        "location": "Página 2, seção 2.6, questão 48"
+      },
+      {
+        "title": "Quadrix — permissão de reprodução didática",
+        "url": "https://ajuda.quadrix.org.br/pt-BR/articles/8280906-provas-anteriores-realizadas-em-2023",
+        "location": "Aviso no início da página: reprodução apenas para fins didáticos, com fonte citada."
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "status": "approved",
+    "editorialReview": "Conferência automática individual: transcrição contra caderno oficial, cruzamento com gabarito definitivo e documento de recursos de 20/02/2024, explicações confrontadas com referência primária. Sem revisão humana profissional.",
+    "reuse": "Reprodução permitida pela Quadrix apenas para fins didáticos, com atribuição. Texto aplicado mantido; explicações próprias separadas."
+  }
+]

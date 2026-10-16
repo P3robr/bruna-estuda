@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2459c4">
+  <meta name="description" content="Estudo pessoal para concursos de Nutricionista: questões, simulados e revisão.">
+  <title>Bruna Estuda</title>
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link id="app-styles" rel="stylesheet" href="./styles.css">
+  <script type="module" src="./boot.mjs"></script>
+</head>
+<body>
+  <section id="entry" class="entry" aria-labelledby="entry-title">
+    <form id="pin-form" class="entry-card">
+      <img src="./assets/mark.svg" alt="" width="52" height="52">
+      <p class="eyebrow">Bruna Estuda</p>
+      <h1 id="entry-title">Seu momento<br>de ir mais longe.</h1>
+      <p class="entry-intro">Um espaço só seu. Digite o PIN para entrar.</p>
+      <label class="sr-only" for="entry-pin">PIN de acesso de quatro números</label>
+      <input id="entry-pin" class="entry-pin" type="password" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="off" aria-describedby="pin-message" required autofocus>
+      <p id="pin-message" class="pin-message" role="alert"></p>
+      <div class="pin-pad" aria-label="Teclado numérico">
+        <button type="button" data-digit="1">1</button><button type="button" data-digit="2">2</button><button type="button" data-digit="3">3</button>
+        <button type="button" data-digit="4">4</button><button type="button" data-digit="5">5</button><button type="button" data-digit="6">6</button>
+        <button type="button" data-digit="7">7</button><button type="button" data-digit="8">8</button><button type="button" data-digit="9">9</button>
+        <button type="button" id="pin-clear" class="pin-secondary">Limpar</button><button type="button" data-digit="0">0</button><button type="button" id="pin-back" class="pin-secondary" aria-label="Apagar último número">⌫</button>
+      </div>
+      <button type="submit" class="primary entry-submit" disabled>Entrar no meu espaço <span aria-hidden="true">↗</span></button>
+      <p id="update-status" class="update-status" role="status">Verificando atualizações…</p>
+      <button id="retry-update" type="button" hidden>Tentar novamente</button>
+      <p class="entry-footnote">Um passo de cada vez.</p>
+      <noscript>Ative o JavaScript para entrar e usar a plataforma.</noscript>
+    </form>
+  </section>
+  <div id="app-shell" hidden>
+  <a class="skip" href="#main">Pular para o conteúdo</a>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Bruna Estuda, início"><img src="./assets/mark.svg" alt="" width="36" height="36"><span>bruna<span class="brand-light">estuda</span><small>Um passo de cada vez.</small></span></a>
+    <nav aria-label="Principal"><a href="#inicio">Início</a><a href="#treinar">Treinar</a><a href="#simulados">Simulados</a><a href="#revisao">Revisão</a></nav>
+    <a class="settings-link" href="#ajustes">Seus dados</a>
+  </header>
+  <div id="storage-status" class="storage-status" role="status"></div>
+  <div id="notice" role="status" aria-live="polite"></div>
+  <main id="main" tabindex="-1"><p>Carregando seu espaço de estudo…</p></main>
+  <footer><span>Bruna Estuda · Nutrição</span><a href="#acervo">Acervo e fontes</a><a href="#ajuda">Como funciona</a><a href="./downloads/Bruna-Estuda.zip" download>Baixar atalho</a><span>Progresso somente neste navegador.</span></footer>
+  <dialog id="dialog"><form method="dialog"><h2 id="dialog-title"></h2><div id="dialog-body"></div><div class="actions"><button value="cancel">Cancelar</button><button class="primary" id="dialog-confirm" value="confirm">Confirmar</button></div></form></dialog>
+  </div>
+</body>
+</html>
