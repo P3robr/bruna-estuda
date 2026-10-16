@@ -1,0 +1,41 @@
+name: Publicar Bruna Estuda
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Conferir aplicação e gerar versão automaticamente
+        run: |
+          node tests/core.test.mjs
+          node tests/pin.test.mjs
+          node tests/subject-colors.test.mjs
+          node tests/update.test.mjs
+          node scripts/release.mjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+      - name: Publicar site
+        id: deployment
+        uses: actions/deploy-pages@v4

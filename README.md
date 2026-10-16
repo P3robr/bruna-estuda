@@ -22,4 +22,4 @@ node scripts/release.mjs
 
 O script scripts/package-launcher.ps1 recria o pacote do atalho. Se o endereço mudar, informe o novo endereço pelo parâmetro SiteUrl, recrie o pacote e depois gere a versão. Uma mudança de endereço também exige exportar e restaurar o progresso.
 
-GitHub Pages deve usar main e /docs. O conteúdo da pasta de pesquisa, anexos, backups e arquivos pessoais não integra este repositório.
+GitHub Pages deve usar GitHub Actions. O fluxo .github/workflows/pages.yml executa as verificações, gera a versão e publica docs/ automaticamente a cada envio para main. Bruna não executa comandos nem baixa novamente o atalho para receber atualizações. O conteúdo da pasta de pesquisa, anexos, backups e arquivos pessoais não integra este repositório.
