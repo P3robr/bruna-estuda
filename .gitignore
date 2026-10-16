@@ -1,0 +1,5 @@
+*.pdf
+*backup*.json
+*emergencia*.json
+tests/tmp/
+output/
