@@ -1,22 +1,676 @@
 {
-  "checkedAt": "2026-10-15",
-  "stage": "Piloto interno; produto e acervo ainda em construção",
-  "activeAuthorial": 40,
-  "activeReal": 34,
-  "realCandidateQuestionsLocated": 180,
-  "excludedFromSes2014TypeA": [25, 30, 45],
-  "correctionFromSes2014": {"34": "B"},
+  "checkedAt": "2026-10-18",
+  "stage": "Meta desta etapa de 300 ativas atingida; ampliação adiada pelo usuário. Publicação e validações finais pendentes.",
+  "activeAuthorial": 100,
+  "activeReal": 200,
+  "realCandidateQuestionsLocated": 1150,
+  "candidateCountScope": "Soma bruta dos cadernos com quantidade individual registrada neste inventário. Não inclui todos os arquivos de pesquisa já obtidos. Itens compartilhados entre provas ainda podem se repetir entre candidatos; apenas itens distintos conferidos entram na contagem ativa.",
+  "excludedFromSes2014TypeA": [
+    25,
+    30,
+    45
+  ],
+  "correctionFromSes2014": {
+    "34": "B"
+  },
   "sources": [
-    {"id":"quadrix-crn4-2022", "institution":"CRN-4/RJ-ES", "board":"Quadrix", "role":"Nutricionista Fiscal, códigos 400/401", "year":2022, "officialPage":"https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022", "paper":"CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf", "definitiveKey":"CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf", "appliedAt":"2022-05-01", "definitiveAt":"2022-05-23", "reuse":"Quadrix permite reprodução apenas para fins didáticos, com atribuição; explicações próprias separadas do texto aplicado.", "candidateCount":80, "activeCount":25, "activeOriginalNumbers":[31,32,33,34,35,40,41,43,47,49,50,51,52,54,55,56,57,73,74,75,76,77,78,79,80], "annulled":[45], "remainingPending":54, "status":"Lote conferido com o gabarito definitivo. Os demais itens dependem de conferência de conteúdo, atualidade e deduplicação. Não é prova completa liberada."},
-    {"id":"quadrix-crn8-2024", "institution":"CRN-8/PR", "board":"Quadrix", "role":"Nutricionista Fiscal Júnior, códigos 401/402", "year":2024, "contestYear":2023, "paper":"https://anexos.cdn.selecao.net.br/uploads/861/concursos/1110/anexos/6e16109b-299b-4f90-a95e-23216503c62a.zip", "definitiveKey":"https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=", "officialPage":"https://quadrix.org.br/informacoes/1110/", "reuseProof":"https://ajuda.quadrix.org.br/pt-BR/articles/8280906-provas-anteriores-realizadas-em-2023", "reuse":"A Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Explicações próprias separadas do texto aplicado.", "candidateCount":50, "activeCount":9, "activeOriginalNumbers":[33,34,35,36,44,45,46,47,48], "remainingPending":41, "status":"Gabarito definitivo de 20/02/2024 localizado para códigos 401/402; pedidos de anulação e alteração indeferidos no documento oficial de recursos. Lote 1 conferido individualmente; não representa prova completa liberada."},
-    {"id":"ses-df-2014", "institution":"SES-DF", "board":"IADES", "role":"Nutricionista, código 110", "year":2014, "paper":"https://arquivos.qconcursos.com/prova/arquivo_prova/45872/iades-2014-ses-df-nutricionista-prova.pdf", "officialArchive":"https://www.iades.com.br/inscricao/upload/113/2014090853949563.zip", "definitiveKey":"https://www.iades.com.br/inscricao/upload/113/201411038503531.pdf", "amendments":"https://www.iades.com.br/inscricao/upload/113/20141103112332147.pdf", "candidateCount":50, "activeCount":0, "originalDurationMinutes":210, "reuse":"Pendente: acesso público não foi tratado como licença de republicação.", "status":"Conteúdo, gabarito, atualidade e reutilização em conferência. Nenhum item aplicado liberado."},
-    {"id":"rdc216", "url":"https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html", "type":"Ato normativo oficial; referência para 20 questões autorais", "reuse":"Questões redigidas originalmente sobre requisitos do ato; sem copiar comentários de terceiros."},
-    {"id":"lei8080", "url":"https://www.planalto.gov.br/ccivil_03/leis/l8080.htm", "type":"Ato normativo oficial; referência para 3 questões autorais", "reuse":"Enunciados e explicações próprios."},
-    {"id":"lei8142", "url":"https://www.planalto.gov.br/ccivil_03/leis/l8142.htm", "type":"Ato normativo oficial; referência para 3 questões autorais", "reuse":"Enunciados e explicações próprios."},
-    {"id":"guia-alimentar", "url":"https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf", "type":"Ministério da Saúde, 2ª edição; referência para 3 questões autorais", "reuse":"Expediente declara CC BY-NC-SA 4.0. Fonte atribuída; uso não comercial e mesmo licenciamento do conteúdo derivado."},
-    {"id":"aleitamento", "url":"https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/aleitamento-materno", "type":"Ministério da Saúde; recomendação institucional; referência para 2 questões autorais", "reuse":"Fatos e recomendações sintetizados em texto próprio; sem imagens ou reprodução integral."},
-    {"id":"imc", "url":"https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight", "type":"OMS; referência conceitual para 3 questões autorais", "reuse":"Definições factuais e cálculo próprio, sem reprodução de ilustrações ou comentário externo."},
-    {"id":"ses-atual", "url":"https://www.saude.df.gov.br/concursos", "type":"Página oficial consultada", "status":"Consulta não confirmou edital específico novo de Nutricionista nem banca para essa especialidade. Pesquisa do ato de contratação ainda pendente."},
-    {"id":"descoberta", "url":"https://www.pciconcursos.com.br/provas/nutricionista", "type":"Índice de candidatos; não integra contagem de itens aprovados", "status":"Próximas fontes: provas de outros órgãos; exigir caderno, gabarito definitivo e condições de reutilização."}
+    {
+      "id": "quadrix-crn10-2018",
+      "institution": "CRN-10/SC",
+      "board": "Quadrix",
+      "role": "Nutricionista Fiscal, código 300",
+      "year": 2018,
+      "officialPage": "https://ajuda.quadrix.org.br/pt-BR/articles/8280897-provas-anteriores-realizadas-em-2018",
+      "paper": "CRN-10-SC_2018.zip / 2018_Caderno prova_QUADRIX_CRN-10_300_Nutricionista Fiscal_compressed.pdf",
+      "definitiveKey": "CRN-10-SC_2018.zip / 1_CRN-10_concurso_2018_gabarito_definitivo_compressed.pdf",
+      "appliedAt": "2018-07-08",
+      "definitiveAt": "2018-07-30",
+      "candidateCount": 120,
+      "activeCount": 23,
+      "activeOriginalNumbers": [
+        73,
+        75,
+        76,
+        77,
+        78,
+        80,
+        87,
+        88,
+        90,
+        92,
+        95,
+        98,
+        102,
+        103,
+        106,
+        107,
+        108,
+        110,
+        111,
+        115,
+        116,
+        118,
+        120
+      ],
+      "remainingPending": 97,
+      "reuse": "Quadrix permite reprodução apenas para fins didáticos com fonte citada. Artigo de Akutsu e colaboradores, referenciado no item 87, sob CC BY-NC 4.0. Livros comerciais são apenas referências de fatos, sem republicação dos documentos.",
+      "status": "Lote de 23 itens conferidos com o gabarito definitivo da especialidade. Normas substituídas, dados antigos, afirmações clínicas ambíguas e equivalentes ficaram pendentes. Não é prova completa liberada."
+    },
+    {
+      "id": "quadrix-crn2-2020",
+      "institution": "CRN-2/RS",
+      "board": "Quadrix",
+      "role": "Nutricionista Fiscal, códigos 400/401",
+      "year": 2020,
+      "contestYear": 2019,
+      "officialPage": "https://ajuda.quadrix.org.br/pt-BR/articles/8280899-provas-anteriores-realizadas-em-2019",
+      "paper": "CRN-2-RS_2019.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-2_Concurso_Publico_2019_compressed.pdf",
+      "definitiveKey": "CRN-2-RS_2019.zip / 1_CRN-2_concurso_publico_2019_gabarito_definitivo_compressed.pdf",
+      "appliedAt": "2020-01-19",
+      "definitiveAt": "2020-02-10",
+      "candidateCount": 120,
+      "activeCount": 16,
+      "activeOriginalNumbers": [
+        72,
+        74,
+        75,
+        76,
+        81,
+        83,
+        85,
+        86,
+        92,
+        93,
+        95,
+        106,
+        111,
+        112,
+        113,
+        118
+      ],
+      "annulled": [
+        116
+      ],
+      "remainingPending": 103,
+      "reuse": "Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Guias do Ministério da Saúde sob CC BY-NC-SA 4.0; atribuição nas referências. Explicações próprias.",
+      "status": "Concurso identificado como 2019 no arquivo; aplicação de 2020 preservada nos itens. Lote conferido individualmente. Item 88 alterado para Errado; 116 anulado e excluído. Não é prova completa liberada."
+    },
+    {
+      "id": "quadrix-cfn-2024",
+      "institution": "CFN",
+      "board": "Quadrix",
+      "role": "Profissional de Atividades Estratégicas, ocupação Nutricionista, código 405",
+      "year": 2024,
+      "officialPage": "https://ajuda.quadrix.org.br/pt-BR/articles/8765923-provas-anteriores-realizadas-em-2024",
+      "paper": "CFN_2024.zip / 405_Nutricionista_QUADRIX_concurso_2024_CFN.pdf",
+      "definitiveKey": "CFN_2024.zip / CFN_concurso_publico_2024_gabarito_definitivo_prova_objetiva.pdf",
+      "appliedAt": "2024-11-24",
+      "definitiveAt": "2024-12-18",
+      "candidateCount": 120,
+      "activeCount": 26,
+      "reuse": "Página oficial autoriza reprodução apenas para fins didáticos, com fonte citada.",
+      "status": "Lote conferido individualmente com o gabarito definitivo da especialidade. Demais itens ainda dependem de atualidade, explicações completas e deduplicação. Não é prova completa liberada.",
+      "activeOriginalNumbers": [
+        74,
+        76,
+        78,
+        80,
+        81,
+        83,
+        84,
+        85,
+        86,
+        89,
+        90,
+        94,
+        95,
+        97,
+        98,
+        99,
+        101,
+        102,
+        104,
+        108,
+        110,
+        111,
+        112,
+        113,
+        118,
+        119
+      ],
+      "annulled": [
+        49,
+        52,
+        53,
+        66,
+        77,
+        87,
+        88,
+        115
+      ],
+      "changed": [
+        {
+          "number": 22,
+          "to": "E"
+        },
+        {
+          "number": 32,
+          "to": "E"
+        },
+        {
+          "number": 79,
+          "to": "E"
+        },
+        {
+          "number": 92,
+          "to": "E"
+        },
+        {
+          "number": 93,
+          "to": "E"
+        }
+      ],
+      "remainingPending": 86
+    },
+    {
+      "id": "quadrix-tijucas-2021",
+      "institution": "Prefeitura de Tijucas do Sul/PR",
+      "board": "Quadrix",
+      "role": "Nutricionista, código 404",
+      "year": 2021,
+      "contestYear": 2020,
+      "officialPage": "https://ajuda.quadrix.org.br/pt-BR/articles/8280901-provas-anteriores-realizadas-em-2020",
+      "paper": "Prefeitura Tijucas do Sul-PR_2020.zip / QUADRIX_Cad_Prova_404_Nutricionista_Pref_Tijucas_Sul_Concurso_Publico_2020_compressed.pdf",
+      "definitiveKey": "Prefeitura Tijucas do Sul-PR_2020.zip / 1_Prefeitura_Tijucas-PR_concurso_publico_2020_gabarito_definitivo_compressed.pdf",
+      "appliedAt": "2021-09-12",
+      "definitiveAt": "2021-10-04",
+      "candidateCount": 40,
+      "activeCount": 10,
+      "reuse": "Página oficial autoriza reprodução apenas para fins didáticos, com fonte citada.",
+      "status": "Lote conferido individualmente com o gabarito definitivo da especialidade. Demais itens ainda dependem de atualidade, explicações completas e deduplicação. Não é prova completa liberada.",
+      "activeOriginalNumbers": [
+        26,
+        28,
+        31,
+        32,
+        33,
+        35,
+        36,
+        38,
+        39,
+        40
+      ],
+      "annulled": [],
+      "changed": [],
+      "remainingPending": 30
+    },
+    {
+      "id": "quadrix-crn4-2022",
+      "institution": "CRN-4/RJ-ES",
+      "board": "Quadrix",
+      "role": "Nutricionista Fiscal, códigos 400/401",
+      "year": 2022,
+      "officialPage": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+      "paper": "CRN-4_2022.zip / QUADRIX_Cad_Prova_400-401_Nutricionista_Fiscal_CRN-4_Concurso_Publico_2022_compressed.pdf",
+      "definitiveKey": "CRN-4_2022.zip / 1_CRN-4_concurso_publico_2022_gabarito_definitivo_compressed.pdf",
+      "appliedAt": "2022-05-01",
+      "definitiveAt": "2022-05-23",
+      "reuse": "Quadrix permite reprodução apenas para fins didáticos, com atribuição; explicações próprias separadas do texto aplicado.",
+      "candidateCount": 80,
+      "activeCount": 27,
+      "activeOriginalNumbers": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        40,
+        41,
+        43,
+        47,
+        49,
+        50,
+        51,
+        52,
+        54,
+        55,
+        56,
+        57,
+        61,
+        62,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "annulled": [
+        45
+      ],
+      "remainingPending": 52,
+      "status": "Lote conferido com o gabarito definitivo. Os demais itens dependem de conferência de conteúdo, atualidade e deduplicação. Não é prova completa liberada."
+    },
+    {
+      "id": "quadrix-crn8-2024",
+      "institution": "CRN-8/PR",
+      "board": "Quadrix",
+      "role": "Nutricionista Fiscal Júnior, códigos 401/402",
+      "year": 2024,
+      "contestYear": 2023,
+      "paper": "https://anexos.cdn.selecao.net.br/uploads/861/concursos/1110/anexos/6e16109b-299b-4f90-a95e-23216503c62a.zip",
+      "definitiveKey": "https://quadrix.org.br/uploads/861/concursos/1110/anexos/ba36e29548db406477bc4551b73237ea.pdf?v124801=",
+      "officialPage": "https://quadrix.org.br/informacoes/1110/",
+      "reuseProof": "https://ajuda.quadrix.org.br/pt-BR/articles/8280906-provas-anteriores-realizadas-em-2023",
+      "reuse": "A Quadrix permite reprodução apenas para fins didáticos, com fonte citada. Explicações próprias separadas do texto aplicado.",
+      "candidateCount": 50,
+      "activeCount": 9,
+      "activeOriginalNumbers": [
+        33,
+        34,
+        35,
+        36,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "remainingPending": 41,
+      "status": "Gabarito definitivo de 20/02/2024 localizado para códigos 401/402; pedidos de anulação e alteração indeferidos no documento oficial de recursos. Lote 1 conferido individualmente; não representa prova completa liberada."
+    },
+    {
+      "id": "ses-df-2014",
+      "institution": "SES-DF",
+      "board": "IADES",
+      "role": "Nutricionista, código 110",
+      "year": 2014,
+      "paper": "https://arquivos.qconcursos.com/prova/arquivo_prova/45872/iades-2014-ses-df-nutricionista-prova.pdf",
+      "officialArchive": "https://www.iades.com.br/inscricao/upload/113/2014090853949563.zip",
+      "definitiveKey": "https://www.iades.com.br/inscricao/upload/113/201411038503531.pdf",
+      "amendments": "https://www.iades.com.br/inscricao/upload/113/20141103112332147.pdf",
+      "candidateCount": 50,
+      "activeCount": 0,
+      "originalDurationMinutes": 210,
+      "reuse": "Pendente: acesso público não foi tratado como licença de republicação.",
+      "status": "Conteúdo, gabarito, atualidade e reutilização em conferência. Nenhum item aplicado liberado."
+    },
+    {
+      "id": "quadrix-alto-paraiso-2023",
+      "institution": "Município de Alto Paraíso de Goiás/GO",
+      "board": "Quadrix",
+      "role": "Nutricionista, código 402; itens compartilhados com Nutricionista em Saúde, código 413; nível superior",
+      "year": 2023,
+      "contestYear": 2020,
+      "officialPage": "https://ajuda.quadrix.org.br/pt-BR/articles/8280901-provas-anteriores-realizadas-em-2020",
+      "paper": "Prefeitura Alto Paraiso-GO_2020.zip / 402_NUTRICIONISTA_Cad_Prova_QUADRIX_Pref_Alto_Paraiso_concurso_2022.pdf",
+      "sharedPaper": "Prefeitura Alto Paraiso-GO_2020.zip / 413_NUTRICIONISTA EM SAÚDE_Cad_Prova_QUADRIX_Pref_Alto_Paraiso_concurso_2022.pdf",
+      "definitiveKey": "Prefeitura Alto Paraiso-GO_2020.zip / 2_Pref_Alto_Paraiso-GO_concurso_publico_2020_gabarito_definitivo_prova_objetiva__compressed.pdf",
+      "appliedAt": "2023-01-29",
+      "definitiveAt": "2023-02-27",
+      "candidateCount": 40,
+      "candidateCountNote": "Registrado somente o caderno 402. Quatro itens admitidos também constam integralmente no 413, com gabaritos iguais, e não foram duplicados.",
+      "activeCount": 4,
+      "activeOriginalNumbers": [
+        29,
+        32,
+        38,
+        39
+      ],
+      "annulled": [
+        35
+      ],
+      "changed": [
+        {
+          "number": 26,
+          "to": "E"
+        }
+      ],
+      "remainingPending": 35,
+      "reuse": "Arquivo oficial permite reprodução apenas para fins didáticos, com fonte citada. Explicações próprias; documentos de pesquisa não republicados.",
+      "status": "Lote conferido. Concurso nº 01/2020; nome do caderno menciona 2022; aplicação efetiva em 2023. Título do definitivo atualizado em 27/02/2023, com assinatura de 21/02/2023 e cabeçalho interno divergente. Não é prova completa liberada."
+    },
+    {
+      "id": "quadrix-barreiras-2022",
+      "institution": "Prefeitura de Barreiras/BA",
+      "board": "Quadrix",
+      "role": "Nutricionista, código 412; nível superior",
+      "year": 2022,
+      "officialPage": "https://quadrix.org.br/informacoes/1178/",
+      "reuseProof": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+      "paper": "Prefeitura Barreiras-BA_2022.zip / QUADRIX_Cad_Prova_412_Nutricionista_Pref_Barreiras_Concurso_Publico_2022.pdf",
+      "definitiveKey": "https://quadrix.org.br/uploads/861/concursos/1178/anexos/193866b343cecc2cf1b04453529a14d5.pdf?v111904",
+      "appliedAt": "2022-09-25",
+      "definitiveAt": "2022-10-21",
+      "candidateCount": 40,
+      "activeCount": 7,
+      "activeOriginalNumbers": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        35,
+        37
+      ],
+      "annulled": [
+        31,
+        34
+      ],
+      "changed": [],
+      "remainingPending": 31,
+      "reuse": "Arquivo oficial permite reprodução apenas para fins didáticos, com atribuição. Explicações próprias; fontes primárias identificadas por alternativa ou tema.",
+      "status": "Lote conferido. Gabarito 412 comparado entre arquivo do site do concurso e acervo oficial. Página registra publicação em 21/10/2022; rodapé do PDF diz 21/09/2022, data inconsistente que não foi usada como publicação. Não é prova completa liberada."
+    },
+    {
+      "id": "quadrix-jatai-2019",
+      "institution": "Prefeitura de Jataí/GO",
+      "board": "Quadrix",
+      "role": "Nutricionista, código 408; nível superior",
+      "year": 2019,
+      "officialPage": "https://ajuda.quadrix.org.br/pt-BR/articles/8280901-provas-anteriores-realizadas-em-2020",
+      "paper": "Prefeitura de Jatai-GO_2020.zip / QUADRIX_concurso_2019_JATAI_408_Nutricionista.pdf",
+      "definitiveKey": "Prefeitura de Jatai-GO_2020.zip / 1_Prefeitura_Municipal_Jatai-GO_concurso_publico_2019_gabarito_definitivo_superior_compressed.pdf",
+      "appliedAt": "2019-12-15",
+      "definitiveAt": "2020-01-14",
+      "candidateCount": 100,
+      "activeCount": 17,
+      "activeOriginalNumbers": [
+        51,
+        53,
+        55,
+        64,
+        66,
+        69,
+        71,
+        73,
+        74,
+        79,
+        84,
+        85,
+        87,
+        90,
+        92,
+        96,
+        97
+      ],
+      "annulled": [
+        21,
+        98
+      ],
+      "remainingPending": 81,
+      "reuse": "Arquivo oficial permite reprodução apenas para fins didáticos, com fonte citada. PDFs permanecem somente na pesquisa local.",
+      "status": "Lote de 17 itens conferidos individualmente com o definitivo do cargo 408. Aplicação em 2019, apesar do ZIP indexado em 2020. Apoios preservados; equivalentes e conteúdo sem explicação completa continuam fora do treino. Não é prova completa liberada."
+    },
+    {
+      "id": "rdc216",
+      "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+      "type": "Ato normativo oficial; referência para 20 questões autorais",
+      "reuse": "Questões redigidas originalmente sobre requisitos do ato; sem copiar comentários de terceiros."
+    },
+    {
+      "id": "lei8080",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+      "type": "Ato normativo oficial; referência para 3 questões autorais",
+      "reuse": "Enunciados e explicações próprios."
+    },
+    {
+      "id": "lei8142",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l8142.htm",
+      "type": "Ato normativo oficial; referência para 3 questões autorais",
+      "reuse": "Enunciados e explicações próprios."
+    },
+    {
+      "id": "guia-alimentar",
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+      "type": "Ministério da Saúde, 2ª edição; referência para 3 questões autorais",
+      "reuse": "Expediente declara CC BY-NC-SA 4.0. Fonte atribuída; uso não comercial e mesmo licenciamento do conteúdo derivado."
+    },
+    {
+      "id": "aleitamento",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/aleitamento-materno",
+      "type": "Ministério da Saúde; recomendação institucional; referência para 2 questões autorais",
+      "reuse": "Fatos e recomendações sintetizados em texto próprio; sem imagens ou reprodução integral."
+    },
+    {
+      "id": "imc",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight",
+      "type": "OMS; referência conceitual para 3 questões autorais",
+      "reuse": "Definições factuais e cálculo próprio, sem reprodução de ilustrações ou comentário externo."
+    },
+    {
+      "id": "ses-atual",
+      "url": "https://www.saude.df.gov.br/concursos",
+      "type": "Página oficial consultada",
+      "status": "Consulta não confirmou edital específico novo de Nutricionista nem banca para essa especialidade. Pesquisa do ato de contratação ainda pendente."
+    },
+    {
+      "id": "descoberta",
+      "url": "https://www.pciconcursos.com.br/provas/nutricionista",
+      "type": "Índice de candidatos; não integra contagem de itens aprovados",
+      "status": "Próximas fontes: provas de outros órgãos; exigir caderno, gabarito definitivo e condições de reutilização."
+    },
+    {
+      "id": "quadrix-crn9-2019",
+      "institution": "CRN-9/MG",
+      "board": "Quadrix",
+      "role": "Nutricionista Assistente Técnico, código 400; itens compartilhados com Nutricionista Fiscal, códigos 410–417; nível superior",
+      "year": 2019,
+      "officialPage": "https://ajuda.quadrix.org.br/pt-BR/articles/8280899-provas-anteriores-realizadas-em-2019",
+      "paper": "CRN-9-MG_2019.zip / QUADRIX_Cad_Prova_400_Nutricionista_Assistente_Tecnico_CRN-9_Conc_Publico_2019_compressed.pdf",
+      "sharedPaper": "CRN-9-MG_2019.zip / QUADRIX_Cad_Prova_410-417_Nutricionista Fiscal_CRN-9_Conc_Publico_2019_compressed.pdf",
+      "definitiveKey": "CRN-9-MG_2019.zip / 1_CRN-9_concurso_publico_2019_gabarito_definitivo_compressed.pdf",
+      "appliedAt": "2019-10-27",
+      "definitiveAt": "2019-11-18",
+      "candidateCount": 120,
+      "candidateCountNote": "Os dois cadernos superiores compartilham conteúdo. Conjunto registrado uma vez, sem duplicar candidatos ou ativos por cargo.",
+      "activeCount": 20,
+      "activeOriginalNumbers": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        65,
+        72,
+        73,
+        74,
+        77,
+        78,
+        83,
+        91,
+        92,
+        105,
+        110,
+        111,
+        112,
+        113,
+        118
+      ],
+      "annulled": [],
+      "changed": [
+        {
+          "number": 33,
+          "to": "C"
+        },
+        {
+          "number": 88,
+          "to": "E"
+        },
+        {
+          "number": 102,
+          "to": "E"
+        }
+      ],
+      "remainingPending": 100,
+      "reuse": "Página oficial Quadrix permite reprodução apenas para fins didáticos, com atribuição. Explicações próprias; livro comercial somente como referência de fatos e cálculo, sem republicação.",
+      "status": "Lote conferido individualmente com as seções 1.7 e 1.8 do definitivo. Normas substituídas, equivalentes e itens sem referência concluída permanecem fora do treino. Não é prova completa liberada."
+    },
+    {
+      "id": "quadrix-crn6-2022",
+      "institution": "CRN-6",
+      "board": "Quadrix",
+      "role": "Nutricionista Fiscal — códigos 400–404, nível superior",
+      "year": 2022,
+      "officialPage": "https://quadrix.org.br/informacoes/1160/",
+      "archivePage": "https://ajuda.quadrix.org.br/pt-BR/articles/8280904-provas-anteriores-realizadas-em-2022",
+      "paper": "CRN-6_2022.zip / 1_QUADRIX_Cad_Prova_400-404_Nutricionista_Fiscal_CRN-6_Concurso_Publico_2022_compressed.pdf",
+      "definitiveKey": "https://quadrix.org.br/uploads/861/concursos/1160/anexos/a4ff896e323ff2797255559857e829cb.pdf?v115318",
+      "appliedAt": "2022-09-11",
+      "definitiveSignedAt": "2022-10-11",
+      "definitiveAt": "2022-10-12",
+      "candidateCount": 120,
+      "activeCount": 12,
+      "activeOriginalNumbers": [
+        71,
+        72,
+        78,
+        93,
+        99,
+        101,
+        102,
+        103,
+        104,
+        117,
+        118,
+        119
+      ],
+      "annulled": [
+        74
+      ],
+      "changed": [
+        {
+          "number": 20,
+          "to": "C"
+        }
+      ],
+      "remainingPending": 107,
+      "reuse": "Arquivo oficial Quadrix permite reprodução apenas para fins didáticos, com atribuição. Explicações próprias; PDFs de pesquisa não republicados.",
+      "status": "Doze itens conferidos individualmente; demais candidatos continuam fora do treino. Assinatura do definitivo em 11/10/2022 e publicação no site em 12/10/2022. Transição do Código de Ética registrada nos itens 101–104."
+    },
+    {
+      "id": "quadrix-crn8-2018",
+      "institution": "CRN-8/PR",
+      "board": "Quadrix",
+      "role": "Nutricionista Fiscal Júnior — códigos 300/310, nível superior",
+      "year": 2018,
+      "officialPage": "https://ajuda.quadrix.org.br/pt-BR/articles/8280897-provas-anteriores-realizadas-em-2018",
+      "paper": "CRN-8-PR_2018.zip / CRN-8_2018_Caderno prova_QUADRIX_300_Nut. Fiscal. Júnior _compressed.pdf",
+      "definitiveKey": "CRN-8-PR_2018.zip / 2_CRN-8_concurso_2018_gabarito_definitivo_compressed.pdf",
+      "appliedAt": "2018-10-21",
+      "definitiveAt": "2018-11-07",
+      "candidateCount": 50,
+      "activeCount": 4,
+      "activeOriginalNumbers": [
+        24,
+        30,
+        43,
+        50
+      ],
+      "annulled": [
+        22
+      ],
+      "changed": [],
+      "remainingPending": 45,
+      "reuse": "Arquivo oficial Quadrix permite reprodução apenas para fins didáticos, com atribuição. Referências usadas para síntese factual e comentários próprios; PDFs não republicados.",
+      "status": "Quatro itens ativos. Questão 29 retirada preventivamente em 17/10/2026, versão 2: ambiguidade na alternativa B sobre exame físico. O gabarito histórico E não foi alterado; sessões anteriores mantêm seus snapshots. Questão 22 anulada excluída."
+    },
+    {
+      "id": "autoral-tecnica-batch1",
+      "type": "Questões autorais para complementar lacunas de técnica dietética",
+      "authorialCount": 17,
+      "status": "Enunciados e comentários próprios; referências factuais individuais. Não são itens aplicados por banca.",
+      "reuse": "Questões CC BY-NC-SA 4.0. Obras BCcampus consultadas sob CC BY 4.0; livro comercial apenas como referência factual, sem reprodução de texto, tabela, imagem ou exercício.",
+      "references": [
+        "https://opentextbc.ca/ingredients/",
+        "https://opentextbc.ca/modernpastryandplateddesserts/",
+        "https://www.ibb.unesp.br/Home/ensino/departamentos/educacao/laboratorios/legislacaosanitaria/tecnica_dietetica.pdf"
+      ]
+    },
+    {
+      "id": "quadrix-fundacaoabc-2025",
+      "institution": "Fundação do ABC — Unidade de Apoio Administrativo, Itatiba/SP",
+      "board": "Quadrix",
+      "role": "Nutricionista — código 409, nível superior",
+      "year": 2025,
+      "officialPage": "https://ajuda.quadrix.org.br/pt-BR/articles/11198235-provas-anteriores-realizadas-em-2025",
+      "paper": "FUNDACAO_ABC_02_2025.zip / 409_Nutricionista_QUADRIX_processo_seletivo_02-2025_Fundacao_ABC.pdf",
+      "definitiveKey": "FUNDACAO_ABC_02_2025.zip / Fundação_do_ABC_processo_seletivo-2_2025_gabarito_definitivo_prova_objetiva.pdf",
+      "appliedAt": "2025-11-23",
+      "definitiveAt": "2025-12-17",
+      "candidateCount": 50,
+      "activeCount": 13,
+      "activeOriginalNumbers": [
+        21,
+        22,
+        23,
+        24,
+        31,
+        32,
+        34,
+        37,
+        38,
+        39,
+        40,
+        44,
+        49
+      ],
+      "annulled": [],
+      "excludedHistorical": [
+        25,
+        48
+      ],
+      "remainingPending": 35,
+      "reuse": "Arquivo oficial Quadrix autoriza reprodução apenas para fins didáticos, com atribuição. Comentários próprios; publicações de referência não republicadas.",
+      "status": "13 itens conferidos com a seção 2.16 do definitivo, cargo 409. Questões 25 e 48 históricas fora do treino atual; equivalentes não contados novamente. O outro arquivo Fundação ABC 01/2025 não contém Nutricionista e não entra no inventário de candidatos."
+    },
+    {
+      "id": "autoral-clinica-batch1",
+      "type": "Complemento autoral de Nutrição clínica e Avaliação nutricional",
+      "authorialCount": 15,
+      "status": "Treze itens clínicos e dois de avaliação para lacunas identificadas; não aplicados por banca. Conferência por IA com referências primárias individuais.",
+      "reuse": "Questões e comentários próprios CC BY-NC-SA 4.0. Referências factuais atribuídas, sem copiar documentos ou alegar endosso institucional.",
+      "references": [
+        "https://www.niddk.nih.gov/copyright",
+        "https://pubmed.ncbi.nlm.nih.gov/33125793/"
+      ]
+    },
+    {
+      "id": "quadrix-iier-2023",
+      "institution": "Instituto de Infectologia Emílio Ribas/SP",
+      "board": "Quadrix",
+      "role": "Agente Técnico de Assistência à Saúde — Nutricionista, código 403; graduação exigida",
+      "year": 2023,
+      "contestYear": 2022,
+      "officialPage": "https://quadrix.org.br/informacoes/1175/",
+      "paper": "IIER_2022.zip / 403_NUTRICIONISTA_Cad_Prova_QUADRIX_Emilio_Ribas_concurso_2022.pdf",
+      "definitiveKey": "IIER_2022.zip / 1_EMILIO_RIBAS_concurso_publico_2022_edital_025_2023.pdf",
+      "appliedAt": "2023-01-22",
+      "definitiveAt": "2023-02-14",
+      "candidateCount": 50,
+      "activeCount": 12,
+      "activeOriginalNumbers": [
+        8,
+        15,
+        18,
+        19,
+        20,
+        23,
+        27,
+        29,
+        33,
+        38,
+        45,
+        47
+      ],
+      "annulled": [
+        43
+      ],
+      "remainingPending": 37,
+      "reuse": "Arquivo oficial Quadrix autoriza reprodução apenas para fins didáticos, com fonte citada. Explicações próprias, fontes atribuídas; documentos de pesquisa e dados pessoais não republicados.",
+      "status": "Preliminar comparado ao definitivo da ocupação. Questões anuladas, equivalentes, ambíguas ou com explicações incompletas excluídas do lote ativo. Não é a prova completa liberada."
+    }
   ]
 }

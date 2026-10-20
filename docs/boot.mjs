@@ -12,6 +12,13 @@
     try{previous=localStorage.getItem('bruna-estuda-release');}catch{}
     const changed=Boolean(previous&&previous!==version.release);
     status.textContent=changed?'Atualizando seu espaço…':'Preparando seu espaço…';
+    // O HTML também muda entre versões. Reabrir com a versão evita usar uma entrada antiga em cache.
+    const entry=new URL(location.href);
+    if(entry.searchParams.get('v')!==version.release){
+      entry.searchParams.set('v',version.release);
+      location.replace(entry.href);
+      return;
+    }
     const suffix=`?v=${version.release}`;
     await new Promise((resolve,reject)=>{
       const style=document.querySelector('#app-styles');

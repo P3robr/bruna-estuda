@@ -8,7 +8,14 @@
   <title>Bruna Estuda</title>
   <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
   <link id="app-styles" rel="stylesheet" href="./styles.css">
-  <script type="module" src="./boot.mjs"></script>
+  <script type="module" id="bootstrap">
+    const boot=document.createElement('script');boot.type='module';boot.src=`./boot.mjs${location.search}`;
+    boot.onerror=()=>{
+      document.querySelector('#update-status').textContent='Não foi possível carregar a atualização. Confira a conexão e tente novamente.';
+      const retry=document.querySelector('#retry-update');retry.hidden=false;retry.onclick=()=>location.reload();
+    };
+    document.head.append(boot);
+  </script>
 </head>
 <body>
   <section id="entry" class="entry" aria-labelledby="entry-title">

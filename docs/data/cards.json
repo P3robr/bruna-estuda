@@ -58,5 +58,85 @@
       "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
       "location": "Capítulo 2"
     }
+  },
+  {
+    "id": "card-td-001",
+    "question": "Como reconhecer uma cocção por calor misto?",
+    "answer": "Ela combina uma etapa de calor seco, como dourar em pouca gordura, com outra de calor úmido, como cozinhar com líquido.",
+    "source": {
+      "title": "Moreira, Leise Nascimento — Técnica Dietética, 2016",
+      "url": "https://www.ibb.unesp.br/Home/ensino/departamentos/educacao/laboratorios/legislacaosanitaria/tecnica_dietetica.pdf",
+      "location": "Seção 1.3.2.4, tabela 1.14, p. 31. Consulta factual; sem reprodução de tabelas, exercícios ou trechos do livro."
+    }
+  },
+  {
+    "id": "card-td-002",
+    "question": "O que permite desenvolver a rede de glúten na massa de trigo?",
+    "answer": "A hidratação e o trabalho das proteínas da farinha, especialmente gliadina e glutenina, formando uma rede capaz de reter gases.",
+    "source": {
+      "title": "The BC Cook Articulation Committee — Understanding Ingredients for the Canadian Baker",
+      "url": "https://opentextbc.ca/ingredients/chapter/flour-in-baking/",
+      "location": "Capítulo 9: hidratação, mistura, gliadina, glutenina e desenvolvimento do glúten. Obra sob CC BY 4.0. Síntese e aplicação autorais em português; não são exercícios originais do livro."
+    }
+  },
+  {
+    "id": "card-td-003",
+    "question": "O que caracteriza a gelatinização do amido nativo?",
+    "answer": "Na presença de água e calor, os grânulos incham e a preparação pode engrossar. O comportamento depende do tipo de amido e da formulação.",
+    "source": {
+      "title": "The BC Cook Articulation Committee — Modern Pastry and Plated Dessert Techniques",
+      "url": "https://opentextbc.ca/modernpastryandplateddesserts/chapter/gelatinization/",
+      "location": "Seção Starches: amido, água, aquecimento e viscosidade. Obra sob CC BY 4.0. Síntese e aplicação autorais em português; não são exercícios originais do livro."
+    }
+  },
+  {
+    "id": "card-td-004",
+    "question": "Por que evitar gordura ao bater claras para formar espuma?",
+    "answer": "A gordura interfere na estabilização das bolhas pelas proteínas da clara. O volume da espuma não comprova segurança microbiológica.",
+    "source": {
+      "title": "Moreira, Leise Nascimento — Técnica Dietética, 2016",
+      "url": "https://www.ibb.unesp.br/Home/ensino/departamentos/educacao/laboratorios/legislacaosanitaria/tecnica_dietetica.pdf",
+      "location": "Seção 7.7.1, tabela 7.4, pp. 154–155. Consulta factual; sem reprodução de tabelas, exercícios ou trechos do livro."
+    }
+  },
+  {
+    "id": "card-td-005",
+    "question": "Como a gema ajuda a estabilizar uma emulsão?",
+    "answer": "Componentes anfifílicos, como fosfolipídios, atuam na interface entre as fases aquosa e lipídica.",
+    "source": {
+      "title": "Moreira, Leise Nascimento — Técnica Dietética, 2016",
+      "url": "https://www.ibb.unesp.br/Home/ensino/departamentos/educacao/laboratorios/legislacaosanitaria/tecnica_dietetica.pdf",
+      "location": "Seção 7.7.3, p. 156. Consulta factual; sem reprodução de tabelas, exercícios ou trechos do livro."
+    }
+  },
+  {
+    "id": "card-td-006",
+    "question": "Homogeneizar o leite é o mesmo que pasteurizá-lo?",
+    "answer": "Não. Homogeneização reduz mecanicamente os glóbulos de gordura; pasteurização é tratamento térmico com finalidade sanitária.",
+    "source": {
+      "title": "The BC Cook Articulation Committee — Understanding Ingredients for the Canadian Baker",
+      "url": "https://opentextbc.ca/ingredients/chapter/milk/",
+      "location": "Primeiros parágrafos: divisão mecânica dos glóbulos e estabilidade da emulsão. Obra sob CC BY 4.0. Síntese e aplicação autorais em português; não são exercícios originais do livro."
+    }
+  },
+  {
+    "id": "card-td-007",
+    "question": "Qual diferença central separa Maillard de caramelização?",
+    "answer": "Maillard envolve açúcares redutores e grupos amino. Caramelização resulta de transformações térmicas dos açúcares e não exige proteína.",
+    "source": {
+      "title": "The BC Cook Articulation Committee — Understanding Ingredients for the Canadian Baker",
+      "url": "https://opentextbc.ca/ingredients/chapter/the-application-of-sugar/",
+      "location": "Parágrafos sobre caramelization e Maillard reaction; distinção dos reagentes. Obra sob CC BY 4.0. Síntese e aplicação autorais em português; não são exercícios originais do livro."
+    }
+  },
+  {
+    "id": "card-td-008",
+    "question": "O que é a faixa de plasticidade de uma gordura?",
+    "answer": "É a faixa de condições em que ela pode deformar-se e ser trabalhada sem ficar quebradiça nem excessivamente fluida.",
+    "source": {
+      "title": "The BC Cook Articulation Committee — Understanding Ingredients for the Canadian Baker",
+      "url": "https://opentextbc.ca/ingredients/chapter/functions-of-fat-in-baking/",
+      "location": "Seção Plastic Range: gordura quebradiça quando muito fria e excessivamente mole quando quente. Obra sob CC BY 4.0. Síntese e aplicação autorais em português; não são exercícios originais do livro."
+    }
   }
 ]

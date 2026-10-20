@@ -17,6 +17,8 @@
 [data-subject="Alimentação coletiva"]{--subject-ink:#646621;--subject-bg:#f3f4df}
 [data-subject="Bioquímica e fisiologia da nutrição"]{--subject-ink:#82402d;--subject-bg:#f8ede6}
 [data-subject="Nutrição clínica"]{--subject-ink:#a32d48;--subject-bg:#fdebf0}
+[data-subject="Técnica dietética"]{--subject-ink:#1b687e;--subject-bg:#e7f4fa}
+[data-subject="Noções de Informática"]{--subject-ink:#60412c;--subject-bg:#f4ebe4}
 .subject-link .subject-icon{color:var(--subject-ink,var(--blue));background:var(--subject-bg,var(--pale))}
 .subject-link:hover{border-color:var(--subject-ink,var(--blue))}
 .question-header>span{flex:1;min-width:0;line-height:1.6}

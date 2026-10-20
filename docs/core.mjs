@@ -29,7 +29,7 @@ export function newSession(questions,config,now=Date.now(),id=crypto.randomUUID(
   if(!questions.length||new Set(questions.map(q=>q.id)).size!==questions.length)throw new Error('Sessão vazia ou com questões repetidas.');
   const rules={penalty:config.penalty??0,weights:config.weights??{}};
   if(!Number.isFinite(rules.penalty)||rules.penalty<0||Object.values(rules.weights).some(w=>!Number.isFinite(w)||w<=0))throw new Error('Pontuação inválida.');
-  return {id,mode:config.mode,questions:clone(questions),answers:{},drafts:{},marked:[],index:0,startedAt:now,resumedAt:now,accumulated:0,limitMs:config.limitMs||0,paused:false,pauses:0,finishedAt:null,finishReason:null,rules,preset:config.preset||null};
+  return {id,mode:config.mode,questions:clone(questions),answers:{},drafts:{},marked:[],index:0,startedAt:now,resumedAt:now,accumulated:0,limitMs:config.limitMs||0,paused:false,pauses:0,finishedAt:null,finishReason:null,rules,preset:config.preset?clone(config.preset):null};
 }
 export function confirmAnswer(s,now=Date.now()){
   if(s.paused||s.finishedAt||expired(s,now))throw new Error('Sessão indisponível para responder.');
@@ -87,6 +87,7 @@ export function validateQuestion(q){
   return q;
 }
 function validateSession(s){
+  if(s?.preset!=null&&(!record(s.preset)||!id(s.preset.id)||!string(s.preset.title,200)||!string(s.preset.note,2000)||!string(s.preset.timeNote,1000)||!string(s.preset.sourceURL,2000)||!s.preset.sourceURL.startsWith('https://')||!string(s.preset.sourceLocation,1000)))throw new Error('Regras de prova antiga inválidas no backup.');
   if(!record(s)||!id(s.id)||!['study','exam'].includes(s.mode)||!Array.isArray(s.questions)||s.questions.length<1||s.questions.length>1500||!record(s.answers)||!record(s.drafts)||!Array.isArray(s.marked)||!integer(s.index,0,s.questions.length-1)||!timestamp(s.startedAt)||!timestamp(s.resumedAt)||!Number.isFinite(s.accumulated)||s.accumulated<0||!Number.isFinite(s.limitMs)||s.limitMs<0||typeof s.paused!=='boolean'||!integer(s.pauses,0,1000000)||!(s.finishedAt===null||timestamp(s.finishedAt))||!record(s.rules)||!Number.isFinite(s.rules.penalty)||s.rules.penalty<0||s.rules.penalty>100||!record(s.rules.weights)||Object.entries(s.rules.weights).some(([k,v])=>!string(k,100)||['__proto__','constructor','prototype'].includes(k)||!Number.isFinite(v)||v<=0||v>100))throw new Error('Sessão inválida no backup.');
   s.questions.forEach(validateQuestion);
   const questions=new Map(s.questions.map(q=>[q.id,q]));if(questions.size!==s.questions.length)throw new Error('Questões repetidas no backup.');

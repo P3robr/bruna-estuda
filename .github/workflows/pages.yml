@@ -27,6 +27,7 @@ jobs:
           node-version: '22'
       - name: Conferir aplicação e gerar versão automaticamente
         run: |
+          node scripts/check-acervo.mjs
           node tests/core.test.mjs
           node tests/pin.test.mjs
           node tests/subject-colors.test.mjs

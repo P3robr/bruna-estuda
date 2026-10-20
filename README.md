@@ -1,18 +1,21 @@
 # Bruna Estuda
 
-Plataforma pessoal para estudar para concursos de Nutricionista. Prévia em construção: 74 questões ativas de um mínimo de 800; esta não é a entrega final.
+Plataforma pessoal para estudar para concursos de Nutricionista. A meta desta etapa, alterada pelo usuário em 18/10/2026, foi alcançada: 300 questões ativas, sendo 200 reais e 100 autorais, com explicações de todas as alternativas. Há uma questão pendente preservada fora do treino. A ampliação será retomada depois.
 
-Abra https://p3robr.github.io/bruna-estuda/ no mesmo navegador e perfil. O progresso fica no seu navegador; use Seus dados para exportar e restaurar backups. O PIN da entrada afasta curiosos, mas não protege os arquivos públicos.
+O endereço proposto é https://p3robr.github.io/bruna-estuda/; ainda não foi publicado nem conferido. Publicação e validações finais no navegador continuam pendentes. Código e acervo serão públicos quando a publicação for autorizada. O progresso fica somente no navegador, com exportação e restauração por arquivo. O PIN 1807 afasta curiosos e não protege arquivos públicos.
 
-O pacote no link Baixar atalho contém ABRA AQUI.url para abrir sempre o mesmo endereço. As atualizações publicadas são verificadas a cada abertura. Não há contas, sincronização, rastreamento ou envio de respostas.
+O pacote Baixar atalho contém ABRA AQUI.url e instruções para abrir o endereço fixo. Exige internet; não é cópia offline nem contém o histórico. As mudanças publicadas são verificadas a cada abertura ou recarregamento, sem exigir manutenção da Bruna. O responsável prepara e envia as mudanças de conteúdo; GitHub Actions verifica e publica. Não há contas, sincronização, rastreamento ou envio de respostas.
 
-Fontes e condições de reutilização estão identificadas no acervo e no inventário público. Explicações próprias com conferência automática; sem revisão profissional humana declarada.
+Fontes e condições de reutilização estão identificadas em cada questão e no inventário público. A revisão foi por IA, sem revisão profissional humana. Exemplos didáticos não constituem orientação clínica para pacientes.
 
 ## Manutenção
 
-Os arquivos publicados ficam em docs/. Antes de enviar uma mudança, execute as verificações e gere a versão por último:
+Os arquivos publicados ficam em docs/. GitHub Pages deve usar GitHub Actions. O fluxo .github/workflows/pages.yml executa as conferências, gera a versão e publica automaticamente a cada envio à main. Bruna não executa comandos nem precisa baixar novamente o atalho.
+
+Antes de enviar mudanças, confira o acervo e a lógica; gere a versão por último:
 
 ```text
+node scripts/check-acervo.mjs
 node tests/core.test.mjs
 node tests/pin.test.mjs
 node tests/subject-colors.test.mjs
@@ -20,6 +23,6 @@ node tests/update.test.mjs
 node scripts/release.mjs
 ```
 
-O script scripts/package-launcher.ps1 recria o pacote do atalho. Se o endereço mudar, informe o novo endereço pelo parâmetro SiteUrl, recrie o pacote e depois gere a versão. Uma mudança de endereço também exige exportar e restaurar o progresso.
+O script scripts/package-launcher.ps1 recria o atalho. Se o endereço mudar, use SiteUrl, gere novamente o pacote e depois a versão. A mudança de endereço exige exportar e restaurar o progresso.
 
-GitHub Pages deve usar GitHub Actions. O fluxo .github/workflows/pages.yml executa as verificações, gera a versão e publica docs/ automaticamente a cada envio para main. Bruna não executa comandos nem baixa novamente o atalho para receber atualizações. O conteúdo da pasta de pesquisa, anexos, backups e arquivos pessoais não integra este repositório.
+Materiais internos de pesquisa, PDFs, anexos pessoais, backups, credenciais e resultados de teste não integram este pacote. O conteúdo editorial é preparado no projeto de trabalho e somente os dados publicáveis são copiados para cá.
