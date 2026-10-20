@@ -2,7 +2,7 @@
 
 Plataforma pessoal para estudar para concursos de Nutricionista. A meta desta etapa, alterada pelo usuário em 18/10/2026, foi alcançada: 300 questões ativas, sendo 200 reais e 100 autorais, com explicações de todas as alternativas. Há uma questão pendente preservada fora do treino. A ampliação será retomada depois.
 
-O endereço proposto é https://p3robr.github.io/bruna-estuda/; ainda não foi publicado nem conferido. Publicação e validações finais no navegador continuam pendentes. Código e acervo serão públicos quando a publicação for autorizada. O progresso fica somente no navegador, com exportação e restauração por arquivo. O PIN 1807 afasta curiosos e não protege arquivos públicos.
+Publicado em 20/10/2026: https://p3robr.github.io/bruna-estuda/. A entrada, o PIN e o início com 300 questões foram conferidos no navegador integrado. Código e acervo são públicos. A bateria final de testes no computador da usuária continua pendente. O progresso fica somente no navegador, com exportação e restauração por arquivo. O PIN 1807 afasta curiosos e não protege arquivos públicos.
 
 O pacote Baixar atalho contém ABRA AQUI.url e instruções para abrir o endereço fixo. Exige internet; não é cópia offline nem contém o histórico. As mudanças publicadas são verificadas a cada abertura ou recarregamento, sem exigir manutenção da Bruna. O responsável prepara e envia as mudanças de conteúdo; GitHub Actions verifica e publica. Não há contas, sincronização, rastreamento ou envio de respostas.
 
