@@ -74,4 +74,12 @@ for(const status of ['approved','pending','historical','excluded']){
 }
 assert.match(review(),/não está no acervo atual/);
 assert.deepEqual(historical,original);
+const studySource=app.slice(app.indexOf('function reviewCandidates('),app.indexOf('function setup(mode)'));
+const reviewIds=runInNewContext(studySource+`
+  const questions=[{id:'a',subject:'Nutrição clínica'},{id:'b',subject:'Língua Portuguesa'},{id:'c',subject:'Técnica dietética'}];
+  const rows=[{questionId:'a',correct:false},{questionId:'a',correct:false},{questionId:'b',correct:true}];
+  const {pool,kinds}=reviewCandidates(rows,['a'],['a','b'],questions);
+  JSON.stringify(studyPool(pool,new Set(['Nutrição clínica','Língua Portuguesa']),kinds,new Set(['wrong','favorites','doubts'])).map(q=>q.id));
+`);
+assert.deepEqual(JSON.parse(reviewIds),['a','b']);
 console.log('Atualização: entrada, recursos, falhas e endereço conferidos; revisão informa mudança/retirada sem reescrever o gabarito da tentativa.');
