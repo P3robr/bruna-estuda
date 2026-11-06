@@ -9,7 +9,7 @@ const number=n=>new Intl.NumberFormat('pt-BR',{maximumFractionDigits:2}).format(
 const date=t=>new Date(t).toLocaleString('pt-BR');
 const diff={easy:'Fácil',medium:'Média',hard:'Difícil'};
 const duration=ms=>{const sec=Math.floor(ms/1000);return `${String(Math.floor(sec/3600)).padStart(2,'0')}:${String(Math.floor(sec/60)%60).padStart(2,'0')}:${String(sec%60).padStart(2,'0')}`;};
-let state=blankState(),bank=[],cards=[],db,canWrite=false,lockRelease,writeQueue=Promise.resolve(),pendingWrites=0,busy=false,viewResult=null,reviewIndex=0,cardIndex=0,cardRevealed=false,noticeTimer;
+let state=blankState(),bank=[],cards=[],db,canWrite=false,lockRelease,writeQueue=Promise.resolve(),pendingWrites=0,busy=false,viewResult=null,reviewIndex=0,cardVisit=null,cardSaving=false,noticeTimer;
 const available=()=>bank.filter(q=>q.status==='approved');
 const subjects=()=>[...new Set(available().map(q=>q.subject))].sort((a,b)=>a.localeCompare(b,'pt-BR'));
 function notify(text){$('#notice').textContent=text;clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>$('#notice').textContent='',6500);}
@@ -452,18 +452,119 @@ function revision(){
   if(!studyParams().has('cartoes')){setup('review');return;}
   const subject=studyParams().get('materia');
   const back=subjects().includes(subject)?`#revisao?materia=${encodeURIComponent(subject)}`:'#revisao';
-  main.innerHTML=heading('Revisar','Cartões de revisão','Leia a pergunta e tente lembrar antes de ver a resposta.')+
-    `<div class="actions study-review-links"><a class="button" href="${back}">Voltar</a><a href="#ajustes">Ajustar intervalos</a></div><div id="cards"></div>`;
+  main.innerHTML=`<div class="flash-shell">
+    <div class="flash-nav"><a href="${back}">‹ Voltar à revisão</a><a href="#ajustes">Ajustar intervalos</a></div>
+    ${heading('Revisão ativa','Cartões de revisão','Pense na resposta. Vire o cartão e marque como foi.')}
+    <div id="cards"></div>
+  </div>`;
   renderCards();
 }
-function renderCards(){
-  const due=cards.filter(c=>!state.cards[c.id]||state.cards[c.id].due<=Date.now());
-  if(!due.length){$('#cards').innerHTML='<p class="empty">Nenhum cartão pendente agora. Volte mais tarde ou continue treinando.</p>';return;}
-  cardIndex=Math.min(cardIndex,due.length-1);const card=due[cardIndex];
-  $('#cards').innerHTML=`<section class="panel"><p class="eyebrow">${due.length} cartão(ões) para revisar</p><h3>${esc(card.question)}</h3>${cardRevealed?`<div class="card-answer">${esc(card.answer)}<p><a href="${esc(card.source.url)}" target="_blank" rel="noreferrer">${esc(card.source.title)}</a> · ${esc(card.source.location)}</p></div><div class="actions"><button id="again">Preciso rever</button><button id="remember" class="primary">Lembrei</button></div>`:'<button id="reveal" class="primary">Mostrar resposta</button>'}<p><small>Agenda de produto: ${state.cardIntervals.join(', ')} dias. Preciso rever mantém o cartão para a próxima sessão de revisão. Sem alegação de personalização científica.</small></p></section>`;
-  if(!cardRevealed){$('#reveal').onclick=()=>{cardRevealed=true;renderCards();};return;}
-  async function rate(remember){try{writable();const old=state.cards[card.id]||{step:0};const step=remember?Math.min(3,old.step+1):0;const d=new Date();if(remember)d.setDate(d.getDate()+state.cardIntervals[step-1]);state.cards[card.id]={step,due:remember?d.getTime():Date.now(),revealed:false};await save();cardRevealed=false;cardIndex=0;if(!remember){$('#cards').innerHTML='<p class="note">Cartão mantido para a próxima visita à revisão. Você pode continuar com as questões.</p>';}else renderCards();}catch(e){notify(e.message);}}
-  $('#again').onclick=()=>rate(false);$('#remember').onclick=()=>rate(true);
+function cardSchedule(previous,intervals,remember,now=Date.now()){
+  const step=remember?Math.min(3,(previous?.step??0)+1):0;
+  const due=new Date(now);
+  if(remember)due.setDate(due.getDate()+intervals[step-1]);
+  return {step,due:due.getTime(),revealed:false};
+}
+function renderCards(focus=false){
+  const deck=$('#cards');
+  cardVisit??={queue:cards.filter(card=>(state.cards[card.id]?.due??0)<=Date.now()),index:0,remembered:0,revealed:false};
+  const visit=cardVisit;
+  const total=visit.queue.length;
+  const card=visit.queue[visit.index];
+  if(!card){
+    const retry=visit.index-visit.remembered;
+    deck.innerHTML=`<section class="flash-complete">
+      <span class="flash-stamp" aria-hidden="true">✓</span>
+      <h2 id="flash-done" tabindex="-1">${total?'Rodada concluída':'Baralho em dia'}</h2>
+      <p>${total?`Você passou por ${total} ${total===1?'cartão':'cartões'}.`:'Nenhum cartão está previsto para agora.'}</p>
+      ${total?`<dl class="flash-results"><div><dt>Lembrei</dt><dd>${visit.remembered}</dd></div><div><dt>Preciso rever</dt><dd>${retry}</dd></div></dl>`:''}
+      <div class="actions">${retry?'<button id="flash-retry" class="primary" type="button">Rever pendentes</button>':''}
+      <a class="button" href="#estudar">Voltar a Estudar</a></div>
+    </section>`;
+    if(retry)$('#flash-retry').onclick=()=>{cardVisit=null;renderCards(true);};
+    if(focus)$('#flash-done').focus();
+    return;
+  }
+
+  const previous=state.cards[card.id];
+  const nextDays=state.cardIntervals[Math.min(2,previous?.step??0)];
+  deck.innerHTML=`<div class="flash-meter">
+    <div><span>Cartão <strong>${visit.index+1} de ${total}</strong></span><span>${visit.index} ${visit.index===1?'revisado':'revisados'}</span></div>
+    <progress value="${visit.index}" max="${total}" aria-label="Cartões revisados nesta rodada"></progress>
+  </div>
+  <div class="flash-stack">
+    <div class="flash-rotor" id="flash-rotor">
+      <button id="reveal" class="flash-face flash-front" type="button" aria-labelledby="flash-prompt flash-turn-label">
+        <span class="flash-face-top"><span>Pergunta</span><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="14" height="14" rx="3"/><path d="M7 4h11a3 3 0 0 1 3 3v11M7 12h6m-6 4h4"/></svg></span>
+        <span class="flash-prompt" id="flash-prompt">${esc(card.question)}</span>
+        <span class="flash-face-bottom" id="flash-turn-label">Virar cartão <span aria-hidden="true">↻</span></span>
+      </button>
+      <section class="flash-face flash-back" id="flash-back" aria-labelledby="flash-answer-title" aria-hidden="true" inert>
+        <div class="flash-face-top"><h2 id="flash-answer-title">Resposta</h2></div>
+        <p class="flash-answer" id="flash-answer" tabindex="-1">${esc(card.answer)}</p>
+        <div class="flash-face-bottom"><button type="button" id="flash-unturn">‹ Ver pergunta</button></div>
+      </section>
+    </div>
+  </div>
+  <div id="flash-grading" hidden>
+    <p class="flash-grade-title">Como foi?</p>
+    ${canWrite?'':'<p class="note">Aba em modo de leitura. <a href="#ajustes">Abrir Seus dados</a> para retomar o salvamento.</p>'}
+    <div class="flash-ratings">
+      <button id="again" type="button" ${canWrite?'':'disabled'}><strong>Preciso rever</strong><small>Volta na próxima rodada</small></button>
+      <button id="remember" class="primary" type="button" ${canWrite?'':'disabled'}><strong>Lembrei</strong><small>Revisar em ${nextDays} ${nextDays===1?'dia':'dias'}</small></button>
+    </div>
+    <details class="flash-reference"><summary>Ver fonte</summary><a href="${esc(card.source.url)}" target="_blank" rel="noreferrer">${esc(card.source.title)}</a> · ${esc(card.source.location)}</details>
+  </div>`;
+  const front=$('#reveal'),back=$('#flash-back'),unturn=$('#flash-unturn');
+  const again=$('#again'),remember=$('#remember');
+  function setFace(revealed,moveFocus=true){
+    visit.revealed=revealed;
+    $('#flash-rotor').classList.toggle('is-flipped',revealed);
+    const shown=revealed?back:front;
+    const covered=revealed?front:back;
+    shown.inert=false;
+    shown.removeAttribute('aria-hidden');
+    $('#flash-grading').hidden=!revealed;
+    if(moveFocus)(revealed?$('#flash-answer'):front).focus({preventScroll:true});
+    covered.inert=true;
+    covered.setAttribute('aria-hidden','true');
+  }
+  function disableRating(disabled){
+    again.disabled=remember.disabled=disabled||!canWrite;
+    unturn.disabled=disabled;
+  }
+  async function rate(recalled){
+    if(cardSaving||!visit.revealed||!canWrite)return;
+    cardSaving=true;
+    disableRating(true);
+    const schedule=cardSchedule(previous,state.cardIntervals,recalled);
+    try{
+      writable();
+      state.cards[card.id]=schedule;
+      await save();
+    }catch(error){
+      if(state.cards[card.id]===schedule){
+        if(previous)state.cards[card.id]=previous;
+        else delete state.cards[card.id];
+      }
+      notify(error.message);
+      disableRating(false);
+      if(cardVisit===visit&&deck.isConnected)(recalled?remember:again).focus();
+      return;
+    }finally{
+      cardSaving=false;
+      disableRating(false);
+    }
+    visit.index++;
+    if(recalled)visit.remembered++;
+    visit.revealed=false;
+    if(cardVisit===visit&&deck.isConnected)renderCards(true);
+  }
+  front.onclick=()=>setFace(true);
+  unturn.onclick=()=>setFace(false);
+  again.onclick=()=>rate(false);
+  remember.onclick=()=>rate(true);
+  setFace(visit.revealed,focus);
 }
 function download(data,name){const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);}
 function settings(){
@@ -499,7 +600,7 @@ async function init(){
   }catch(e){main.innerHTML=heading('Acervo indisponível','Não foi possível carregar as questões.')+`<p class="note error">${esc(e.message)} Confira a conexão e recarregue.</p>`;return;}
   try{db=await openDatabase();state=await readState(db);await acquire();if(canWrite)await writeState(db,state);}
   catch(e){canWrite=false;storageMessage(`Armazenamento indisponível: ${e.message}. Não inicie uma sessão sem salvamento.`);}
-  render();window.addEventListener('hashchange',()=>{cardRevealed=false;render();});window.addEventListener('beforeunload',event=>{if(pendingWrites){event.preventDefault();event.returnValue='';}});setInterval(updateTimer,1000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)updateTimer();});
+  render();window.addEventListener('hashchange',()=>{cardVisit=null;render();});window.addEventListener('beforeunload',event=>{if(pendingWrites){event.preventDefault();event.returnValue='';}});setInterval(updateTimer,1000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)updateTimer();});
   if(!state.lastExport||Date.now()-state.lastExport>7*86400000){if(state.sessions.length)notify('Seu progresso merece uma cópia. Exporte o backup em Seus dados.');}
 }
 // Barreira visual para curiosos, não autenticação: o site e o PIN são públicos.

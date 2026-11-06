@@ -82,4 +82,16 @@ const reviewIds=runInNewContext(studySource+`
   JSON.stringify(studyPool(pool,new Set(['Nutrição clínica','Língua Portuguesa']),kinds,new Set(['wrong','favorites','doubts'])).map(q=>q.id));
 `);
 assert.deepEqual(JSON.parse(reviewIds),['a','b']);
+const cardSource=app.slice(app.indexOf('function cardSchedule('),app.indexOf('function renderCards('));
+const schedule=runInNewContext(cardSource+';cardSchedule', {});
+const today=new Date(2026,10,6,12);
+const intervals=[1,3,7];
+for(const [previous,step,days] of [[undefined,1,1],[{step:1},2,3],[{step:2},3,7],[{step:3},3,7]]){
+  const next=schedule(previous,intervals,true,today.getTime());
+  assert.equal(next.step,step);
+  assert.equal(next.due,new Date(2026,10,6+days,12).getTime());
+  assert.equal(next.revealed,false);
+}
+assert.equal(schedule({step:3},intervals,false,today.getTime()).step,0);
+assert.equal(schedule({step:3},intervals,false,today.getTime()).due,today.getTime());
 console.log('Atualização: entrada, recursos, falhas e endereço conferidos; revisão informa mudança/retirada sem reescrever o gabarito da tentativa.');
