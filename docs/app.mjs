@@ -37,6 +37,8 @@ async function acquire(){
   });
 }
 function route(){return (location.hash.slice(1)||'inicio').split('?')[0];}
+const studyRoutes=['estudar','treinar','simulados','revisao'];
+const studyParams=()=>new URLSearchParams(location.hash.split('?')[1]);
 function navigate(path){if(location.hash===`#${path}`)render();else location.hash=path;}
 function heading(kicker,title,text=''){return `<div class="intro"><div><p class="eyebrow">${esc(kicker)}</p><h1>${esc(title)}</h1>${text?`<p>${esc(text)}</p>`:''}</div></div>`;}
 function metric(label,value,note=''){return `<div class="stat"><span>${esc(label)}</span><strong>${esc(value)}</strong><span>${esc(note)}</span></div>`;}
@@ -45,49 +47,177 @@ function home(){
   const errorCounts=new Map();for(const r of rows)if(!r.correct)errorCounts.set(r.subject,(errorCounts.get(r.subject)||0)+1);
   const review=[...errorCounts.entries()].sort((a,b)=>b[1]-a[1])[0];
   main.innerHTML=`<div class="intro"><div><p class="eyebrow">Seu espaço de estudo</p><h1>Vamos dar o próximo passo, Bruna.</h1><p>Cada questão ajuda a entender melhor o que você já sabe e o que merece outra leitura.</p></div><span class="date">${esc(new Date().toLocaleDateString('pt-BR',{day:'numeric',month:'long'}))}</span></div>
-  <div class="home-grid"><section class="panel study-start"><div><p class="eyebrow">${state.active?'De onde você parou':'Comece no seu ritmo'}</p><h2>${state.active?`${state.active.mode==='study'?'Treino':'Simulado'} em andamento`:'Um pouco de estudo. Mais perto do seu objetivo.'}</h2><p>${state.active?`${Object.keys(state.active.answers).length} de ${state.active.questions.length} respostas confirmadas. ${state.active.paused?'Sessão pausada.':'Tempo segue contando.'}`:'Escolha uma matéria e resolva uma questão por vez, com explicações depois de confirmar.'}</p><div class="actions"><a class="button primary" href="#${state.active?'sessao':'treinar'}">${state.active?'Continuar sessão':'Treinar agora'}</a><a class="button" href="#simulados">Fazer simulado</a></div></div><img class="book-art" src="./assets/mark.svg" alt="" width="105" height="105"></section>
+  <div class="home-grid"><section class="panel study-start"><div><p class="eyebrow">${state.active?'De onde você parou':'Comece no seu ritmo'}</p><h2>${state.active?`${state.active.mode==='study'?'Treino':'Simulado'} em andamento`:'Um pouco de estudo. Mais perto do seu objetivo.'}</h2><p>${state.active?`${Object.keys(state.active.answers).length} de ${state.active.questions.length} respostas confirmadas. ${state.active.paused?'Sessão pausada.':'Tempo segue contando.'}`:'Escolha entre praticar questões, simular uma prova ou revisar o que já estudou.'}</p><div class="actions">${state.active?'<a class="button primary" href="#sessao">Continuar sessão</a>':''}<a class="button ${state.active?'':'primary'}" href="#estudar">Estudar</a></div></div><img class="book-art" src="./assets/mark.svg" alt="" width="105" height="105"></section>
   <section class="panel goal-panel"><div class="row"><h3>Seu objetivo de hoje</h3><a href="#ajustes">Editar</a></div><div class="goal-number">${today} <span>/ ${state.goal} respostas</span></div><progress value="${Math.min(today,state.goal)}" max="${state.goal}" aria-label="Progresso da meta diária"></progress><small>${today>=state.goal?'Meta alcançada. Seu esforço conta.':today?'Já começou. Continue no seu ritmo.':'Pode começar com uma questão.'} ${streak(rows)} dia(s) de sequência.</small></section></div>
   <section class="stats" aria-label="Seu progresso">${metric('Questões únicas',stats.unique,'sem contar repetições')}${metric('Tentativas',stats.total,`${stats.correct} acertos · ${stats.wrong} erros`)}${metric('Aproveitamento',percent(stats.rate),'acertos / respostas confirmadas')}${metric('Acervo ativo',available().length,'questões aprovadas para treino')}</section>
-  <div class="section-top"><h2>Treinar por matéria</h2><a href="#treinar">Personalizar treino</a></div><div class="subject-list">${subjects().map((s,i)=>`<a class="subject-link" data-subject="${esc(s)}" href="#treinar?materia=${encodeURIComponent(s)}"><span class="subject-icon">${String(i+1).padStart(2,'0')}</span><span>${esc(s)}<small>${available().filter(q=>q.subject===s).length} questões</small></span><span class="chevron" aria-hidden="true">›</span></a>`).join('')}</div>
-  <div class="home-grid"><section><div class="section-top"><h2>Uma boa próxima revisão</h2></div><div class="note">${review?`Você teve ${review[1]} erro(s) em ${esc(review[0])}. Vale revisitar as explicações.`:'As sugestões aparecem a partir das suas respostas. Sem pressa: comece por uma matéria.'} <a href="#revisao">Abrir revisão</a></div></section><section><div class="section-top"><h2>Sua evolução</h2><a href="#historico">Ver histórico</a></div><p class="muted">${stats.total?'Veja primeiras tentativas, repetições e resultados separados por modo.':'Seu histórico começa quando você confirmar a primeira resposta.'}</p></section></div>
+  <div class="section-top"><h2>Estudar por matéria</h2></div><div class="subject-list">${subjects().map((s,i)=>`<a class="subject-link" data-subject="${esc(s)}" href="#estudar?materia=${encodeURIComponent(s)}"><span class="subject-icon">${String(i+1).padStart(2,'0')}</span><span>${esc(s)}<small>${available().filter(q=>q.subject===s).length} questões</small></span><span class="chevron" aria-hidden="true">›</span></a>`).join('')}</div>
+  <div class="home-grid"><section><div class="section-top"><h2>Uma boa próxima revisão</h2></div><div class="note">${review?`Você teve ${review[1]} erro(s) em ${esc(review[0])}. Vale revisitar as explicações.`:'As sugestões aparecem a partir das suas respostas. Sem pressa: comece por uma matéria.'}</div></section><section><div class="section-top"><h2>Sua evolução</h2><a href="#historico">Ver histórico</a></div><p class="muted">${stats.total?'Veja primeiras tentativas, repetições e resultados separados por modo.':'Seu histórico começa quando você confirmar a primeira resposta.'}</p></section></div>
   ${available().length<300?`<p class="note warning" style="margin-top:28px">Acervo em construção: ${available().length} questões ativas para a meta desta etapa de 300. A ampliação posterior foi adiada. <a href="#acervo">Ver cobertura e pendências</a>.</p>`:''}`;
 }
-function setup(mode){
-  const preselected=new URLSearchParams(location.hash.split('?')[1]||'').get('materia')||'';
-  main.innerHTML=heading(mode==='study'?'Aprender praticando':'Ensaio de prova',mode==='study'?'O que vamos estudar?':'Monte seu simulado.',mode==='study'?'A correção aparece depois de confirmar. Você decide quando seguir.':'Gabarito e explicações aparecem somente depois de finalizar.')+`
-  ${state.active?'<p class="note warning">Há uma sessão em andamento. Continue ou finalize antes de iniciar outra. <a href="#sessao">Continuar</a></p>':''}
-  <form id="setup" class="panel"><div class="fields"><label class="field grow">Matéria<select name="subject"><option value="">Todas as matérias</option>${subjects().map(s=>`<option ${s===preselected?'selected':''}>${esc(s)}</option>`).join('')}</select></label><label class="field grow">Assunto<select name="topic"><option value="">Todos os assuntos</option></select></label><label class="field">Dificuldade<select name="difficulty"><option value="">Mista</option>${Object.entries(diff).map(([v,t])=>`<option value="${v}">${t}</option>`).join('')}</select><small>Estimativa editorial, sem classificação oficial.</small></label></div>
-  <div class="fields"><label class="field">Quantidade<input name="count" type="number" min="1" max="1500" value="${Math.min(10,available().length)||1}" required></label>${mode==='exam'?'<label class="field">Tempo<select name="timer"><option value="0">Livre</option><option value="30">30 minutos</option><option value="60">60 minutos</option><option value="120">120 minutos</option><option value="custom">Personalizado</option></select></label><label class="field" id="custom-time" hidden>Minutos<input name="minutes" type="number" min="1" max="600" value="60"></label>':''}</div>
-  ${mode==='exam'?`<details><summary>Opções avançadas: distribuição, pesos e penalidade</summary><p class="muted">Para distribuir por matéria, selecione Todas as matérias acima e preencha todas as quantidades; a soma deve corresponder ao total solicitado. Deixe todas vazias para sorteio geral.</p><div class="table-wrap"><table><thead><tr><th>Matéria</th><th>Quantidade</th><th>Peso por questão</th></tr></thead><tbody>${subjects().map((s,i)=>`<tr><td>${esc(s)}</td><td><input aria-label="Quantidade: ${esc(s)}" name="quota-${i}" type="number" min="0" max="1500" placeholder="Automática"></td><td><input aria-label="Peso: ${esc(s)}" name="weight-${i}" type="number" min="0.01" max="100" step="0.01" value="1"></td></tr>`).join('')}</tbody></table></div><label class="field">Desconto por erro (multiplicado pelo peso)<input name="penalty" type="number" min="0" max="100" step="0.01" value="0"><small>0: sem desconto. 1: cada erro desconta o peso de um acerto. Em branco vale zero.</small></label></details>`:''}
-  <div class="note"><strong>Tempo e salvamento</strong><br>Pausar congela o tempo e oculta a questão. Fechar sem pausar mantém a contagem. Ao voltar depois do prazo, o simulado é finalizado uma única vez. Alterações no relógio do computador podem afetar a contagem. Progresso salvo neste navegador.</div>
-  <p id="available" class="muted" aria-live="polite"></p><p id="form-error" class="danger" role="alert"></p><button class="primary" ${state.active||!canWrite?'disabled':''}>${mode==='study'?'Começar treino':'Começar simulado'}</button></form>
-  ${mode==='exam'?`<section class="panel" style="margin-top:24px"><h2>Provas antigas · recortes adaptados</h2>${oldExams.map(exam=>`<h3>${esc(exam.title)}</h3><p>${esc(exam.note)}</p><p><strong>${exam.numbers.length} questões, na ordem original.</strong> O edital reservava ${exam.originalMinutes} minutos para a objetiva e a redação juntas.</p><div class="fields"><label class="field">Tempo do recorte<select id="past-time-${esc(exam.id)}"><option value="proportional">Ajustado: ${Math.ceil(exam.originalMinutes*exam.numbers.length/exam.originalCount)} minutos</option><option value="original">Manter ${exam.originalMinutes} minutos do edital</option><option value="free">Livre</option></select><small>Ajuste proporcional é escolha de treino, sem duração oficial própria.</small></label></div><p><a href="${esc(exam.sourceURL)}" target="_blank" rel="noreferrer">Consultar edital e regras de origem</a></p><button data-past-exam="${esc(exam.id)}" ${state.active||!canWrite?'disabled':''}>Começar recorte adaptado</button>`).join('')}<p id="past-error" class="danger" role="alert"></p><p class="muted">SES-DF/2014 e demais provas continuam em conferência. Nenhuma prova completa liberada.</p></section>`:''}`;
-  const form=$('#setup');
-  function updateTopics(){const s=form.elements.subject.value;const topics=[...new Set(available().filter(q=>!s||q.subject===s).map(q=>q.topic))].sort();form.elements.topic.innerHTML='<option value="">Todos os assuntos</option>'+topics.map(t=>`<option>${esc(t)}</option>`).join('');}
-  function filtered(){return available().filter(q=>(!form.elements.subject.value||q.subject===form.elements.subject.value)&&(!form.elements.topic.value||q.topic===form.elements.topic.value)&&(!form.elements.difficulty.value||q.difficulty===form.elements.difficulty.value));}
-  function updateCount(){const n=filtered().length;$('#available').textContent=`${n} questões disponíveis com estes filtros. Sem repetições dentro da sessão.`;if(mode==='exam'){const custom=form.elements.timer.value==='custom';$('#custom-time').hidden=!custom;form.elements.minutes.disabled=!custom;form.elements.minutes.required=custom;}}
-  form.elements.subject.onchange=()=>{updateTopics();updateCount();};form.onchange=updateCount;updateTopics();updateCount();
-  main.querySelectorAll('[data-past-exam]').forEach(button=>button.onclick=async()=>{
-    if(busy)return;busy=true;
-    try{writable();if(state.active)throw new Error('Finalize a sessão atual primeiro.');const {questions,config}=prepareOldExam(bank,button.dataset.pastExam,$(`#past-time-${button.dataset.pastExam}`).value);state.active=newSession(questions,config);await save();navigate('sessao');}
-    catch(error){$('#past-error').textContent=error.message;}finally{busy=false;}
+function study(){
+  const subject=studyParams().get('materia');
+  const suffix=subjects().includes(subject)?`?materia=${encodeURIComponent(subject)}`:'';
+  const modes=[
+    ['treinar','Treinar','Confira a resposta e a explicação logo depois de confirmar cada questão.'],
+    ['simulados','Fazer simulado','Resolva como em uma prova. Veja o gabarito só no final.'],
+    ['revisao','Revisar','Refaça questões que errou ou marcou. Estude com cartões de revisão.']
+  ];
+  main.innerHTML=heading('Estudar','Como você quer estudar?',suffix?`Matéria escolhida: ${subject}.`:'Escolha o tipo de estudo para hoje.')+
+    `<div class="study-modes">${modes.map(([path,title,text])=>`<a class="button study-mode" href="#${path}${path==='revisao'?'':suffix}"><strong>${title}</strong><span>${text}</span><span class="study-chevron" aria-hidden="true">›</span></a>`).join('')}</div>`+
+    (state.active?'<p class="note">Você tem uma sessão em andamento. <a href="#sessao">Continuar sessão</a></p>':'');
+}
+function choiceOptions(name,options,selected){
+  return options.map(([value,label,disabled])=>`<label class="study-choice"><input type="radio" name="${name}" value="${esc(value)}" ${value===selected?'checked':''} ${disabled?'disabled':''}><span>${esc(label)}</span></label>`).join('');
+}
+function choiceGroup(name,title,options,selected){
+  return `<fieldset class="study-group"><legend>${title}</legend><div class="study-choices">${choiceOptions(name,options,selected)}</div></fieldset>`;
+}
+function selectedChoice(form,name){
+  return form.querySelector(`input[name="${name}"]:checked`)?.value??'';
+}
+function questionCount(max){
+  return `<fieldset class="study-group"><legend>Quantas questões?</legend><div class="study-choices">${[1,5,10,20,30].map(n=>`<button type="button" data-count="${n}" aria-pressed="false">${n}</button>`).join('')}</div><label class="field study-count">Quantidade<input name="count" type="number" min="1" max="${max||1}" value="${Math.min(10,max)||1}" required></label></fieldset>`;
+}
+function syncCount(form,max,adjust){
+  const count=form.elements.count;
+  count.max=Math.max(1,max);
+  if(adjust&&Number(count.value)>Number(count.max))count.value=count.max;
+  form.querySelectorAll('[data-count]').forEach(button=>{
+    button.hidden=Number(button.dataset.count)>max;
+    button.setAttribute('aria-pressed',String(button.dataset.count===count.value));
+    button.onclick=()=>{count.value=button.dataset.count;count.dispatchEvent(new Event('input',{bubbles:true}));};
   });
-  form.onsubmit=async e=>{e.preventDefault();if(busy)return;busy=true;
-    try{writable();if(state.active)throw new Error('Finalize a sessão atual primeiro.');if(!form.reportValidity())return;
-      const total=Number(form.elements.count.value);let questions;const config={mode,weights:{},penalty:0,limitMs:0};
-      if(mode==='exam'){
-        config.penalty=Number(form.elements.penalty.value);const timer=form.elements.timer.value;config.limitMs=60000*(timer==='custom'?Number(form.elements.minutes.value):Number(timer));
+}
+function setup(mode){
+  const isExam=mode==='exam';
+  const preselected=studyParams().get('materia');
+  const options=subjects();
+  const subject=options.includes(preselected)?preselected:'';
+  const canStart=canWrite&&!state.active;
+  const title=isExam?'Fazer simulado':'Treinar';
+  const back=subject?`#estudar?materia=${encodeURIComponent(subject)}`:'#estudar';
+  main.innerHTML=heading('Estudar',title,isExam?'Veja o gabarito e as explicações ao finalizar.':'Veja o gabarito e a explicação depois de confirmar cada resposta.')+
+  `${state.active?'<p class="note warning">Continue ou finalize a sessão atual antes de começar outra. <a href="#sessao">Continuar sessão</a></p>':''}
+  ${isExam?`<details class="panel study-exams" id="study-exams"><summary>Usar uma prova anterior</summary>${oldExams.map(exam=>`<h3>${esc(exam.title)}</h3><p>${esc(exam.note)}</p><p><strong>${exam.numbers.length} questões, na ordem original.</strong> O edital reservava ${exam.originalMinutes} minutos para a objetiva e a redação juntas.</p><div class="fields"><label class="field">Tempo do recorte<select id="past-time-${esc(exam.id)}"><option value="proportional">Ajustado: ${Math.ceil(exam.originalMinutes*exam.numbers.length/exam.originalCount)} minutos</option><option value="original">Manter ${exam.originalMinutes} minutos do edital</option><option value="free">Livre</option></select><small>Ajuste proporcional é escolha de treino, sem duração oficial própria.</small></label></div><p><a href="${esc(exam.sourceURL)}" target="_blank" rel="noreferrer">Consultar edital e regras de origem</a></p><button data-past-exam="${esc(exam.id)}" ${state.active||!canWrite?'disabled':''}>Começar recorte adaptado</button>`).join('')}<p id="past-error" class="danger" role="alert"></p><p class="muted">SES-DF/2014 e demais provas continuam em conferência. Nenhuma prova completa liberada.</p></details>`:''}
+  <form id="setup" class="panel study-panel">
+    <section id="study-subject">
+      <p class="eyebrow">Etapa 1 de 2</p>
+      <h2 tabindex="-1">O que você quer estudar?</h2>
+      ${choiceGroup('subject','Matéria',[['','Todas as matérias'],...options.map(s=>[s,s])],subject)}
+      <div class="actions"><a class="button" href="${back}">Voltar</a><button id="study-next" class="primary" type="button">Continuar</button></div>
+    </section>
+    <section id="study-config" hidden>
+      <p class="eyebrow">Etapa 2 de 2</p>
+      <h2 tabindex="-1">Prepare sua sessão</h2>
+      <p id="study-selection" class="muted"></p>
+      ${questionCount(available().length)}
+      ${isExam?choiceGroup('timer','Tempo',[['0','Sem limite'],['30','30 min'],['60','60 min'],['120','120 min'],['custom','Personalizado']],'0')+
+        '<label class="field study-count" id="custom-time" hidden>Duração em minutos<input name="minutes" type="number" min="1" max="600" value="60" disabled></label>':''}
+      <details><summary>Filtrar por assunto ou dificuldade</summary>
+        <fieldset class="study-group"><legend>Assunto</legend><div class="study-choices" id="study-topics"></div></fieldset>
+        ${choiceGroup('difficulty','Dificuldade',[['','Mista'],...Object.entries(diff)],'')}
+        <small>A dificuldade é uma estimativa editorial.</small>
+      </details>
+      ${isExam?`<details><summary>Distribuição, pesos e penalidade</summary><p class="muted">Para distribuir por matéria, escolha Todas as matérias na etapa anterior e preencha todas as quantidades; a soma deve corresponder ao total solicitado. Deixe todas vazias para sorteio geral.</p><div class="table-wrap"><table><thead><tr><th>Matéria</th><th>Quantidade</th><th>Peso por questão</th></tr></thead><tbody>${subjects().map((s,i)=>`<tr><td>${esc(s)}</td><td><input aria-label="Quantidade: ${esc(s)}" name="quota-${i}" type="number" min="0" max="1500" placeholder="Automática"></td><td><input aria-label="Peso: ${esc(s)}" name="weight-${i}" type="number" min="0.01" max="100" step="0.01" value="1"></td></tr>`).join('')}</tbody></table></div><label class="field">Desconto por erro (multiplicado pelo peso)<input name="penalty" type="number" min="0" max="100" step="0.01" value="0"><small>0: sem desconto. 1: cada erro desconta o peso de um acerto. Em branco vale zero.</small></label></details>`:''}
+      <p id="available" class="muted" aria-live="polite"></p>
+      <p id="form-error" class="danger" role="alert"></p>
+      <div class="actions"><button id="study-back" type="button">Voltar</button><button id="start-study" class="primary" type="submit" ${canStart?'':'disabled'}>${isExam?'Começar simulado':'Começar treino'}</button></div>
+    </section>
+  </form>`;
+
+  const form=$('#setup');
+  const get=name=>selectedChoice(form,name);
+  const first=$('#study-subject');
+  const second=$('#study-config');
+  function updateTopics(){
+    const subject=get('subject');
+    const topics=[...new Set(available().filter(q=>!subject||q.subject===subject).map(q=>q.topic))].sort((a,b)=>a.localeCompare(b,'pt-BR'));
+    $('#study-topics').innerHTML=choiceOptions('topic',[['','Todos os assuntos'],...topics.map(t=>[t,t])],'');
+    $('#study-selection').textContent=subject||'Todas as matérias';
+  }
+  function filtered(){
+    const subject=get('subject'),topic=get('topic'),difficulty=get('difficulty');
+    return available().filter(q=>(!subject||q.subject===subject)&&(!topic||q.topic===topic)&&(!difficulty||q.difficulty===difficulty));
+  }
+  function updateCount(adjust){
+    const count=filtered().length;
+    syncCount(form,count,adjust);
+    $('#available').textContent=count?`${count} questões disponíveis. Sem repetições na sessão.`:'Nenhuma questão com esses filtros. Ajuste o assunto ou a dificuldade.';
+    $('#start-study').disabled=!canStart||!count;
+  }
+  function showConfig(show){
+    first.hidden=show;
+    second.hidden=!show;
+    if(isExam)$('#study-exams').hidden=show;
+    const title=(show?second:first).querySelector('h2');
+    title.focus({preventScroll:true});
+    title.scrollIntoView({block:'center'});
+  }
+  $('#study-next').onclick=()=>showConfig(true);
+  $('#study-back').onclick=()=>showConfig(false);
+  form.oninput=event=>{if(event.target.name==='count')syncCount(form,filtered().length,false);};
+  form.onchange=event=>{
+    const name=event.target.name;
+    if(name==='subject')updateTopics();
+    if(['subject','topic','difficulty'].includes(name))updateCount(true);
+    if(name==='timer'){
+      const custom=get('timer')==='custom';
+      $('#custom-time').hidden=!custom;
+      form.elements.minutes.disabled=!custom;
+      form.elements.minutes.required=custom;
+    }
+  };
+  form.addEventListener('invalid',event=>{
+    const details=event.target.closest('details');
+    if(details)details.open=true;
+  },true);
+  updateTopics();
+  updateCount(true);
+
+  main.querySelectorAll('[data-past-exam]').forEach(button=>button.onclick=async()=>{
+    if(busy)return;
+    busy=true;
+    try{
+      writable();
+      if(state.active)throw new Error('Finalize a sessão atual primeiro.');
+      const {questions,config}=prepareOldExam(bank,button.dataset.pastExam,$(`#past-time-${button.dataset.pastExam}`).value);
+      state.active=newSession(questions,config);
+      await save();
+      navigate('sessao');
+    }catch(error){$('#past-error').textContent=error.message;}
+    finally{busy=false;}
+  });
+  form.onsubmit=async event=>{
+    event.preventDefault();
+    if(second.hidden){showConfig(true);return;}
+    if(busy)return;
+    busy=true;
+    try{
+      writable();
+      if(state.active)throw new Error('Finalize a sessão atual primeiro.');
+      if(!form.reportValidity())return;
+      const total=Number(form.elements.count.value);
+      const config={mode,weights:{},penalty:0,limitMs:0};
+      let questions;
+      if(isExam){
+        config.penalty=Number(form.elements.penalty.value);
+        const timer=get('timer');
+        config.limitMs=60000*(timer==='custom'?Number(form.elements.minutes.value):Number(timer));
         if(!Number.isInteger(config.limitMs)||config.limitMs<0||config.limitMs>36000000)throw new Error('Duração inválida.');
-        const quotas=subjects().map((s,i)=>({s,raw:form.elements[`quota-${i}`].value,n:Number(form.elements[`quota-${i}`].value)}));
-        subjects().forEach((s,i)=>config.weights[s]=Number(form.elements[`weight-${i}`].value));
+        const quotas=options.map((s,i)=>({s,raw:form.elements[`quota-${i}`].value,n:Number(form.elements[`quota-${i}`].value)}));
+        options.forEach((s,i)=>config.weights[s]=Number(form.elements[`weight-${i}`].value));
         if(quotas.some(q=>q.raw!=='')){
-          if(form.elements.subject.value)throw new Error('Para distribuir, selecione Todas as matérias.');
+          if(get('subject'))throw new Error('Para distribuir, selecione Todas as matérias.');
           if(quotas.some(q=>!Number.isInteger(q.n)||q.n<0)||quotas.reduce((n,q)=>n+q.n,0)!==total)throw new Error('A soma das quantidades por matéria deve corresponder ao total.');
           questions=quotas.flatMap(q=>q.n?choose(filtered().filter(item=>item.subject===q.s),q.n):[]);
         }
       }
-      questions??=choose(filtered(),total);state.active=newSession(questions,config);await save();navigate('sessao');
-    }catch(err){$('#form-error').textContent=err.message;}finally{busy=false;}
+      questions??=choose(filtered(),total);
+      state.active=newSession(questions,config);
+      await save();
+      navigate('sessao');
+    }catch(error){$('#form-error').textContent=error.message;}
+    finally{busy=false;}
   };
 }
 function explanation(q,answer){
@@ -115,7 +245,7 @@ async function questionActions(s,review=false){
 }
 async function move(n){try{writable();state.active.index=Math.max(0,Math.min(state.active.questions.length-1,state.active.index+n));await save();render();}catch(e){notify(e.message);}}
 function session(){
-  const s=state.active;if(!s){main.innerHTML=heading('Sua sessão','Nenhuma sessão em andamento.')+'<a class="button primary" href="#treinar">Começar treino</a>';return;}
+  const s=state.active;if(!s){main.innerHTML=heading('Sua sessão','Nenhuma sessão em andamento.')+'<a class="button primary" href="#estudar">Estudar</a>';return;}
   main.innerHTML=`<div class="session-top"><div><p class="eyebrow">${s.mode==='study'?'Modo estudo':'Modo simulado · correção ao finalizar'}</p><h1>Uma questão de cada vez.</h1>${s.preset?`<p class="muted">${esc(s.preset.title)} · recorte adaptado</p>`:''}</div><div class="actions"><span id="timer" class="timer" aria-label="Tempo da sessão"></span><button id="pause">${s.paused?'Retomar':'Pausar'}</button><button id="finish">Finalizar</button></div></div>${s.paused?'<section class="panel paused"><p class="eyebrow">Pode respirar</p><h2>Sessão pausada.</h2><p>Questões ocultas. O tempo está congelado.</p><button id="resume" class="primary">Retomar estudo</button></section>':`<div class="session-grid"><aside class="panel map" aria-label="Mapa de questões"><h2>Sua sessão</h2><small>${Object.keys(s.answers).length} de ${s.questions.length} confirmadas</small><div class="map-grid">${s.questions.map((q,i)=>`<button data-index="${i}" class="${i===s.index?'current':''} ${s.answers[q.id]?'confirmed':''} ${s.marked.includes(q.id)?'flagged':''}" aria-label="Questão ${i+1}${s.answers[q.id]?', confirmada':', não respondida'}${s.marked.includes(q.id)?', marcada para revisão':''}" ${i===s.index?'aria-current="step"':''}>${i+1}</button>`).join('')}</div><p class="map-legend">Contorno: atual<br>Fundo azul: confirmada<br>?: marcada para revisão<br>Branco: não respondida</p><a href="#inicio">Voltar ao início</a></aside><article class="panel question">${questionBody(s.questions[s.index],s)}</article></div>`}`;
   const toggle=async()=>{try{writable();if(s.paused)resume(s);else pause(s);await save();render(false);}catch(e){notify(e.message);}};
   $('#pause').onclick=toggle;if($('#resume'))$('#resume').onclick=toggle;
@@ -137,7 +267,7 @@ function result(){
   const r=score(s);main.innerHTML=heading('Sessão finalizada',s.mode==='study'?'Mais um passo dado.':'Seu resultado.',`${date(s.finishedAt)} · ${s.finishReason==='expired'?'Tempo esgotado':'Finalização manual'} · ${s.pauses} pausa(s) · ${duration(s.accumulated)} de tempo ativo`)+`
   ${s.preset?`<section class="note"><strong>${esc(s.preset.title)} · adaptação</strong><p>${esc(s.preset.note)}</p><p>${esc(s.preset.timeNote)}</p><a href="${esc(s.preset.sourceURL)}" target="_blank" rel="noreferrer">Fonte das regras de origem</a></section>`:''}
   <section class="panel"><div class="result-score">${number(r.net)} <small>/ ${number(r.max)} pontos possíveis</small></div><p class="muted">Acerto soma o peso. Erro desconta ${number(s.rules.penalty)} × peso. Em branco vale zero. Pesos: ${Object.entries(s.rules.weights).map(([k,v])=>`${esc(k)} ${number(v)}`).join('; ')||'1 por questão'}.</p><div class="stats">${metric('Acertos',r.correct)}${metric('Erros',r.wrong)}${metric('Em branco',r.blank)}${metric('Sobre o total',percent(r.totalRate),`${r.correct} / ${r.total}`)}</div><p>Aproveitamento nas respostas: <strong>${percent(r.answeredRate)}</strong> (${r.correct} / ${r.correct+r.wrong}). Este resultado não estima probabilidade de aprovação.</p><div class="table-wrap"><table><thead><tr><th>Matéria</th><th>Acertos</th><th>Erros</th><th>Em branco</th><th>Sobre o total</th></tr></thead><tbody>${Object.entries(r.subjects).map(([k,v])=>`<tr><td>${esc(k)}</td><td>${v.correct}</td><td>${v.wrong}</td><td>${v.blank}</td><td>${percent(v.correct/v.total)} (${v.total} questões)</td></tr>`).join('')}</tbody></table></div></section>
-  <div class="section-top"><h2>Rever questão ${reviewIndex+1} de ${s.questions.length}</h2><div class="actions"><button id="prev-review" ${reviewIndex===0?'disabled':''}>Anterior</button><button id="next-review" ${reviewIndex===s.questions.length-1?'disabled':''}>Próxima</button></div></div><article class="panel question">${questionBody(s.questions[reviewIndex],{...s,index:reviewIndex},true)}</article><p><a href="#historico">Ver histórico</a> · <a href="#treinar">Novo treino</a></p>`;
+  <div class="section-top"><h2>Rever questão ${reviewIndex+1} de ${s.questions.length}</h2><div class="actions"><button id="prev-review" ${reviewIndex===0?'disabled':''}>Anterior</button><button id="next-review" ${reviewIndex===s.questions.length-1?'disabled':''}>Próxima</button></div></div><article class="panel question">${questionBody(s.questions[reviewIndex],{...s,index:reviewIndex},true)}</article><p><a href="#historico">Ver histórico</a> · <a href="#estudar">Estudar de novo</a></p>`;
   $('#prev-review').onclick=()=>{reviewIndex--;render(false);};$('#next-review').onclick=()=>{reviewIndex++;render(false);};questionActions({...s,index:reviewIndex},true);
 }
 function history(){
@@ -153,11 +283,59 @@ function history(){
   main.querySelectorAll('select').forEach(n=>n.onchange=update);update();
 }
 function revision(){
-  main.innerHTML=heading('Revisitar para lembrar','O que merece outra leitura?','Refaça questões em uma nova tentativa. O resultado anterior continua no histórico.')+`<section class="panel"><div class="fields"><label class="field grow">Revisar<select id="review-filter"><option value="wrong">Questões erradas</option><option value="favorites">Favoritas</option><option value="doubts">Com dúvida</option><option value="correct">Já acertadas</option><option value="all">Todas as respondidas</option></select></label><label class="field">Quantidade<input id="review-count" type="number" min="1" max="1500" value="10"></label><label class="field">Ordem<select id="review-order"><option value="errors">Erros recorrentes primeiro</option><option value="random">Aleatória</option></select></label></div><p id="review-available" class="muted"></p><button id="start-review" class="primary">Começar revisão</button>${state.active?'<p class="note">Finalize a sessão em andamento antes de começar outra. <a href="#sessao">Continuar</a></p>':''}</section><div class="section-top"><h2>Cartões de revisão</h2><a href="#ajustes">Ajustar intervalos</a></div><div id="cards"></div>`;
-  function candidates(){const rows=attempts(state),kind=$('#review-filter').value;const counts=new Map();for(const r of rows)if(!r.correct)counts.set(r.questionId,(counts.get(r.questionId)||0)+1);return available().filter(q=>kind==='wrong'?counts.has(q.id):kind==='favorites'||kind==='doubts'?state[kind].includes(q.id):kind==='correct'?rows.some(r=>r.questionId===q.id&&r.correct):rows.some(r=>r.questionId===q.id)).sort((a,b)=>(counts.get(b.id)||0)-(counts.get(a.id)||0));}
-  function update(){$('#review-available').textContent=`${candidates().length} questões disponíveis. Itens sem aprovação atual ficam fora desta revisão; suas versões antigas continuam no histórico.`;}$('#review-filter').onchange=update;update();
-  $('#start-review').onclick=async()=>{try{writable();if(state.active)throw new Error('Continue ou finalize a sessão em andamento.');const n=Number($('#review-count').value),items=candidates();if(n<1||!Number.isInteger(n)||n>items.length)throw new Error(`Disponíveis: ${items.length}. Ajuste a quantidade.`);const qs=$('#review-order').value==='random'?choose(items,n):items.slice(0,n);state.active=newSession(qs,{mode:'study'});await save();navigate('sessao');}catch(e){notify(e.message);}};
+  const kinds=[['wrong','Questões erradas'],['favorites','Favoritas'],['doubts','Com dúvida'],['correct','Já acertadas'],['all','Todas as respondidas']];
+  const rows=attempts(state);
+  const errors=new Map();
+  for(const row of rows)if(!row.correct)errors.set(row.questionId,(errors.get(row.questionId)||0)+1);
+  const answered=new Set(rows.map(row=>row.questionId));
+  const correct=new Set(rows.filter(row=>row.correct).map(row=>row.questionId));
+  const groups={
+    wrong:errors,
+    favorites:new Set(state.favorites),
+    doubts:new Set(state.doubts),
+    correct,
+    all:answered
+  };
+  const approved=available().sort((a,b)=>(errors.get(b.id)||0)-(errors.get(a.id)||0));
+  const lists=new Map(kinds.map(([kind])=>[kind,approved.filter(q=>groups[kind].has(q.id))]));
+  const initial=kinds.find(([kind])=>lists.get(kind).length)?.[0];
+  main.innerHTML=heading('Estudar','Revisar','Refaça questões ou relembre o conteúdo com cartões.')+
+    `<div class="actions study-review-links"><a class="button" href="#estudar">Voltar</a><a class="button" href="#revisao?cartoes">Ir para os cartões</a></div>
+    ${state.active?'<p class="note warning">Finalize a sessão em andamento antes de começar outra. <a href="#sessao">Continuar sessão</a></p>':''}
+    <form id="review-setup" class="panel study-panel"><h2>Refazer questões</h2>
+      ${choiceGroup('kind','O que você quer revisar?',kinds.map(([kind,label])=>[kind,`${label} · ${lists.get(kind).length}`,!lists.get(kind).length]),initial)}
+      ${initial?questionCount(lists.get(initial).length)+`<details><summary>Alterar ordem</summary>${choiceGroup('order','Ordem das questões',[['errors','Erros recorrentes primeiro'],['random','Aleatória']],'errors')}</details>
+      <p id="review-available" class="muted" aria-live="polite"></p><p id="review-error" class="danger" role="alert"></p><button class="primary" ${state.active||!canWrite?'disabled':''}>Começar revisão</button>`:'<p class="note">As questões aparecem aqui depois que você responder ou marcar alguma durante o estudo. Os cartões já estão disponíveis abaixo.</p>'}
+    </form>
+    <div class="section-top"><h2 id="cards-title" tabindex="-1">Cartões de revisão</h2><a href="#ajustes">Ajustar intervalos</a></div><div id="cards"></div>`;
   renderCards();
+  if(!initial)return;
+  const form=$('#review-setup');
+  const candidates=()=>lists.get(selectedChoice(form,'kind'));
+  function updateCount(adjust){
+    syncCount(form,candidates().length,adjust);
+    $('#review-available').textContent=`${candidates().length} questões disponíveis.`;
+  }
+  form.onchange=event=>{if(event.target.name==='kind')updateCount(true);};
+  form.oninput=event=>{if(event.target.name==='count')updateCount(false);};
+  updateCount(false);
+  form.onsubmit=async event=>{
+    event.preventDefault();
+    if(busy)return;
+    busy=true;
+    try{
+      writable();
+      if(state.active)throw new Error('Continue ou finalize a sessão em andamento.');
+      const count=Number(form.elements.count.value);
+      const items=candidates();
+      if(!Number.isInteger(count)||count<1||count>items.length)throw new Error(`Escolha entre 1 e ${items.length} questões.`);
+      const questions=selectedChoice(form,'order')==='random'?choose(items,count):items.slice(0,count);
+      state.active=newSession(questions,{mode:'study'});
+      await save();
+      navigate('sessao');
+    }catch(error){$('#review-error').textContent=error.message;}
+    finally{busy=false;}
+  };
 }
 function renderCards(){
   const due=cards.filter(c=>!state.cards[c.id]||state.cards[c.id].due<=Date.now());
@@ -185,12 +363,14 @@ function coverage(){
   const approved=available();const countBy=key=>{const counts=new Map();for(const q of approved)counts.set(q[key],(counts.get(q[key])||0)+1);return [...counts.entries()].map(([k,n])=>`<tr><td>${esc(key==='difficulty'?diff[k]:key==='origin'?(k==='real'?'Aplicada':'Autoral'):k||'Não se aplica')}</td><td>${n}</td></tr>`).join('');};
   main.innerHTML=heading('Transparência do acervo','Questões com origem e contexto.','Conteúdo histórico não confirma o programa de um próximo concurso. Dificuldade é editorial. Somente itens aprovados entram no treino.')+`<section class="panel"><p class="coverage-count">${approved.length} <small>/ meta desta etapa: 300 ativas</small></p><p>${bank.filter(q=>q.status==='pending').length} itens pendentes no arquivo de acervo carregado. Candidatos ainda em pesquisa são contabilizados separadamente no inventário interno.</p><p>Explicações próprias, conferidas por consulta automática às fontes; sem revisão profissional humana. Não constituem orientação clínica para pacientes.</p><div class="note warning">SES-DF: referência inicial é a seleção de 2014. Especialidades e regras de um concurso futuro dependem do respectivo edital. Não há configuração de próximo concurso confirmada nesta versão.</div>${['subject','topic','origin','board','difficulty'].map(k=>`<details open><summary>Contagem por ${{subject:'matéria',topic:'assunto',origin:'origem',board:'banca',difficulty:'dificuldade'}[k]}</summary><table><thead><tr><th>Classificação</th><th>Ativas</th></tr></thead><tbody>${countBy(k)}</tbody></table></details>`).join('')}<h2>Fontes por questão</h2><p>Enunciados autorais são identificados individualmente. As referências de cada explicação aparecem depois da correção. Gabaritos antigos sem verificação definitiva, questões anuladas e material com reutilização pendente não são liberados.</p><a href="./data/inventory.json" target="_blank">Abrir inventário público de fontes</a></section>`;
 }
-function help(){main.innerHTML=heading('Guia rápido','Estude, confirme, revise.')+`<section class="panel"><ol><li>Em Treinar, escolha os filtros e a quantidade. Selecionar uma alternativa não registra resposta: clique em Confirmar resposta.</li><li>Leia as explicações. Use Próxima quando terminar. Em simulados, a correção fica escondida até finalizar.</li><li>Pausar congela o tempo e oculta o conteúdo. Fechar sem pausar mantém a contagem. Uma mudança no relógio do sistema pode afetar o tempo.</li><li>Em Revisão, volte às erradas, favoritas e dúvidas. Cada nova sessão guarda uma tentativa independente.</li><li>Em Seus dados, exporte o progresso regularmente. Para mudar de endereço ou computador, exporte no antigo e restaure no novo.</li></ol><h2>Cuidados com seus dados</h2><p>Usamos IndexedDB com formato identificado e versionado. Dados não são enviados a serviços externos. Limpar dados do navegador ou usar modo anônimo pode apagar o progresso. Internet pode ser necessária para abrir o site. Não há promessa de funcionamento offline completo.</p><p>As sessões guardam as versões das questões e as regras usadas. Atualizar o banco não recalcula silenciosamente notas antigas. O histórico oferece as explicações da versão respondida.</p><h2>Acesso e teclado</h2><p>Use Tab para navegar, Espaço para selecionar e Enter para acionar botões. Alternativas também podem ser escolhidas pelas setas do teclado quando o grupo tem foco. Questões extensas podem exigir rolagem. O mapa mostra respostas confirmadas, sem indicar acerto ou erro no simulado.</p><h2>Abrir e atualizar</h2><p>Baixe o atalho no rodapé, extraia o pacote e abra o arquivo ABRA AQUI. Ele abre sempre o mesmo endereço do site. É preciso ter internet. Ao abrir ou recarregar, o site confere a versão publicada e mostra Atualizando quando há novidades. Uma sessão em andamento mantém suas questões e regras originais; o acervo novo vale para as próximas sessões.</p><p>O atalho não contém seu histórico. Use sempre o mesmo navegador e perfil. O progresso permanece no navegador deste endereço; antes de trocar de computador ou endereço, exporte e restaure seu backup.</p><p>O código e o acervo publicados no GitHub Pages são públicos. O PIN da entrada é apenas uma barreira visual contra curiosos; não protege arquivos ou dados sensíveis.</p></section>`;}
+function help(){main.innerHTML=heading('Guia rápido','Estude, confirme, revise.')+`<section class="panel"><ol><li>Abra Estudar e escolha Treinar, Fazer simulado ou Revisar. No treino, escolha a matéria e a quantidade. Selecionar uma alternativa não registra resposta: clique em Confirmar resposta.</li><li>Leia as explicações. Use Próxima quando terminar. Em simulados, a correção fica escondida até finalizar.</li><li>Pausar congela o tempo e oculta o conteúdo. Fechar sem pausar mantém a contagem. Uma mudança no relógio do sistema pode afetar o tempo.</li><li>Em Revisar, volte às erradas, favoritas e dúvidas ou use os cartões. Cada nova sessão guarda uma tentativa independente.</li><li>Em Seus dados, exporte o progresso regularmente. Para mudar de endereço ou computador, exporte no antigo e restaure no novo.</li></ol><h2>Cuidados com seus dados</h2><p>Usamos IndexedDB com formato identificado e versionado. Dados não são enviados a serviços externos. Limpar dados do navegador ou usar modo anônimo pode apagar o progresso. Internet pode ser necessária para abrir o site. Não há promessa de funcionamento offline completo.</p><p>As sessões guardam as versões das questões e as regras usadas. Atualizar o banco não recalcula silenciosamente notas antigas. O histórico oferece as explicações da versão respondida.</p><h2>Acesso e teclado</h2><p>Use Tab para navegar, Espaço para selecionar e Enter para acionar botões. Alternativas também podem ser escolhidas pelas setas do teclado quando o grupo tem foco. Questões extensas podem exigir rolagem. O mapa mostra respostas confirmadas, sem indicar acerto ou erro no simulado.</p><h2>Abrir e atualizar</h2><p>Baixe o atalho no rodapé, extraia o pacote e abra o arquivo ABRA AQUI. Ele abre sempre o mesmo endereço do site. É preciso ter internet. Ao abrir ou recarregar, o site confere a versão publicada e mostra Atualizando quando há novidades. Uma sessão em andamento mantém suas questões e regras originais; o acervo novo vale para as próximas sessões.</p><p>O atalho não contém seu histórico. Use sempre o mesmo navegador e perfil. O progresso permanece no navegador deste endereço; antes de trocar de computador ou endereço, exporte e restaure seu backup.</p><p>O código e o acervo publicados no GitHub Pages são públicos. O PIN da entrada é apenas uma barreira visual contra curiosos; não protege arquivos ou dados sensíveis.</p></section>`;}
 function render(focus=true){
   const before=document.activeElement;
   const selector=before?.id?`#${CSS.escape(before.id)}`:before?.name==='answer'?`input[name="answer"][value="${before.value}"]`:before?.dataset.mark?`[data-mark="${before.dataset.mark}"]`:null;
-  const path=route();document.querySelectorAll('nav a').forEach(a=>{if(a.hash===`#${path}`)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
-  try{({inicio:home,treinar:()=>setup('study'),simulados:()=>setup('exam'),sessao:session,resultado:result,historico:history,revisao:revision,ajustes:settings,acervo:coverage,ajuda:help}[path]||home)();if(focus){main.focus({preventScroll:true});window.scrollTo(0,0);}else if(selector){const target=$(selector);if(target&&!target.disabled&&!target.closest('fieldset[disabled]'))target.focus({preventScroll:true});else if($('.explanation h3')){$('.explanation h3').tabIndex=-1;$('.explanation h3').focus({preventScroll:true});}}}
+  const path=route();
+  const current=studyRoutes.includes(path)?'estudar':path;
+  document.querySelectorAll('nav a').forEach(a=>{if(a.hash===`#${current}`)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+  try{({inicio:home,estudar:study,treinar:()=>setup('study'),simulados:()=>setup('exam'),sessao:session,resultado:result,historico:history,revisao:revision,ajustes:settings,acervo:coverage,ajuda:help}[path]||home)();if(focus){main.focus({preventScroll:true});if(path==='revisao'&&studyParams().has('cartoes')){$('#cards-title').focus();}else window.scrollTo(0,0);}else if(selector){const target=$(selector);if(target&&!target.disabled&&!target.closest('fieldset[disabled]'))target.focus({preventScroll:true});else if($('.explanation h3')){$('.explanation h3').tabIndex=-1;$('.explanation h3').focus({preventScroll:true});}}}
   catch(e){main.innerHTML=heading('Não foi possível abrir esta tela','Seus dados precisam de atenção.')+`<p class="note error">${esc(e.message)}</p><a class="button" href="#ajustes">Abrir Seus dados</a>`;}
 }
 async function init(){
